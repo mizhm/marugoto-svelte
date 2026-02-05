@@ -12,6 +12,9 @@
 		Volume2
 	} from 'lucide-svelte';
 	import { speak } from '$lib/audio';
+	import { fly } from 'svelte/transition';
+	import { flip } from 'svelte/animate';
+	import { quadOut } from 'svelte/easing';
 
 	let { data }: { data: PageData } = $props();
 
@@ -147,11 +150,13 @@
 		</p>
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-			{#each filteredVocabulary as entry}
+			{#each filteredVocabulary as entry, i (entry)}
 				<div
-					class="card bg-base-100 shadow-md border-l-4 {LEVEL_ACCENTS[
+					animate:flip={{ duration: 300, easing: quadOut }}
+					in:fly={{ y: 20, duration: 400, delay: Math.min(i * 30, 300), easing: quadOut }}
+					class="card bg-base-100/60 backdrop-blur-md shadow-sm border border-base-content/5 hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 {LEVEL_ACCENTS[
 						data.book.level
-					]} hover:shadow-lg"
+					]}"
 				>
 					<div class="card-body p-5">
 						<!-- Lesson badge -->

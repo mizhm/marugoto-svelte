@@ -17,6 +17,9 @@
 
 	// Level order for display
 	const levelOrder: BookLevel[] = ['A1', 'A2-1', 'A2-2', 'A2/B1', 'B1-1', 'B1-2'];
+
+	import { fly, fade } from 'svelte/transition';
+	import { quadOut, backOut } from 'svelte/easing';
 </script>
 
 <svelte:head>
@@ -31,7 +34,7 @@
 <div>
 	<!-- Hero Section -->
 	<header class="pt-16 pb-12 px-4">
-		<div class="max-w-4xl mx-auto text-center">
+		<div class="max-w-4xl mx-auto text-center" in:fly={{ y: 50, duration: 800, easing: backOut }}>
 			<!-- Logo -->
 			<div class="mb-8 relative inline-block">
 				<div
@@ -112,9 +115,10 @@
 
 					<!-- Book Cards -->
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-						{#each booksByLevel[level] as book}
+						{#each booksByLevel[level] as book, i}
 							<a
 								href="/book/{book.id}"
+								in:fly={{ y: 30, duration: 600, delay: 200 + i * 150, easing: quadOut }}
 								class="group relative bg-base-100 rounded-2xl overflow-hidden border border-base-content/5 hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10"
 							>
 								<!-- Gradient overlay on hover -->

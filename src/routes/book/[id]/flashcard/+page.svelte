@@ -9,8 +9,10 @@
 		Shuffle,
 		Check,
 		X,
-		Volume2
+		Volume2,
+		Trophy
 	} from 'lucide-svelte';
+	import { fly, scale } from 'svelte/transition';
 
 	let { data }: { data: PageData } = $props();
 
@@ -27,6 +29,7 @@
 	let autoPlay = $state(true);
 	let knownCount = $state(0);
 	let unknownCount = $state(0);
+	let sessionCompleted = $state(false);
 
 	// Load settings
 	$effect(() => {
@@ -41,7 +44,7 @@
 		// key: currentCard combined with autoPlay check
 		// We use currentIndex to track card changes
 		const card = cards[currentIndex];
-		if (card && autoPlay && !isFlipped) {
+		if (card && autoPlay && !isFlipped && !sessionCompleted) {
 			// Small delay to let transition finish or merely to not startle user immediately
 			const timer = setTimeout(() => {
 				speak(card.kanji || card.hiragana);
@@ -65,6 +68,7 @@
 		isFlipped = false;
 		knownCount = 0;
 		unknownCount = 0;
+		sessionCompleted = false;
 	}
 
 	function shuffleCards() {
@@ -80,6 +84,8 @@
 		if (currentIndex < cards.length - 1) {
 			currentIndex++;
 			isFlipped = false;
+		} else {
+			sessionCompleted = true;
 		}
 	}
 
@@ -87,6 +93,7 @@
 		if (currentIndex > 0) {
 			currentIndex--;
 			isFlipped = false;
+			sessionCompleted = false;
 		}
 	}
 
@@ -176,6 +183,31 @@
 			<div class="text-center">
 				<p class="text-xl text-base-content/60">Không có từ vựng</p>
 			</div>
+		{:else if sessionCompleted}
+			<div class="text-center" in:fly={{ y: 20 }}>
+				<div class="mb-6">
+					<Trophy class="w-24 h-24 text-warning mx-auto drop-shadow-xl animate-bounce" />
+				</div>
+				<h2 class="text-3xl font-bold mb-4">Hoàn thành!</h2>
+
+				<div class="stats stats-vertical sm:stats-horizontal shadow bg-base-100 mb-8">
+					<div class="stat place-items-center">
+						<div class="stat-title text-success">Đã biết</div>
+						<div class="stat-value text-success">{knownCount}</div>
+					</div>
+					<div class="stat place-items-center">
+						<div class="stat-title text-error">Chưa biết</div>
+						<div class="stat-value text-error">{unknownCount}</div>
+					</div>
+				</div>
+
+				<div class="flex justify-center gap-4">
+					<button class="btn btn-primary btn-lg gap-2" onclick={resetSession}>
+						<RotateCcw class="w-6 h-6" />
+						Học lại
+					</button>
+				</div>
+			</div>
 		{:else if currentCard}
 			<!-- Stats -->
 			<div class="flex items-center gap-6 mb-6 text-sm">
@@ -195,7 +227,7 @@
 			<!-- Flashcard -->
 			<div class="w-full max-w-2xl perspective-1000">
 				<div
-					class="w-full aspect-[3/2] cursor-pointer outline-none focus:ring-4 focus:ring-primary/20 rounded-2xl"
+					class="w-full aspect-[3/2] cursor-pointer outline-none rounded-2xl"
 					onclick={flipCard}
 					onkeydown={(e) => {
 						if (e.key === 'Enter' || e.key === ' ') flipCard();
@@ -215,7 +247,9 @@
 								class="w-full h-full bg-base-100 rounded-2xl shadow-xl flex flex-col items-center justify-center p-8 border border-base-300 relative"
 							>
 								<button
-									class="absolute top-4 right-4 btn btn-circle btn-ghost text-base-content/50 hover:text-primary hover:bg-primary/10 z-10"
+									class="absolute top-4 right-4 btn btn-circle btn-ghost text-base-content/50 hover:text-primary hover:bg-primary/10 z-10 transition-opacity duration-200 {isFlipped
+										? 'opacity-0 pointer-events-none'
+										: 'opacity-100'}"
 									onclick={(e) => {
 										e.stopPropagation();
 										speak(currentCard.kanji || currentCard.hiragana);

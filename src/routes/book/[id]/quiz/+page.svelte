@@ -129,6 +129,29 @@
 </script>
 
 <svelte:head>
+	<style>
+		@keyframes shake {
+			0%,
+			100% {
+				transform: translateX(0);
+			}
+			20% {
+				transform: translateX(-5px);
+			}
+			40% {
+				transform: translateX(5px);
+			}
+			60% {
+				transform: translateX(-5px);
+			}
+			80% {
+				transform: translateX(5px);
+			}
+		}
+		.animate-shake {
+			animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+		}
+	</style>
 	<title>Quiz - {data.book.title}</title>
 </svelte:head>
 
@@ -318,11 +341,11 @@
 							class="btn btn-lg h-auto py-4 text-left justify-start gap-3 border-2
 								{isAnswered
 								? isCorrect
-									? 'bg-success border-success text-white hover:bg-success'
+									? 'bg-success border-success text-white hover:bg-success scale-105 shadow-xl transition-transform'
 									: isWrongSelected
-										? 'bg-error border-error text-white hover:bg-error'
-										: 'btn-ghost opacity-30 border-transparent'
-								: 'btn-outline hover:btn-primary border-base-300'}"
+										? 'bg-error border-error text-white hover:bg-error animate-shake shadow-lg'
+										: 'btn-ghost opacity-30 border-transparent scale-95'
+								: 'btn-outline hover:btn-primary border-base-300 hover:scale-[1.01] transition-transform'}"
 							onclick={() => selectAnswer(i)}
 							disabled={isAnswered}
 						>
