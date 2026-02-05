@@ -1,7 +1,0 @@
-/home/minh/Documents/pet/marugoto-svelte/.devenv/flake.json
-/home/minh/Documents/pet/marugoto-svelte/.devenv.flake.nix
-/home/minh/Documents/pet/marugoto-svelte/.env
-/home/minh/Documents/pet/marugoto-svelte/devenv.local.nix
-/home/minh/Documents/pet/marugoto-svelte/devenv.lock
-/home/minh/Documents/pet/marugoto-svelte/devenv.nix
-/home/minh/Documents/pet/marugoto-svelte/devenv.yaml

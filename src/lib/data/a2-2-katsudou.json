@@ -1,0 +1,5241 @@
+[
+  { "hiragana": "あ", "kanji": null, "meaning": "A!", "lesson": 4 },
+  { "hiragana": "ああ", "kanji": null, "meaning": "A~!", "lesson": 9 },
+  { "hiragana": "あいさつ", "kanji": null, "meaning": "chào hỏi", "lesson": 9 },
+  {
+    "hiragana": "あいます 【あう1】",
+    "kanji": "会います",
+    "meaning": "gặp",
+    "lesson": 9
+  },
+  { "hiragana": "アイロン", "kanji": null, "meaning": "bàn là", "lesson": 11 },
+  { "hiragana": "あかい", "kanji": "赤い", "meaning": "đỏ", "lesson": 2 },
+  {
+    "hiragana": "あかちゃん",
+    "kanji": "（赤ちゃん）",
+    "meaning": "em bé",
+    "lesson": 16
+  },
+  {
+    "hiragana": "あかるい",
+    "kanji": "明るい",
+    "meaning": "rạng rỡ, vui tươi",
+    "lesson": 1
+  },
+  { "hiragana": "あき", "kanji": "秋", "meaning": "mùa thu", "lesson": 13 },
+  {
+    "hiragana": "あきこ／あきこさん",
+    "kanji": null,
+    "meaning": "Akiko (tên người)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "あきます 【あく1】",
+    "kanji": null,
+    "meaning": "mở",
+    "lesson": 15
+  },
+  {
+    "hiragana": "あきます 【あきる2】",
+    "kanji": null,
+    "meaning": "chán",
+    "lesson": 16
+  },
+  {
+    "hiragana": "あきまつり",
+    "kanji": "秋まつり",
+    "meaning": "lễ hội mùa thu",
+    "lesson": 10
+  },
+  {
+    "hiragana": "アクセサリー",
+    "kanji": null,
+    "meaning": "trang sức",
+    "lesson": 6
+  },
+  {
+    "hiragana": "あげます 【あげる2】",
+    "kanji": "（上げます）",
+    "meaning": "tặng, cho",
+    "lesson": 9
+  },
+  {
+    "hiragana": "あげます 【あげる2】",
+    "kanji": "（上げます）",
+    "meaning": "tăng",
+    "lesson": 15
+  },
+  { "hiragana": "あさ", "kanji": "朝", "meaning": "buổi sáng", "lesson": 7 },
+  { "hiragana": "あさって", "kanji": null, "meaning": "ngày kia", "lesson": 8 },
+  {
+    "hiragana": "あさの／あさのさん",
+    "kanji": null,
+    "meaning": "Asano (họ)",
+    "lesson": 1
+  },
+  { "hiragana": "あじ", "kanji": "味", "meaning": "vị", "lesson": 3 },
+  { "hiragana": "あした", "kanji": null, "meaning": "ngày mai", "lesson": 7 },
+  { "hiragana": "あそこ", "kanji": null, "meaning": "đằng kia", "lesson": 2 },
+  {
+    "hiragana": "あそびます 【あそぶ1】",
+    "kanji": null,
+    "meaning": "chơi",
+    "lesson": 9
+  },
+  { "hiragana": "あたたかい", "kanji": null, "meaning": "ấm", "lesson": 3 },
+  { "hiragana": "あたま", "kanji": "頭", "meaning": "đầu", "lesson": 2 },
+  {
+    "hiragana": "あたまが いい",
+    "kanji": "頭が いい",
+    "meaning": "thông minh",
+    "lesson": 2
+  },
+  {
+    "hiragana": "あたらしい",
+    "kanji": "新しい",
+    "meaning": "mới",
+    "lesson": 1
+  },
+  {
+    "hiragana": "あたり",
+    "kanji": null,
+    "meaning": "vùng, khu vực",
+    "lesson": 13
+  },
+  {
+    "hiragana": "あちら",
+    "kanji": null,
+    "meaning": "phía đằng kia",
+    "lesson": 8
+  },
+  {
+    "hiragana": "あちらこちら",
+    "kanji": null,
+    "meaning": "khắp nơi",
+    "lesson": 9
+  },
+  { "hiragana": "あつい", "kanji": null, "meaning": "nóng", "lesson": 4 },
+  { "hiragana": "あつい", "kanji": null, "meaning": "nóng", "lesson": 5 },
+  {
+    "hiragana": "あつまります 【あつまる1】",
+    "kanji": null,
+    "meaning": "tập hợp, tập trung",
+    "lesson": 7
+  },
+  { "hiragana": "あと", "kanji": "後", "meaning": "sau khi", "lesson": 3 },
+  {
+    "hiragana": "アドバイス",
+    "kanji": null,
+    "meaning": "lời khuyên",
+    "lesson": 4
+  },
+  {
+    "hiragana": "あなた",
+    "kanji": null,
+    "meaning": "bạn (ngôi thứ hai số ít)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "あに",
+    "kanji": null,
+    "meaning": "anh trai (của mình)",
+    "lesson": 18
+  },
+  {
+    "hiragana": "アニメ",
+    "kanji": null,
+    "meaning": "phim hoạt hình",
+    "lesson": 1
+  },
+  {
+    "hiragana": "あね",
+    "kanji": null,
+    "meaning": "chị (của mình)",
+    "lesson": 2
+  },
+  { "hiragana": "あの", "kanji": null, "meaning": "～ kia", "lesson": 2 },
+  { "hiragana": "あの ころ", "kanji": null, "meaning": "hồi ấy", "lesson": 18 },
+  {
+    "hiragana": "あの／あのう",
+    "kanji": null,
+    "meaning": "À…, Ừm…",
+    "lesson": 3
+  },
+  {
+    "hiragana": "あはは",
+    "kanji": null,
+    "meaning": "ahaha (cười lớn)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "あびます 【あびる2】",
+    "kanji": null,
+    "meaning": "tắm",
+    "lesson": 15
+  },
+  { "hiragana": "あぶら", "kanji": null, "meaning": "dầu", "lesson": 15 },
+  {
+    "hiragana": "あべ／あべさん",
+    "kanji": null,
+    "meaning": "Abe (tên người)",
+    "lesson": 16
+  },
+  { "hiragana": "あまい", "kanji": null, "meaning": "ngọt", "lesson": 4 },
+  {
+    "hiragana": "あまえます 【あまえる2】",
+    "kanji": null,
+    "meaning": "được chiều chuộng",
+    "lesson": 18
+  },
+  {
+    "hiragana": "あまり（～ない）",
+    "kanji": null,
+    "meaning": "không ~ lắm",
+    "lesson": 6
+  },
+  { "hiragana": "あめ", "kanji": "雨", "meaning": "mưa", "lesson": 7 },
+  { "hiragana": "あめ", "kanji": null, "meaning": "kẹo", "lesson": 10 },
+  { "hiragana": "アメリカ", "kanji": null, "meaning": "Mỹ", "lesson": 1 },
+  {
+    "hiragana": "ありがとう",
+    "kanji": null,
+    "meaning": "Cảm ơn.",
+    "lesson": 6
+  },
+  {
+    "hiragana": "あります 【ある1】",
+    "kanji": null,
+    "meaning": "có",
+    "lesson": 3
+  },
+  {
+    "hiragana": "あるきます 【あるく1】",
+    "kanji": "歩きます",
+    "meaning": "đi bộ",
+    "lesson": 13
+  },
+  {
+    "hiragana": "あれ",
+    "kanji": null,
+    "meaning": "cái kia (xa cả người nói và người nghe)",
+    "lesson": 10
+  },
+  { "hiragana": "アレルギー", "kanji": null, "meaning": "dị ứng", "lesson": 3 },
+  {
+    "hiragana": "アンケート",
+    "kanji": null,
+    "meaning": "bản điều tra",
+    "lesson": 6
+  },
+  {
+    "hiragana": "あんない（します） （【する3】）",
+    "kanji": null,
+    "meaning": "hướng dẫn, chỉ dẫn",
+    "lesson": 7
+  },
+  { "hiragana": "いい", "kanji": null, "meaning": "đẹp, tốt", "lesson": 1 },
+  {
+    "hiragana": "いいえ／いえ",
+    "kanji": null,
+    "meaning": "Không.",
+    "lesson": 2
+  },
+  {
+    "hiragana": "いいます 【いう1】",
+    "kanji": "言います",
+    "meaning": "nói",
+    "lesson": 18
+  },
+  { "hiragana": "いえ", "kanji": "家", "meaning": "nhà", "lesson": 9 },
+  {
+    "hiragana": "いえじゅう",
+    "kanji": "（家中）",
+    "meaning": "cả nhà, khắp nhà",
+    "lesson": 9
+  },
+  {
+    "hiragana": "いかが",
+    "kanji": null,
+    "meaning": "~ thì thế nào? (cách nói lịch sự của どう）",
+    "lesson": 6
+  },
+  {
+    "hiragana": "いきます 【いく1】",
+    "kanji": "行きます",
+    "meaning": "đi",
+    "lesson": 1
+  },
+  {
+    "hiragana": "いきもの",
+    "kanji": "（生き物）",
+    "meaning": "sinh vật",
+    "lesson": 6
+  },
+  { "hiragana": "いし", "kanji": null, "meaning": "đá", "lesson": 13 },
+  {
+    "hiragana": "いしかわ／いしかわさん",
+    "kanji": null,
+    "meaning": "Ishikawa (tên người)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "いじょう",
+    "kanji": null,
+    "meaning": "hơn ~, ~ trờ lên",
+    "lesson": 13
+  },
+  { "hiragana": "いす", "kanji": null, "meaning": "ghế", "lesson": 7 },
+  {
+    "hiragana": "いそがしい",
+    "kanji": null,
+    "meaning": "bận rộn",
+    "lesson": 8
+  },
+  {
+    "hiragana": "いただきます",
+    "kanji": null,
+    "meaning": "Tôi xin phép dùng bữa.",
+    "lesson": 4
+  },
+  { "hiragana": "イタリア", "kanji": null, "meaning": "Ý", "lesson": 17 },
+  {
+    "hiragana": "いちにちじゅう",
+    "kanji": "一日中",
+    "meaning": "suốt cả ngày",
+    "lesson": 6
+  },
+  {
+    "hiragana": "いちねんじゅう",
+    "kanji": "一年中",
+    "meaning": "quanh năm",
+    "lesson": 5
+  },
+  { "hiragana": "いちばん", "kanji": null, "meaning": "nhất", "lesson": 3 },
+  { "hiragana": "いちばん", "kanji": null, "meaning": "nhất", "lesson": 18 },
+  {
+    "hiragana": "いちろう／いちろうさん",
+    "kanji": null,
+    "meaning": "Ichiro (tên người)",
+    "lesson": 1
+  },
+  { "hiragana": "いつ", "kanji": null, "meaning": "khi nào", "lesson": 10 },
+  {
+    "hiragana": "いつか",
+    "kanji": null,
+    "meaning": "một lúc nào đó",
+    "lesson": 1
+  },
+  {
+    "hiragana": "いつか",
+    "kanji": "５日／五日",
+    "meaning": "mùng 5/ 5 ngày",
+    "lesson": 10
+  },
+  {
+    "hiragana": "いつごろ",
+    "kanji": null,
+    "meaning": "tầm khi nào",
+    "lesson": 14
+  },
+  {
+    "hiragana": "いっしょに",
+    "kanji": null,
+    "meaning": "cùng nhau",
+    "lesson": 2
+  },
+  {
+    "hiragana": "いっぽん　＜じゅうどう＞",
+    "kanji": null,
+    "meaning": "đòn ippon (judo)",
+    "lesson": 18
+  },
+  { "hiragana": "いつも", "kanji": null, "meaning": "luôn luôn", "lesson": 3 },
+  { "hiragana": "いぬ", "kanji": null, "meaning": "chó", "lesson": 18 },
+  {
+    "hiragana": "いのります 【いのる1】",
+    "kanji": null,
+    "meaning": "cầu nguyện",
+    "lesson": 10
+  },
+  { "hiragana": "イベント", "kanji": null, "meaning": "sự kiện", "lesson": 7 },
+  { "hiragana": "いま", "kanji": "今", "meaning": "bây giờ", "lesson": 7 },
+  {
+    "hiragana": "いまから",
+    "kanji": "今から",
+    "meaning": "từ giờ",
+    "lesson": 17
+  },
+  {
+    "hiragana": "います 【いる2】",
+    "kanji": null,
+    "meaning": "có",
+    "lesson": 9
+  },
+  {
+    "hiragana": "いままで",
+    "kanji": "今まで",
+    "meaning": "cho đến giờ",
+    "lesson": 17
+  },
+  { "hiragana": "いみ", "kanji": null, "meaning": "ý nghĩa", "lesson": 1 },
+  {
+    "hiragana": "いもうと",
+    "kanji": null,
+    "meaning": "em gái (của mình)",
+    "lesson": 9
+  },
+  {
+    "hiragana": "いもうとさん",
+    "kanji": null,
+    "meaning": "em gái （của người khác）",
+    "lesson": 9
+  },
+  { "hiragana": "いやあ", "kanji": null, "meaning": "Ừm…", "lesson": 6 },
+  {
+    "hiragana": "いらっしゃいませ",
+    "kanji": null,
+    "meaning": "Chào mừng quý khách.",
+    "lesson": 3
+  },
+  {
+    "hiragana": "いりぐち",
+    "kanji": "（入り口）",
+    "meaning": "cửa vào",
+    "lesson": 8
+  },
+  {
+    "hiragana": "いります 【いる1】",
+    "kanji": null,
+    "meaning": "cần",
+    "lesson": 16
+  },
+  { "hiragana": "イルカ", "kanji": null, "meaning": "cá heo", "lesson": 6 },
+  {
+    "hiragana": "いれます 【いれる2】",
+    "kanji": "（入れます）",
+    "meaning": "cho vào",
+    "lesson": 4
+  },
+  { "hiragana": "いろ", "kanji": "色", "meaning": "màu sắc", "lesson": 4 },
+  {
+    "hiragana": "いろいろ（な）",
+    "kanji": null,
+    "meaning": "nhiều, đa dạng",
+    "lesson": 3
+  },
+  {
+    "hiragana": "いわいます 【いわう1】",
+    "kanji": "（祝います）",
+    "meaning": "chúc mừng",
+    "lesson": 10
+  },
+  {
+    "hiragana": "いんしょく",
+    "kanji": "飲食",
+    "meaning": "ăn uống",
+    "lesson": 8
+  },
+  {
+    "hiragana": "インターネット",
+    "kanji": null,
+    "meaning": "internet",
+    "lesson": 11
+  },
+  { "hiragana": "インド", "kanji": null, "meaning": "Ấn Độ", "lesson": 1 },
+  {
+    "hiragana": "ウーロンちゃ",
+    "kanji": "ウーロン茶",
+    "meaning": "trà ô long",
+    "lesson": 3
+  },
+  {
+    "hiragana": "ううん／うーん",
+    "kanji": null,
+    "meaning": "Ừm…",
+    "lesson": 12
+  },
+  {
+    "hiragana": "うえ",
+    "kanji": "上",
+    "meaning": "lớn hơn, trên",
+    "lesson": 1
+  },
+  {
+    "hiragana": "うけつけ",
+    "kanji": "受付",
+    "meaning": "lễ tân, tiếp tân",
+    "lesson": 7
+  },
+  {
+    "hiragana": "うごきます 【うごく1】",
+    "kanji": null,
+    "meaning": "chạy, hoạt động",
+    "lesson": 11
+  },
+  {
+    "hiragana": "うしろ",
+    "kanji": "（後ろ）",
+    "meaning": "phía sau",
+    "lesson": 8
+  },
+  { "hiragana": "うた", "kanji": null, "meaning": "bài hát", "lesson": 14 },
+  {
+    "hiragana": "うたいます 【うたう1】",
+    "kanji": null,
+    "meaning": "hát",
+    "lesson": 10
+  },
+  { "hiragana": "うち", "kanji": "（家）", "meaning": "nhà", "lesson": 9 },
+  { "hiragana": "うちわ", "kanji": null, "meaning": "quạt giấy", "lesson": 8 },
+  {
+    "hiragana": "うつくしい",
+    "kanji": null,
+    "meaning": "đẹp, xinh đẹp",
+    "lesson": 5
+  },
+  {
+    "hiragana": "うふふ",
+    "kanji": null,
+    "meaning": "ihihi (tiếng cười phụ nữ)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "うまれます 【うまれる2】",
+    "kanji": "（生まれます）",
+    "meaning": "được sinh ra",
+    "lesson": 1
+  },
+  { "hiragana": "うみ", "kanji": "海", "meaning": "biển", "lesson": 5 },
+  {
+    "hiragana": "うみべのカフカ",
+    "kanji": "海辺のカフカ",
+    "meaning": "\"Kafka bên bờ biển\" (tác phẩm của tiểu thuyết gia Murakami Haruki)",
+    "lesson": 17
+  },
+  {
+    "hiragana": "うります 【うる1】",
+    "kanji": null,
+    "meaning": "bán",
+    "lesson": 16
+  },
+  {
+    "hiragana": "うれしい",
+    "kanji": null,
+    "meaning": "vui sướng",
+    "lesson": 18
+  },
+  { "hiragana": "うん", "kanji": null, "meaning": "Ừ.", "lesson": 4 },
+  { "hiragana": "え", "kanji": "絵", "meaning": "tranh", "lesson": 13 },
+  { "hiragana": "え／えっ", "kanji": null, "meaning": "Ớ!, Hả?", "lesson": 1 },
+  {
+    "hiragana": "エアコン",
+    "kanji": null,
+    "meaning": "điều hòa",
+    "lesson": 11
+  },
+  { "hiragana": "えいが", "kanji": null, "meaning": "phim ảnh", "lesson": 1 },
+  {
+    "hiragana": "えいよう",
+    "kanji": null,
+    "meaning": "dinh dưỡng",
+    "lesson": 3
+  },
+  { "hiragana": "ええ", "kanji": null, "meaning": "Ừ., Vâng.", "lesson": 6 },
+  {
+    "hiragana": "ええと／えっと／ええっと",
+    "kanji": null,
+    "meaning": "Ờ thì…",
+    "lesson": 1
+  },
+  {
+    "hiragana": "エキスポ／EXPO",
+    "kanji": null,
+    "meaning": "hội trợ thế giới (EXPO)",
+    "lesson": 17
+  },
+  {
+    "hiragana": "エキスポ ななじゅう おおさか／EXPO'70 おおさか",
+    "kanji": "EXPO'70 大阪",
+    "meaning": "EXPO Osaka 1970",
+    "lesson": 17
+  },
+  {
+    "hiragana": "エコ",
+    "kanji": null,
+    "meaning": "tiết kiệm, sinh thái",
+    "lesson": 15
+  },
+  {
+    "hiragana": "エコかつどう",
+    "kanji": null,
+    "meaning": "hành động tiết kiệm năng lượng",
+    "lesson": 15
+  },
+  {
+    "hiragana": "エコバッグ",
+    "kanji": null,
+    "meaning": "túi sinh thái, túi bảo vệ môi trường",
+    "lesson": 15
+  },
+  {
+    "hiragana": "エネルギー",
+    "kanji": null,
+    "meaning": "năng lượng",
+    "lesson": 12
+  },
+  { "hiragana": "えび", "kanji": null, "meaning": "tôm", "lesson": 3 },
+  {
+    "hiragana": "えん／～えん",
+    "kanji": null,
+    "meaning": "~ yên",
+    "lesson": 3
+  },
+  {
+    "hiragana": "えんりょ（します） （【する3】）",
+    "kanji": "（遠慮（します））",
+    "meaning": "khách sáo, ngại ngừng",
+    "lesson": 8
+  },
+  { "hiragana": "おいしい", "kanji": null, "meaning": "ngon", "lesson": 3 },
+  {
+    "hiragana": "オイルショック",
+    "kanji": null,
+    "meaning": "khủng hoảng dầu lửa",
+    "lesson": 18
+  },
+  { "hiragana": "おお", "kanji": null, "meaning": "Ồ!", "lesson": 14 },
+  { "hiragana": "おおい", "kanji": "多い", "meaning": "nhiều", "lesson": 5 },
+  {
+    "hiragana": "おおきい",
+    "kanji": "大きい",
+    "meaning": "to, lớn",
+    "lesson": 12
+  },
+  {
+    "hiragana": "おおきさ",
+    "kanji": "大きさ",
+    "meaning": "độ lớn",
+    "lesson": 12
+  },
+  {
+    "hiragana": "おおきな",
+    "kanji": "大きな",
+    "meaning": "to lớn",
+    "lesson": 3
+  },
+  {
+    "hiragana": "おおきに",
+    "kanji": null,
+    "meaning": "Cảm ơn. (phương ngữ Kyoto)",
+    "lesson": 13
+  },
+  { "hiragana": "おおさか", "kanji": "大阪", "meaning": "Osaka", "lesson": 13 },
+  {
+    "hiragana": "おおそうじ",
+    "kanji": "大そうじ",
+    "meaning": "tổng vệ sinh",
+    "lesson": 9
+  },
+  {
+    "hiragana": "おおみそか",
+    "kanji": null,
+    "meaning": "ngày cuối năm",
+    "lesson": 9
+  },
+  {
+    "hiragana": "おかあさん",
+    "kanji": "お母さん",
+    "meaning": "mẹ (của người khác)",
+    "lesson": 9
+  },
+  {
+    "hiragana": "おかし（かし）",
+    "kanji": null,
+    "meaning": "bánh kẹo",
+    "lesson": 6
+  },
+  {
+    "hiragana": "おかしやさん",
+    "kanji": null,
+    "meaning": "cửa hàng bánh kẹo",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おかもとたろう",
+    "kanji": "岡本太郎",
+    "meaning": "Okamoto Taro (tên nghệ sĩ)",
+    "lesson": 17
+  },
+  {
+    "hiragana": "おがわ／おがわさん",
+    "kanji": "小川／小川さん",
+    "meaning": "Ogawa (tên người)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おきなわ",
+    "kanji": "沖縄",
+    "meaning": "Okinawa",
+    "lesson": 5
+  },
+  {
+    "hiragana": "おきなわガラス",
+    "kanji": "沖縄ガラス",
+    "meaning": "xưởng thổi thủy tinh Okinawa",
+    "lesson": 6
+  },
+  {
+    "hiragana": "おきます 【おく1】",
+    "kanji": "おきます",
+    "meaning": "đặt, để",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おきます 【おきる2】",
+    "kanji": "起きます",
+    "meaning": "thức dậy",
+    "lesson": 18
+  },
+  {
+    "hiragana": "おきゃくさま",
+    "kanji": "お客さま",
+    "meaning": "quý khách (cách nói lịch sự của おきゃくさん）",
+    "lesson": 6
+  },
+  {
+    "hiragana": "おくさん",
+    "kanji": null,
+    "meaning": "vợ (của người khác)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "おくります 【おくる2】",
+    "kanji": null,
+    "meaning": "gửi",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おこさん",
+    "kanji": "お子さん",
+    "meaning": "con (của người khác)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "おさかな（さかな）",
+    "kanji": "お魚（魚）",
+    "meaning": "cá",
+    "lesson": 3
+  },
+  {
+    "hiragana": "おさけ（さけ）",
+    "kanji": "お酒（酒）",
+    "meaning": "rượu",
+    "lesson": 3
+  },
+  {
+    "hiragana": "おしえます 【おしえる2】",
+    "kanji": null,
+    "meaning": "dạy",
+    "lesson": 7
+  },
+  {
+    "hiragana": "おしごと（しごと）",
+    "kanji": "お仕事（仕事）",
+    "meaning": "công việc",
+    "lesson": 1
+  },
+  {
+    "hiragana": "おしゃれ（な）",
+    "kanji": null,
+    "meaning": "điệu đà, ăn diện",
+    "lesson": 12
+  },
+  {
+    "hiragana": "おしゃれします 【おしゃれする3】",
+    "kanji": null,
+    "meaning": "điệu đà, ăn diện",
+    "lesson": 18
+  },
+  {
+    "hiragana": "おしょうがつ（しょうがつ）",
+    "kanji": "お正月（正月）",
+    "meaning": "tết, lễ đón năm mới",
+    "lesson": 9
+  },
+  {
+    "hiragana": "おしろ（しろ）",
+    "kanji": null,
+    "meaning": "thành, lâu đài",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おすすめ",
+    "kanji": null,
+    "meaning": "lời khuyên, gợi ý",
+    "lesson": 3
+  },
+  {
+    "hiragana": "おせち（りょうり）",
+    "kanji": "おせち（料理）",
+    "meaning": "món ăn ngày tết",
+    "lesson": 9
+  },
+  {
+    "hiragana": "おせわ（せわ）",
+    "kanji": "お世話（世話）",
+    "meaning": "chăm sóc, giúp đỡ, quan tâm",
+    "lesson": 9
+  },
+  { "hiragana": "おそい", "kanji": null, "meaning": "muộn", "lesson": 18 },
+  {
+    "hiragana": "おちゃ",
+    "kanji": "お茶",
+    "meaning": "trà xanh",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おっと",
+    "kanji": null,
+    "meaning": "chồng (của mình)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おてら（てら）",
+    "kanji": null,
+    "meaning": "chùa",
+    "lesson": 13
+  },
+  { "hiragana": "おと", "kanji": null, "meaning": "âm thanh", "lesson": 11 },
+  {
+    "hiragana": "おとうさん",
+    "kanji": "お父さん",
+    "meaning": "bố (của người khác)",
+    "lesson": 9
+  },
+  {
+    "hiragana": "おとうと",
+    "kanji": null,
+    "meaning": "em trai (của mình)",
+    "lesson": 16
+  },
+  {
+    "hiragana": "おとこのこ",
+    "kanji": "男の子",
+    "meaning": "bé trai",
+    "lesson": 10
+  },
+  {
+    "hiragana": "おとこのひと",
+    "kanji": "男の人",
+    "meaning": "người đàn ông",
+    "lesson": 2
+  },
+  {
+    "hiragana": "おとしだま",
+    "kanji": null,
+    "meaning": "tiền mừng tuổi",
+    "lesson": 9
+  },
+  {
+    "hiragana": "おとします 【おとす1】",
+    "kanji": null,
+    "meaning": "làm rơi, đánh rơi",
+    "lesson": 11
+  },
+  {
+    "hiragana": "おとなしい",
+    "kanji": null,
+    "meaning": "hiền lành, ngoan ngoãn",
+    "lesson": 18
+  },
+  {
+    "hiragana": "おともだち（ともだち）",
+    "kanji": "お友だち（友だち）",
+    "meaning": "bạn bè",
+    "lesson": 2
+  },
+  {
+    "hiragana": "おどり",
+    "kanji": null,
+    "meaning": "điệu múa, điệu nhảy",
+    "lesson": 6
+  },
+  {
+    "hiragana": "おどります 【おどる1】",
+    "kanji": null,
+    "meaning": "nhảy, múa",
+    "lesson": 10
+  },
+  { "hiragana": "おなか", "kanji": null, "meaning": "bụng", "lesson": 4 },
+  { "hiragana": "おなじ", "kanji": null, "meaning": "giống", "lesson": 1 },
+  { "hiragana": "おに", "kanji": null, "meaning": "quỷ", "lesson": 10 },
+  {
+    "hiragana": "おにわ（にわ）",
+    "kanji": null,
+    "meaning": "khu vườn",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おねえさん",
+    "kanji": null,
+    "meaning": "chị gái (của người khác)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "おねがい",
+    "kanji": "（お願い）",
+    "meaning": "nhờ vả",
+    "lesson": 8
+  },
+  {
+    "hiragana": "おねがいします／いたします",
+    "kanji": "お願いします／いたします",
+    "meaning": "Làm ơn ~.",
+    "lesson": 1
+  },
+  {
+    "hiragana": "おのみもの（のみもの）",
+    "kanji": "お飲み物（飲み物）",
+    "meaning": "đồ uống",
+    "lesson": 3
+  },
+  {
+    "hiragana": "おはか（はか）",
+    "kanji": null,
+    "meaning": "mộ",
+    "lesson": 14
+  },
+  {
+    "hiragana": "おはな",
+    "kanji": "お花",
+    "meaning": "nghệ thuật cắm hoa",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おはよう",
+    "kanji": null,
+    "meaning": "Chào. (buổi sáng)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "オプショナルプラン",
+    "kanji": null,
+    "meaning": "kế hoạch tùy chọn",
+    "lesson": 6
+  },
+  {
+    "hiragana": "おべんとう（べんとう）",
+    "kanji": null,
+    "meaning": "cơm hộp",
+    "lesson": 7
+  },
+  {
+    "hiragana": "おぼえます 【おぼえる2】",
+    "kanji": null,
+    "meaning": "nhớ",
+    "lesson": 17
+  },
+  {
+    "hiragana": "おみやげ（みやげ）",
+    "kanji": null,
+    "meaning": "quà lưu niệm",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おめでたい（めでたい）",
+    "kanji": null,
+    "meaning": "đáng mừng, đáng chúc mừng",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おめでとう",
+    "kanji": null,
+    "meaning": "Chúc mừng!",
+    "lesson": 9
+  },
+  { "hiragana": "おもい", "kanji": null, "meaning": "nặng", "lesson": 12 },
+  {
+    "hiragana": "おもいで",
+    "kanji": "（思い出）",
+    "meaning": "kỷ niệm",
+    "lesson": 6
+  },
+  {
+    "hiragana": "おもいます 【おもう1】",
+    "kanji": "思います",
+    "meaning": "nghĩ",
+    "lesson": 5
+  },
+  { "hiragana": "おもさ", "kanji": null, "meaning": "cân nặng", "lesson": 12 },
+  { "hiragana": "おもしろい", "kanji": null, "meaning": "thú vị", "lesson": 2 },
+  { "hiragana": "おもちゃ", "kanji": null, "meaning": "đồ chơi", "lesson": 16 },
+  {
+    "hiragana": "おや",
+    "kanji": null,
+    "meaning": "bố mẹ (của mình)",
+    "lesson": 9
+  },
+  {
+    "hiragana": "およぎます 【およぐ1】",
+    "kanji": "泳ぎます",
+    "meaning": "bơi lội",
+    "lesson": 6
+  },
+  { "hiragana": "おりもの", "kanji": null, "meaning": "đồ dệt", "lesson": 14 },
+  {
+    "hiragana": "おりょうり（りょうり）",
+    "kanji": "お料理（料理）",
+    "meaning": "món ăn",
+    "lesson": 3
+  },
+  {
+    "hiragana": "オリンピック",
+    "kanji": null,
+    "meaning": "Olympic",
+    "lesson": 17
+  },
+  { "hiragana": "オレンジ", "kanji": null, "meaning": "quả cam", "lesson": 3 },
+  {
+    "hiragana": "オレンジジュース",
+    "kanji": null,
+    "meaning": "nước cam",
+    "lesson": 3
+  },
+  { "hiragana": "おわり", "kanji": null, "meaning": "kết thúc", "lesson": 13 },
+  {
+    "hiragana": "おわりごろ",
+    "kanji": null,
+    "meaning": "khoảng cuối",
+    "lesson": 13
+  },
+  {
+    "hiragana": "おわります 【おわる1】",
+    "kanji": null,
+    "meaning": "xong, kết thúc",
+    "lesson": 7
+  },
+  {
+    "hiragana": "おんがく",
+    "kanji": "音楽",
+    "meaning": "âm nhạc",
+    "lesson": 6
+  },
+  {
+    "hiragana": "おんがくか",
+    "kanji": "（音楽家）",
+    "meaning": "nhạc sĩ",
+    "lesson": 17
+  },
+  {
+    "hiragana": "おんがくプレーヤー",
+    "kanji": "音楽プレーヤー",
+    "meaning": "máy nghe nhạc",
+    "lesson": 11
+  },
+  { "hiragana": "おんど", "kanji": null, "meaning": "nhiệt độ", "lesson": 15 },
+  {
+    "hiragana": "おんなのこ",
+    "kanji": "女の子",
+    "meaning": "bé gái",
+    "lesson": 2
+  },
+  {
+    "hiragana": "おんなのひと",
+    "kanji": "女の人",
+    "meaning": "người phụ nữ",
+    "lesson": 2
+  },
+  {
+    "hiragana": "か／～か",
+    "kanji": "（～家）",
+    "meaning": "~ gia (tiểu thuyết gia)",
+    "lesson": 17
+  },
+  { "hiragana": "カード", "kanji": null, "meaning": "thẻ", "lesson": 7 },
+  { "hiragana": "かい", "kanji": null, "meaning": "sò", "lesson": 3 },
+  { "hiragana": "かい", "kanji": null, "meaning": "~ lần", "lesson": 5 },
+  {
+    "hiragana": "かいがい",
+    "kanji": "（海外）",
+    "meaning": "nước ngoài",
+    "lesson": 13
+  },
+  {
+    "hiragana": "かいぎ",
+    "kanji": null,
+    "meaning": "cuộc họp, hội nghị",
+    "lesson": 15
+  },
+  {
+    "hiragana": "かいぎしつ",
+    "kanji": null,
+    "meaning": "phòng họp",
+    "lesson": 15
+  },
+  {
+    "hiragana": "がいこく",
+    "kanji": "外国",
+    "meaning": "nước ngoài",
+    "lesson": 17
+  },
+  {
+    "hiragana": "がいこくじん",
+    "kanji": "外国人",
+    "meaning": "người nước ngoài",
+    "lesson": 13
+  },
+  {
+    "hiragana": "かいしゃ",
+    "kanji": "会社",
+    "meaning": "công ty",
+    "lesson": 1
+  },
+  {
+    "hiragana": "かいじょう",
+    "kanji": "会場",
+    "meaning": "hội trường",
+    "lesson": 7
+  },
+  {
+    "hiragana": "ガイド",
+    "kanji": null,
+    "meaning": "hướng dẫn viên du lịch",
+    "lesson": 6
+  },
+  {
+    "hiragana": "かいます 【かう1】",
+    "kanji": "買います",
+    "meaning": "mua",
+    "lesson": 1
+  },
+  {
+    "hiragana": "かいめ／～かいめ",
+    "kanji": null,
+    "meaning": "lần thứ ~",
+    "lesson": 13
+  },
+  {
+    "hiragana": "かいもの（します） （【する3】）",
+    "kanji": "買い物（します）",
+    "meaning": "mua sắm",
+    "lesson": 2
+  },
+  { "hiragana": "カウンター", "kanji": null, "meaning": "quầy", "lesson": 3 },
+  {
+    "hiragana": "かえります 【かえる1】",
+    "kanji": null,
+    "meaning": "trở về",
+    "lesson": 5
+  },
+  { "hiragana": "がか", "kanji": null, "meaning": "họa sỹ", "lesson": 17 },
+  { "hiragana": "かがく", "kanji": null, "meaning": "khoa học", "lesson": 17 },
+  {
+    "hiragana": "かがくしゃ",
+    "kanji": null,
+    "meaning": "nhà khoa học",
+    "lesson": 17
+  },
+  {
+    "hiragana": "かきます 【かく1】",
+    "kanji": "書きます",
+    "meaning": "viết",
+    "lesson": 6
+  },
+  {
+    "hiragana": "かきます 【かく1】",
+    "kanji": null,
+    "meaning": "vẽ",
+    "lesson": 7
+  },
+  {
+    "hiragana": "がくせい",
+    "kanji": "学生",
+    "meaning": "sinh viên, học sinh",
+    "lesson": 17
+  },
+  { "hiragana": "かけはし", "kanji": null, "meaning": "cầu nối", "lesson": 17 },
+  {
+    "hiragana": "かけます（しょうゆを） 【かける2】",
+    "kanji": null,
+    "meaning": "rưới (nước tương)",
+    "lesson": 4
+  },
+  {
+    "hiragana": "かけます（めがねを） 【かける2】",
+    "kanji": null,
+    "meaning": "đeo (kính)",
+    "lesson": 2
+  },
+  { "hiragana": "かさ", "kanji": null, "meaning": "ô", "lesson": 16 },
+  {
+    "hiragana": "かざり",
+    "kanji": null,
+    "meaning": "vật trang trí",
+    "lesson": 10
+  },
+  {
+    "hiragana": "かざりつけ",
+    "kanji": null,
+    "meaning": "treo đồ trang trí, bày biện",
+    "lesson": 9
+  },
+  {
+    "hiragana": "かざります 【かざる1】",
+    "kanji": null,
+    "meaning": "trang trí",
+    "lesson": 9
+  },
+  {
+    "hiragana": "かします 【かす1】",
+    "kanji": null,
+    "meaning": "cho mượn",
+    "lesson": 17
+  },
+  { "hiragana": "かぜ", "kanji": "風", "meaning": "gió", "lesson": 14 },
+  { "hiragana": "かぞく", "kanji": null, "meaning": "gia đình", "lesson": 1 },
+  {
+    "hiragana": "かた",
+    "kanji": null,
+    "meaning": "người (cách nói lịch sự)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "かた（たべかた）／～かた",
+    "kanji": null,
+    "meaning": "cách (cách ăn)",
+    "lesson": 4
+  },
+  {
+    "hiragana": "カタカナ",
+    "kanji": null,
+    "meaning": "katakana",
+    "lesson": 18
+  },
+  {
+    "hiragana": "かたづけ",
+    "kanji": null,
+    "meaning": "dọn dẹp, sắp xếp",
+    "lesson": 7
+  },
+  { "hiragana": "かたな", "kanji": null, "meaning": "kiếm Nhật", "lesson": 14 },
+  {
+    "hiragana": "がつ／～がつ",
+    "kanji": null,
+    "meaning": "tháng ~",
+    "lesson": 1
+  },
+  {
+    "hiragana": "かっこいい",
+    "kanji": null,
+    "meaning": "đẹp trai, ngầu",
+    "lesson": 2
+  },
+  {
+    "hiragana": "がっこう",
+    "kanji": "学校",
+    "meaning": "trường học",
+    "lesson": 1
+  },
+  {
+    "hiragana": "かつどう",
+    "kanji": null,
+    "meaning": "hoạt động",
+    "lesson": 15
+  },
+  {
+    "hiragana": "かつやく（します） （【する3】）",
+    "kanji": null,
+    "meaning": "hoạt động tích cực",
+    "lesson": 17
+  },
+  { "hiragana": "かどう", "kanji": "華道", "meaning": "hoa đạo", "lesson": 13 },
+  {
+    "hiragana": "かとう／かとうさん",
+    "kanji": null,
+    "meaning": "Kato (tên người)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "かなしい",
+    "kanji": null,
+    "meaning": "đau khổ, buồn bã",
+    "lesson": 18
+  },
+  { "hiragana": "かに", "kanji": null, "meaning": "cua", "lesson": 3 },
+  { "hiragana": "かになべ", "kanji": null, "meaning": "lẩu cua", "lesson": 3 },
+  {
+    "hiragana": "カフェ",
+    "kanji": null,
+    "meaning": "quán cà phê",
+    "lesson": 13
+  },
+  {
+    "hiragana": "かぶります 【かぶる1】",
+    "kanji": null,
+    "meaning": "đội",
+    "lesson": 2
+  },
+  {
+    "hiragana": "がまん",
+    "kanji": null,
+    "meaning": "nhẫn nại, chịu đựng",
+    "lesson": 4
+  },
+  { "hiragana": "かみ", "kanji": null, "meaning": "tóc", "lesson": 2 },
+  { "hiragana": "かみ", "kanji": null, "meaning": "giấy", "lesson": 15 },
+  { "hiragana": "かみさま", "kanji": null, "meaning": "thần", "lesson": 14 },
+  {
+    "hiragana": "かみなり",
+    "kanji": "（雷）",
+    "meaning": "sấm sét",
+    "lesson": 14
+  },
+  { "hiragana": "カメラ", "kanji": null, "meaning": "máy ảnh", "lesson": 7 },
+  { "hiragana": "カラー", "kanji": null, "meaning": "màu sắc", "lesson": 12 },
+  { "hiragana": "からい", "kanji": null, "meaning": "cay", "lesson": 4 },
+  { "hiragana": "カラオケ", "kanji": null, "meaning": "karaoke", "lesson": 8 },
+  {
+    "hiragana": "カラオケコンテスト",
+    "kanji": null,
+    "meaning": "cuộc thi karaoke",
+    "lesson": 8
+  },
+  { "hiragana": "ガラス", "kanji": null, "meaning": "thủy tinh", "lesson": 6 },
+  { "hiragana": "からだ", "kanji": "体", "meaning": "cơ thể", "lesson": 3 },
+  {
+    "hiragana": "からだに いい",
+    "kanji": "体に いい",
+    "meaning": "tốt cho cơ thể",
+    "lesson": 3
+  },
+  {
+    "hiragana": "かります 【かりる2】",
+    "kanji": "借ります",
+    "meaning": "thuê, mượn",
+    "lesson": 5
+  },
+  { "hiragana": "かるい", "kanji": null, "meaning": "nhẹ", "lesson": 12 },
+  { "hiragana": "かるた", "kanji": null, "meaning": "karuta", "lesson": 9 },
+  { "hiragana": "かれ", "kanji": null, "meaning": "anh ấy", "lesson": 2 },
+  { "hiragana": "かわ", "kanji": "川", "meaning": "sông", "lesson": 6 },
+  {
+    "hiragana": "かわい／かわいさん",
+    "kanji": null,
+    "meaning": "Kawai (tên người)",
+    "lesson": 11
+  },
+  {
+    "hiragana": "かわいい",
+    "kanji": null,
+    "meaning": "dễ thương",
+    "lesson": 2
+  },
+  {
+    "hiragana": "かわきます 【かわく1】",
+    "kanji": null,
+    "meaning": "khô/ khát",
+    "lesson": 4
+  },
+  {
+    "hiragana": "かわります 【かわる1】",
+    "kanji": null,
+    "meaning": "thay đổi",
+    "lesson": 4
+  },
+  { "hiragana": "カン", "kanji": null, "meaning": "lon", "lesson": 15 },
+  {
+    "hiragana": "かんがえ",
+    "kanji": null,
+    "meaning": "suy nghĩ",
+    "lesson": 15
+  },
+  {
+    "hiragana": "かんきょう",
+    "kanji": null,
+    "meaning": "môi trường",
+    "lesson": 15
+  },
+  {
+    "hiragana": "かんこう",
+    "kanji": null,
+    "meaning": "tham quan",
+    "lesson": 5
+  },
+  {
+    "hiragana": "かんこうシーズン",
+    "kanji": null,
+    "meaning": "mùa du lịch",
+    "lesson": 5
+  },
+  {
+    "hiragana": "かんこく",
+    "kanji": "（韓国）",
+    "meaning": "Hàn Quốc",
+    "lesson": 18
+  },
+  {
+    "hiragana": "かんこくご",
+    "kanji": "（韓国語）",
+    "meaning": "tiếng Hàn Quốc",
+    "lesson": 18
+  },
+  {
+    "hiragana": "がんじつ",
+    "kanji": "元日",
+    "meaning": "ngày mùng 1 tết",
+    "lesson": 9
+  },
+  {
+    "hiragana": "かんしゃ（します） （【する3】）",
+    "kanji": null,
+    "meaning": "cảm tạ, cảm ơn",
+    "lesson": 10
+  },
+  {
+    "hiragana": "がんたん",
+    "kanji": "元旦",
+    "meaning": "sáng mùng 1 tết",
+    "lesson": 9
+  },
+  {
+    "hiragana": "かんたん（な）",
+    "kanji": null,
+    "meaning": "dễ dàng, đơn giản",
+    "lesson": 12
+  },
+  {
+    "hiragana": "かんとく",
+    "kanji": null,
+    "meaning": "đạo diễn",
+    "lesson": 17
+  },
+  {
+    "hiragana": "かんぱい（します） （【する3】）",
+    "kanji": null,
+    "meaning": "cạn ly",
+    "lesson": 4
+  },
+  {
+    "hiragana": "がんばります 【がんばる1】",
+    "kanji": null,
+    "meaning": "cố gắng",
+    "lesson": 17
+  },
+  { "hiragana": "き", "kanji": "気", "meaning": "cảm xúc", "lesson": 11 },
+  { "hiragana": "き", "kanji": "（木）", "meaning": "cây", "lesson": 13 },
+  {
+    "hiragana": "き（そうじき）／～き",
+    "kanji": null,
+    "meaning": "máy ~ (máy hút bụi)",
+    "lesson": 11
+  },
+  { "hiragana": "きいろい", "kanji": null, "meaning": "vàng", "lesson": 2 },
+  { "hiragana": "ぎおん", "kanji": "祇園", "meaning": "Gion", "lesson": 13 },
+  {
+    "hiragana": "ききます 【きく1】",
+    "kanji": "聞きます",
+    "meaning": "nghe",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ききます 【きく1】",
+    "kanji": "聞きます",
+    "meaning": "hỏi",
+    "lesson": 7
+  },
+  {
+    "hiragana": "きこく（します） （【する3】）",
+    "kanji": null,
+    "meaning": "về nước",
+    "lesson": 17
+  },
+  { "hiragana": "きせつ", "kanji": null, "meaning": "mùa", "lesson": 3 },
+  { "hiragana": "きぞく", "kanji": null, "meaning": "quý tộc", "lesson": 13 },
+  {
+    "hiragana": "きつえん",
+    "kanji": "喫煙",
+    "meaning": "việc hút thuốc",
+    "lesson": 3
+  },
+  {
+    "hiragana": "きつえんせき",
+    "kanji": "喫煙席",
+    "meaning": "chỗ ngồi được hút thuốc",
+    "lesson": 3
+  },
+  {
+    "hiragana": "きっかけ",
+    "kanji": null,
+    "meaning": "cơ duyên",
+    "lesson": 17
+  },
+  {
+    "hiragana": "きに いります",
+    "kanji": null,
+    "meaning": "thích, ưa thích",
+    "lesson": 12
+  },
+  {
+    "hiragana": "きに します",
+    "kanji": "気に します",
+    "meaning": "để ý, bận tâm",
+    "lesson": 11
+  },
+  {
+    "hiragana": "きのう",
+    "kanji": "機能",
+    "meaning": "chức năng",
+    "lesson": 12
+  },
+  {
+    "hiragana": "きびしい",
+    "kanji": null,
+    "meaning": "khó tính, nghiêm khắc",
+    "lesson": 2
+  },
+  {
+    "hiragana": "きます 【きる2】",
+    "kanji": "着ます",
+    "meaning": "mặc",
+    "lesson": 2
+  },
+  {
+    "hiragana": "きます 【くる3】",
+    "kanji": "来ます",
+    "meaning": "đến",
+    "lesson": 3
+  },
+  {
+    "hiragana": "きもち",
+    "kanji": "（気持ち）",
+    "meaning": "cảm giác",
+    "lesson": 13
+  },
+  {
+    "hiragana": "きもち（が） いい",
+    "kanji": "（気持ち（が） いい）",
+    "meaning": "thoải mái, thư thái",
+    "lesson": 13
+  },
+  {
+    "hiragana": "きもの",
+    "kanji": "（着物）",
+    "meaning": "kimono",
+    "lesson": 10
+  },
+  { "hiragana": "きゃく", "kanji": "（客）", "meaning": "khách", "lesson": 3 },
+  {
+    "hiragana": "キャプテン",
+    "kanji": null,
+    "meaning": "đội trưởng",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ぎゅうにく",
+    "kanji": "牛肉",
+    "meaning": "thịt bò",
+    "lesson": 3
+  },
+  {
+    "hiragana": "きゅうねんちゅう",
+    "kanji": "旧年中",
+    "meaning": "suốt năm qua",
+    "lesson": 9
+  },
+  { "hiragana": "きょう", "kanji": "今日", "meaning": "hôm nay", "lesson": 6 },
+  {
+    "hiragana": "きょういく",
+    "kanji": null,
+    "meaning": "giáo dục",
+    "lesson": 17
+  },
+  {
+    "hiragana": "きょういくしゃ",
+    "kanji": null,
+    "meaning": "nhà giáo dục",
+    "lesson": 17
+  },
+  {
+    "hiragana": "きょうことば",
+    "kanji": "京ことば",
+    "meaning": "tiếng Kyoto",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ぎょうじ",
+    "kanji": "（行事）",
+    "meaning": "sự kiện, lễ hội",
+    "lesson": 10
+  },
+  {
+    "hiragana": "きょうしつ",
+    "kanji": null,
+    "meaning": "phòng học",
+    "lesson": 7
+  },
+  {
+    "hiragana": "きょうだい",
+    "kanji": null,
+    "meaning": "anh chị em (của mình)",
+    "lesson": 1
+  },
+  { "hiragana": "きょうと", "kanji": "京都", "meaning": "Kyoto", "lesson": 13 },
+  {
+    "hiragana": "きょうみ",
+    "kanji": null,
+    "meaning": "quan tâm, hứng thú",
+    "lesson": 1
+  },
+  {
+    "hiragana": "きょうみが あります（～に）",
+    "kanji": null,
+    "meaning": "có hứng thú/ quan tâm đến ~",
+    "lesson": 1
+  },
+  {
+    "hiragana": "きょうみを もちます（～に）",
+    "kanji": "きょうみを 持ちます（～に）",
+    "meaning": "có hứng thú/ quan tâm đến ~",
+    "lesson": 18
+  },
+  {
+    "hiragana": "きょうりょく（します） （【する3】）",
+    "kanji": "協力（します）",
+    "meaning": "hợp tác, hiệp lực",
+    "lesson": 6
+  },
+  {
+    "hiragana": "きょねん",
+    "kanji": "去年",
+    "meaning": "năm ngoái",
+    "lesson": 13
+  },
+  {
+    "hiragana": "きよみずでら",
+    "kanji": "清水寺",
+    "meaning": "chùa Kiyomizu",
+    "lesson": 13
+  },
+  {
+    "hiragana": "きよみずの ぶたい",
+    "kanji": "清水の ぶたい",
+    "meaning": "vũ đài Kiyomizu",
+    "lesson": 13
+  },
+  {
+    "hiragana": "きれい（な）",
+    "kanji": null,
+    "meaning": "xinh đẹp",
+    "lesson": 2
+  },
+  {
+    "hiragana": "キロ／～きろ",
+    "kanji": null,
+    "meaning": "~ cân, kilogram",
+    "lesson": 13
+  },
+  {
+    "hiragana": "きを つけます",
+    "kanji": "気を つけます",
+    "meaning": "chú ý, cẩn thận",
+    "lesson": 15
+  },
+  { "hiragana": "きん", "kanji": "金", "meaning": "vàng", "lesson": 13 },
+  {
+    "hiragana": "きん",
+    "kanji": "（きんようび）",
+    "meaning": "thứ sáu",
+    "lesson": 8
+  },
+  {
+    "hiragana": "きんえん",
+    "kanji": "禁煙",
+    "meaning": "cấm hút thuốc",
+    "lesson": 3
+  },
+  {
+    "hiragana": "きんえんせき",
+    "kanji": "禁煙席",
+    "meaning": "chỗ ngồi cấm hút thuốc",
+    "lesson": 3
+  },
+  {
+    "hiragana": "きんかくじ／きんかく",
+    "kanji": "金閣寺／金閣",
+    "meaning": "chùa Vàng",
+    "lesson": 13
+  },
+  { "hiragana": "きんし", "kanji": "禁止", "meaning": "cấm", "lesson": 14 },
+  {
+    "hiragana": "きんじょ",
+    "kanji": null,
+    "meaning": "hàng xóm",
+    "lesson": 16
+  },
+  {
+    "hiragana": "きんメダル",
+    "kanji": "金メダル",
+    "meaning": "huy chương vàng",
+    "lesson": 17
+  },
+  {
+    "hiragana": "くうき",
+    "kanji": "（空気）",
+    "meaning": "không khí",
+    "lesson": 15
+  },
+  {
+    "hiragana": "くうこう",
+    "kanji": "空港",
+    "meaning": "sân bay",
+    "lesson": 5
+  },
+  { "hiragana": "くだもの", "kanji": null, "meaning": "hoa quả", "lesson": 16 },
+  { "hiragana": "くつ", "kanji": null, "meaning": "giày", "lesson": 16 },
+  {
+    "hiragana": "クッション",
+    "kanji": null,
+    "meaning": "nệm ngồi, nệm tựa lưng",
+    "lesson": 16
+  },
+  {
+    "hiragana": "くに",
+    "kanji": "国",
+    "meaning": "đất nước, quốc gia",
+    "lesson": 1
+  },
+  {
+    "hiragana": "くの／くのさん",
+    "kanji": null,
+    "meaning": "Kuno (tên người)",
+    "lesson": 1
+  },
+  { "hiragana": "クラス", "kanji": null, "meaning": "lớp học", "lesson": 1 },
+  {
+    "hiragana": "くらべます 【くらべる2】",
+    "kanji": null,
+    "meaning": "so sánh",
+    "lesson": 11
+  },
+  {
+    "hiragana": "グリーンカーテン",
+    "kanji": null,
+    "meaning": "rèm che bằng cây xanh",
+    "lesson": 15
+  },
+  { "hiragana": "くるま", "kanji": "車", "meaning": "ô tô", "lesson": 3 },
+  { "hiragana": "グレー", "kanji": null, "meaning": "màu xám", "lesson": 12 },
+  {
+    "hiragana": "クレジットカード",
+    "kanji": null,
+    "meaning": "thẻ tín dụng",
+    "lesson": 11
+  },
+  {
+    "hiragana": "くろさわあきら",
+    "kanji": "黒澤明",
+    "meaning": "Kurosawa Akira",
+    "lesson": 17
+  },
+  {
+    "hiragana": "くろやなぎてつこ",
+    "kanji": "黒柳徹子",
+    "meaning": "Kuroyanagi Tetsuko",
+    "lesson": 17
+  },
+  {
+    "hiragana": "くん／～くん",
+    "kanji": null,
+    "meaning": "hậu tố gọi tên bé trai/ nam giới",
+    "lesson": 2
+  },
+  {
+    "hiragana": "げいじゅつ",
+    "kanji": null,
+    "meaning": "nghệ thuật",
+    "lesson": 17
+  },
+  {
+    "hiragana": "げいじゅつか",
+    "kanji": null,
+    "meaning": "người làm nghệ thuật",
+    "lesson": 17
+  },
+  {
+    "hiragana": "けいたいでんわ",
+    "kanji": "携帯電話",
+    "meaning": "điện thoại di động",
+    "lesson": 14
+  },
+  { "hiragana": "けが", "kanji": null, "meaning": "vết thương", "lesson": 17 },
+  { "hiragana": "けしき", "kanji": null, "meaning": "phong cảnh", "lesson": 5 },
+  {
+    "hiragana": "けします 【けす1】",
+    "kanji": null,
+    "meaning": "tắt",
+    "lesson": 15
+  },
+  {
+    "hiragana": "けっこん（します） （【する3】）",
+    "kanji": "結婚（します）",
+    "meaning": "kết hôn",
+    "lesson": 18
+  },
+  { "hiragana": "ケルン", "kanji": null, "meaning": "Koeln", "lesson": 13 },
+  {
+    "hiragana": "けんか（します） （【する3】）",
+    "kanji": null,
+    "meaning": "cãi nhau",
+    "lesson": 18
+  },
+  {
+    "hiragana": "げんき（な）",
+    "kanji": "元気（な）",
+    "meaning": "khỏe",
+    "lesson": 2
+  },
+  {
+    "hiragana": "けんこう（な）",
+    "kanji": null,
+    "meaning": "khỏe mạnh",
+    "lesson": 1
+  },
+  {
+    "hiragana": "けんた／けんたさん",
+    "kanji": null,
+    "meaning": "Kenta (tên người)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "こ",
+    "kanji": "子",
+    "meaning": "trẻ con, đứa bé",
+    "lesson": 1
+  },
+  {
+    "hiragana": "こ／～こ",
+    "kanji": null,
+    "meaning": "~ chiếc/cái (cách đếm đồ vật nhỏ hình cầu hoặc hình hộp)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ご／～ご",
+    "kanji": "～語",
+    "meaning": "tiếng ~ (ngôn ngữ)",
+    "lesson": 7
+  },
+  { "hiragana": "こい", "kanji": null, "meaning": "tình yêu", "lesson": 14 },
+  {
+    "hiragana": "こいのぼり",
+    "kanji": null,
+    "meaning": "cờ cá chép",
+    "lesson": 10
+  },
+  {
+    "hiragana": "こいびと",
+    "kanji": null,
+    "meaning": "người yêu",
+    "lesson": 18
+  },
+  {
+    "hiragana": "こうえん",
+    "kanji": null,
+    "meaning": "công viên",
+    "lesson": 16
+  },
+  {
+    "hiragana": "こうこう",
+    "kanji": "高校",
+    "meaning": "trường cấp 3, THPT",
+    "lesson": 18
+  },
+  {
+    "hiragana": "コース",
+    "kanji": null,
+    "meaning": "hành trình tham quan",
+    "lesson": 5
+  },
+  {
+    "hiragana": "コート",
+    "kanji": null,
+    "meaning": "áo khoác dài, áo măng tô",
+    "lesson": 5
+  },
+  { "hiragana": "コーヒー", "kanji": null, "meaning": "cà phê", "lesson": 3 },
+  { "hiragana": "コーラ", "kanji": null, "meaning": "cô-ca", "lesson": 3 },
+  {
+    "hiragana": "ごかぞく（かぞく）",
+    "kanji": null,
+    "meaning": "gia đình (của người khác)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "ごきょうだい（きょうだい）",
+    "kanji": null,
+    "meaning": "anh chị em (của người khác)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "ごきょうりょく",
+    "kanji": "ご協力（協力）",
+    "meaning": "hợp tác, hiệp lực (cách nói lịch sự)",
+    "lesson": 6
+  },
+  {
+    "hiragana": "こきんわかしゅう",
+    "kanji": "古今和歌集",
+    "meaning": "Kokin Wakashu (tuyển tập thơ Nhật Bản)",
+    "lesson": 14
+  },
+  {
+    "hiragana": "こくほう",
+    "kanji": "国宝",
+    "meaning": "quốc bảo",
+    "lesson": 14
+  },
+  {
+    "hiragana": "こくめい",
+    "kanji": "国名",
+    "meaning": "tên nước",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ごけっこん（けっこん）",
+    "kanji": "ご結婚（結婚）",
+    "meaning": "kết hôn (cách nói lịch sự)",
+    "lesson": 18
+  },
+  { "hiragana": "ここ", "kanji": null, "meaning": "ở đây", "lesson": 13 },
+  {
+    "hiragana": "ごご",
+    "kanji": "午後",
+    "meaning": "chiều, tối (PM)",
+    "lesson": 8
+  },
+  {
+    "hiragana": "ございます（ざしきが）",
+    "kanji": null,
+    "meaning": "có (cách nói lịch sự của あります)",
+    "lesson": 3
+  },
+  {
+    "hiragana": "ごさんか（さんか）",
+    "kanji": "ご参加（参加）",
+    "meaning": "sự tham gia (cách nói lịch sự)",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ごしゅじん",
+    "kanji": null,
+    "meaning": "chồng (của người khác)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "ごしょ",
+    "kanji": "御所",
+    "meaning": "Gosho (nơi ở của Thiên Hoàng)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ごぜん",
+    "kanji": "午前",
+    "meaning": "sáng, trưa (AM)",
+    "lesson": 8
+  },
+  {
+    "hiragana": "こたえます 【こたえる2】",
+    "kanji": null,
+    "meaning": "trả lời",
+    "lesson": 7
+  },
+  {
+    "hiragana": "ごちそう",
+    "kanji": null,
+    "meaning": "chiêu đãi",
+    "lesson": 9
+  },
+  {
+    "hiragana": "ごちゅうもん（ちゅうもん）",
+    "kanji": null,
+    "meaning": "gọi món (cách nói lịch sự)",
+    "lesson": 3
+  },
+  {
+    "hiragana": "こちら",
+    "kanji": null,
+    "meaning": "phía này/ đằng này (cách nói lịch sự của ここ)",
+    "lesson": 3
+  },
+  {
+    "hiragana": "こちらこそ",
+    "kanji": null,
+    "meaning": "Chính tôi mới là người mong được giúp đỡ.",
+    "lesson": 7
+  },
+  {
+    "hiragana": "こっち",
+    "kanji": null,
+    "meaning": "cái này, đằng này",
+    "lesson": 12
+  },
+  { "hiragana": "コップ", "kanji": null, "meaning": "cốc", "lesson": 6 },
+  { "hiragana": "こと", "kanji": "（事）", "meaning": "việc", "lesson": 1 },
+  {
+    "hiragana": "ごとうみどり",
+    "kanji": "五嶋みどり",
+    "meaning": "Goto Midori (tên nghệ sĩ violin)",
+    "lesson": 17
+  },
+  { "hiragana": "ことし", "kanji": "今年", "meaning": "năm nay", "lesson": 8 },
+  {
+    "hiragana": "ことば",
+    "kanji": null,
+    "meaning": "từ/ ngôn ngữ",
+    "lesson": 3
+  },
+  {
+    "hiragana": "こども",
+    "kanji": "子ども",
+    "meaning": "trẻ con",
+    "lesson": 9
+  },
+  {
+    "hiragana": "こどものひ",
+    "kanji": "子どもの日",
+    "meaning": "tết thiếu nhi",
+    "lesson": 10
+  },
+  { "hiragana": "この", "kanji": null, "meaning": "～ này", "lesson": 2 },
+  { "hiragana": "ごはん", "kanji": null, "meaning": "cơm", "lesson": 4 },
+  { "hiragana": "コピー", "kanji": null, "meaning": "copy", "lesson": 15 },
+  {
+    "hiragana": "こまります 【こまる1】",
+    "kanji": null,
+    "meaning": "gay go, rắc rối",
+    "lesson": 11
+  },
+  { "hiragana": "ごみ／ゴミ", "kanji": null, "meaning": "rác", "lesson": 12 },
+  {
+    "hiragana": "こみます 【こむ1】",
+    "kanji": null,
+    "meaning": "đông đúc",
+    "lesson": 5
+  },
+  {
+    "hiragana": "コメント",
+    "kanji": null,
+    "meaning": "ý kiến, bình luận",
+    "lesson": 12
+  },
+  {
+    "hiragana": "ごめんなさい",
+    "kanji": null,
+    "meaning": "Xin lỗi.",
+    "lesson": 14
+  },
+  {
+    "hiragana": "ごよやく（よやく）",
+    "kanji": null,
+    "meaning": "đặt trước (cách nói lịch sự)",
+    "lesson": 3
+  },
+  {
+    "hiragana": "ごりょうしん（りょうしん）",
+    "kanji": null,
+    "meaning": "bố mẹ (của người khác)",
+    "lesson": 18
+  },
+  { "hiragana": "これ", "kanji": null, "meaning": "cái này", "lesson": 10 },
+  { "hiragana": "これから", "kanji": null, "meaning": "từ giờ", "lesson": 13 },
+  {
+    "hiragana": "ころ",
+    "kanji": null,
+    "meaning": "hồi, lúc, khi",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ごろ／～ごろ",
+    "kanji": null,
+    "meaning": "khoảng ~",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ごろごろします 【ごろごろする3】",
+    "kanji": null,
+    "meaning": "không làm gì (trạng thái thả lỏng, thư giãn)",
+    "lesson": 9
+  },
+  {
+    "hiragana": "こわれます 【こわれる2】",
+    "kanji": null,
+    "meaning": "bị hỏng",
+    "lesson": 11
+  },
+  {
+    "hiragana": "コンサート",
+    "kanji": null,
+    "meaning": "hòa nhạc",
+    "lesson": 8
+  },
+  {
+    "hiragana": "コンテスト",
+    "kanji": null,
+    "meaning": "cuộc thi",
+    "lesson": 7
+  },
+  { "hiragana": "こんど", "kanji": null, "meaning": "lần tới", "lesson": 2 },
+  {
+    "hiragana": "こんにちは",
+    "kanji": null,
+    "meaning": "Xin chào. (trưa & chiều)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "コンピューター",
+    "kanji": null,
+    "meaning": "máy tính",
+    "lesson": 7
+  },
+  {
+    "hiragana": "さあ",
+    "kanji": null,
+    "meaning": "Nào ~! Vậy thì… (dùng khi kêu gọi/thúc giục người khác)",
+    "lesson": 3
+  },
+  { "hiragana": "さい", "kanji": "～歳", "meaning": "~ tuổi", "lesson": 1 },
+  { "hiragana": "さいきん", "kanji": null, "meaning": "gần đây", "lesson": 1 },
+  { "hiragana": "さいご", "kanji": null, "meaning": "cuối cùng", "lesson": 4 },
+  { "hiragana": "サイズ", "kanji": null, "meaning": "kích cỡ", "lesson": 12 },
+  {
+    "hiragana": "さいたま",
+    "kanji": "（埼玉）",
+    "meaning": "Saitama",
+    "lesson": 1
+  },
+  { "hiragana": "サイト", "kanji": null, "meaning": "trang web", "lesson": 11 },
+  {
+    "hiragana": "さいとう／さいとうさん",
+    "kanji": null,
+    "meaning": "Saito (tên người)",
+    "lesson": 7
+  },
+  { "hiragana": "サイン", "kanji": null, "meaning": "chữ kí", "lesson": 18 },
+  {
+    "hiragana": "さかい／さかいさん",
+    "kanji": null,
+    "meaning": "Sakai (tên người)",
+    "lesson": 18
+  },
+  {
+    "hiragana": "さがします 【さがす1】",
+    "kanji": null,
+    "meaning": "tìm",
+    "lesson": 7
+  },
+  { "hiragana": "さかな", "kanji": "魚", "meaning": "cá", "lesson": 3 },
+  {
+    "hiragana": "さくひん",
+    "kanji": null,
+    "meaning": "tác phẩm",
+    "lesson": 17
+  },
+  {
+    "hiragana": "さくら",
+    "kanji": null,
+    "meaning": "hoa anh đào",
+    "lesson": 13
+  },
+  {
+    "hiragana": "さくらし",
+    "kanji": "佐倉市",
+    "meaning": "thành phố Sakura",
+    "lesson": 10
+  },
+  {
+    "hiragana": "さげます 【さげる2】",
+    "kanji": "（下げます）",
+    "meaning": "giảm",
+    "lesson": 15
+  },
+  {
+    "hiragana": "ざしき",
+    "kanji": null,
+    "meaning": "phòng trải chiếu Nhật",
+    "lesson": 3
+  },
+  { "hiragana": "さしみ", "kanji": null, "meaning": "gỏi cá", "lesson": 3 },
+  {
+    "hiragana": "さそいます 【さそう1】",
+    "kanji": null,
+    "meaning": "mời",
+    "lesson": 18
+  },
+  {
+    "hiragana": "さつえい",
+    "kanji": "撮影",
+    "meaning": "chụp ảnh",
+    "lesson": 7
+  },
+  {
+    "hiragana": "さっか",
+    "kanji": "（作家）",
+    "meaning": "tác giả/ nhà văn",
+    "lesson": 1
+  },
+  { "hiragana": "さっき", "kanji": null, "meaning": "lúc nãy", "lesson": 13 },
+  { "hiragana": "ざっし", "kanji": null, "meaning": "tạp chí", "lesson": 13 },
+  { "hiragana": "さどう", "kanji": "茶道", "meaning": "trà đạo", "lesson": 13 },
+  {
+    "hiragana": "さとう／さとうさん",
+    "kanji": null,
+    "meaning": "Sato (tên người)",
+    "lesson": 3
+  },
+  {
+    "hiragana": "さま／～さま",
+    "kanji": null,
+    "meaning": "ngài/ ông ~, bà ~ (cách nói lịch sự của さん）",
+    "lesson": 3
+  },
+  { "hiragana": "さむい", "kanji": null, "meaning": "lạnh", "lesson": 5 },
+  {
+    "hiragana": "さむらい",
+    "kanji": "（侍）",
+    "meaning": "samurai",
+    "lesson": 13
+  },
+  { "hiragana": "さら", "kanji": null, "meaning": "đĩa", "lesson": 4 },
+  {
+    "hiragana": "サリー",
+    "kanji": null,
+    "meaning": "sally (áo phụ nữ Ấn Độ)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "さわります 【さわる1】",
+    "kanji": null,
+    "meaning": "sờ, chạm tay vào",
+    "lesson": 14
+  },
+  {
+    "hiragana": "さん／～さん",
+    "kanji": null,
+    "meaning": "bạn ~, anh ~, chị ~",
+    "lesson": 1
+  },
+  {
+    "hiragana": "さんか（します） （【する3】）",
+    "kanji": "参加（します）",
+    "meaning": "tham gia",
+    "lesson": 6
+  },
+  {
+    "hiragana": "さんかひ",
+    "kanji": "参加費",
+    "meaning": "phí tham gia",
+    "lesson": 8
+  },
+  {
+    "hiragana": "サングラス",
+    "kanji": null,
+    "meaning": "kính râm",
+    "lesson": 5
+  },
+  {
+    "hiragana": "ざんねん（な）",
+    "kanji": null,
+    "meaning": "đáng tiếc",
+    "lesson": 7
+  },
+  {
+    "hiragana": "し",
+    "kanji": "（～市）",
+    "meaning": "thành phố",
+    "lesson": 10
+  },
+  { "hiragana": "じ", "kanji": null, "meaning": "chữ viết", "lesson": 14 },
+  { "hiragana": "じ／～じ", "kanji": "～時", "meaning": "~ giờ", "lesson": 7 },
+  {
+    "hiragana": "しあい",
+    "kanji": null,
+    "meaning": "cuộc thi đấu",
+    "lesson": 17
+  },
+  {
+    "hiragana": "しあわせ",
+    "kanji": null,
+    "meaning": "niềm hạnh phúc",
+    "lesson": 10
+  },
+  {
+    "hiragana": "しあわせ（な）",
+    "kanji": null,
+    "meaning": "hạnh phúc",
+    "lesson": 10
+  },
+  { "hiragana": "シーズン", "kanji": null, "meaning": "mùa", "lesson": 5 },
+  {
+    "hiragana": "シーディー／CD",
+    "kanji": null,
+    "meaning": "CD",
+    "lesson": 17
+  },
+  {
+    "hiragana": "シーディープレーヤー／CDプレーヤー",
+    "kanji": null,
+    "meaning": "máy chạy đĩa CD",
+    "lesson": 17
+  },
+  { "hiragana": "ジーンズ", "kanji": null, "meaning": "quần bò", "lesson": 2 },
+  {
+    "hiragana": "ジェイポップ／Jポップ",
+    "kanji": null,
+    "meaning": "nhạc pop Nhật Bản",
+    "lesson": 8
+  },
+  {
+    "hiragana": "ジェイポップコンサート／Jポップコンサート",
+    "kanji": null,
+    "meaning": "buổi trình diễn Jpop",
+    "lesson": 8
+  },
+  {
+    "hiragana": "しかい",
+    "kanji": null,
+    "meaning": "dẫn chương trình",
+    "lesson": 7
+  },
+  {
+    "hiragana": "しかいしゃ",
+    "kanji": null,
+    "meaning": "người dẫn chương trình",
+    "lesson": 17
+  },
+  {
+    "hiragana": "しかります 【しかる1】",
+    "kanji": null,
+    "meaning": "mắng",
+    "lesson": 18
+  },
+  {
+    "hiragana": "じかん",
+    "kanji": "時間",
+    "meaning": "thời gian",
+    "lesson": 6
+  },
+  {
+    "hiragana": "じこしょうかい",
+    "kanji": null,
+    "meaning": "giới thiệu bản thân",
+    "lesson": 1
+  },
+  {
+    "hiragana": "しごと",
+    "kanji": "仕事",
+    "meaning": "công việc",
+    "lesson": 1
+  },
+  {
+    "hiragana": "しじょうかわらまち",
+    "kanji": "四条河原町",
+    "meaning": "khu Shijoukawara",
+    "lesson": 13
+  },
+  { "hiragana": "じしん", "kanji": null, "meaning": "tự tin", "lesson": 7 },
+  {
+    "hiragana": "しずか（な）",
+    "kanji": null,
+    "meaning": "trầm tĩnh, yên tĩnh",
+    "lesson": 13
+  },
+  {
+    "hiragana": "しぜん",
+    "kanji": null,
+    "meaning": "tự nhiên, thiên nhiên",
+    "lesson": 5
+  },
+  { "hiragana": "した", "kanji": "下", "meaning": "dưới", "lesson": 1 },
+  { "hiragana": "じだい", "kanji": null, "meaning": "thời đại", "lesson": 13 },
+  {
+    "hiragana": "しちごさん",
+    "kanji": "七五三",
+    "meaning": "lễ ba-năm-bảy tuổi",
+    "lesson": 10
+  },
+  {
+    "hiragana": "しちにんのさむらい",
+    "kanji": "七人の侍",
+    "meaning": "Bảy samurai (phim)",
+    "lesson": 17
+  },
+  {
+    "hiragana": "しつもん",
+    "kanji": "質問",
+    "meaning": "câu hỏi",
+    "lesson": 6
+  },
+  {
+    "hiragana": "しつれい（な）",
+    "kanji": null,
+    "meaning": "thất lễ, bất lịch sự",
+    "lesson": 18
+  },
+  { "hiragana": "じてんしゃ", "kanji": null, "meaning": "xe đạp", "lesson": 1 },
+  { "hiragana": "じぶん", "kanji": "自分", "meaning": "tự mình", "lesson": 4 },
+  { "hiragana": "しま", "kanji": null, "meaning": "đảo", "lesson": 5 },
+  {
+    "hiragana": "します 【する3】",
+    "kanji": null,
+    "meaning": "làm",
+    "lesson": 1
+  },
+  {
+    "hiragana": "します（きれいに） 【する3】",
+    "kanji": null,
+    "meaning": "làm (cho sạch đẹp)",
+    "lesson": 15
+  },
+  {
+    "hiragana": "します（それに） 【する3】",
+    "kanji": null,
+    "meaning": "lựa chọn, quyết định (chọn cái đó)",
+    "lesson": 3
+  },
+  {
+    "hiragana": "しめます 【しめる2】",
+    "kanji": null,
+    "meaning": "đóng",
+    "lesson": 15
+  },
+  {
+    "hiragana": "しゃ（かがくしゃ）／～しゃ",
+    "kanji": null,
+    "meaning": "nhà ~ (nhà hóa học)",
+    "lesson": 17
+  },
+  {
+    "hiragana": "じゃあ／じゃ",
+    "kanji": null,
+    "meaning": "Vậy thì, ~",
+    "lesson": 3
+  },
+  {
+    "hiragana": "しゃかいじん",
+    "kanji": "（社会人）",
+    "meaning": "người đi làm, người trong độ tuổi lao động",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ジャケット",
+    "kanji": null,
+    "meaning": "áo khoác",
+    "lesson": 5
+  },
+  { "hiragana": "しゃしん", "kanji": "写真", "meaning": "ảnh", "lesson": 8 },
+  { "hiragana": "シャツ", "kanji": null, "meaning": "sơ mi", "lesson": 2 },
+  { "hiragana": "ジャム", "kanji": null, "meaning": "mứt", "lesson": 16 },
+  {
+    "hiragana": "シャワー",
+    "kanji": null,
+    "meaning": "vòi hoa sen",
+    "lesson": 15
+  },
+  {
+    "hiragana": "じゅう",
+    "kanji": "～中",
+    "meaning": "trong suốt ~",
+    "lesson": 9
+  },
+  {
+    "hiragana": "しゅうかく",
+    "kanji": null,
+    "meaning": "thu hoạch",
+    "lesson": 10
+  },
+  {
+    "hiragana": "しゅうきょう",
+    "kanji": null,
+    "meaning": "tôn giáo",
+    "lesson": 3
+  },
+  {
+    "hiragana": "じゅうしょ",
+    "kanji": "住所",
+    "meaning": "địa chỉ",
+    "lesson": 7
+  },
+  {
+    "hiragana": "しゅうしょく（します） （【する3】）",
+    "kanji": null,
+    "meaning": "xin việc, bắt đầu đi làm",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ジュース",
+    "kanji": null,
+    "meaning": "nước ngọt, nước hoa quả",
+    "lesson": 3
+  },
+  { "hiragana": "じゅうたん", "kanji": null, "meaning": "thảm", "lesson": 14 },
+  {
+    "hiragana": "じゅうどう",
+    "kanji": "柔道",
+    "meaning": "judo (nhu đạo)",
+    "lesson": 8
+  },
+  {
+    "hiragana": "じゅうどうか",
+    "kanji": "（柔道家）",
+    "meaning": "vận động viên judo",
+    "lesson": 17
+  },
+  {
+    "hiragana": "じゅうどうデモンストレーション",
+    "kanji": "（柔道デモンストレーション）",
+    "meaning": "biểu diễn judo",
+    "lesson": 8
+  },
+  {
+    "hiragana": "しゅっちょう",
+    "kanji": "出張",
+    "meaning": "chuyến công tác",
+    "lesson": 2
+  },
+  {
+    "hiragana": "しゅっぱつ（します） （【する3】）",
+    "kanji": "出発（します）",
+    "meaning": "xuất phát",
+    "lesson": 13
+  },
+  { "hiragana": "しゅみ", "kanji": null, "meaning": "sở thích", "lesson": 1 },
+  { "hiragana": "じゅんび", "kanji": null, "meaning": "chuẩn bị", "lesson": 7 },
+  {
+    "hiragana": "しょ",
+    "kanji": "書",
+    "meaning": "văn thư, thư tịch",
+    "lesson": 14
+  },
+  {
+    "hiragana": "しょう",
+    "kanji": null,
+    "meaning": "giải thưởng",
+    "lesson": 17
+  },
+  { "hiragana": "しよう", "kanji": "使用", "meaning": "sử dụng", "lesson": 14 },
+  {
+    "hiragana": "じょう／～じょう",
+    "kanji": "（～上）",
+    "meaning": "về mặt ~/ trên lĩnh vực ~",
+    "lesson": 3
+  },
+  {
+    "hiragana": "しょうエネ",
+    "kanji": "省エネ",
+    "meaning": "tiết kiệm năng lượng",
+    "lesson": 12
+  },
+  {
+    "hiragana": "しょうエネルギー",
+    "kanji": "省エネルギー",
+    "meaning": "tiết kiệm năng lượng",
+    "lesson": 12
+  },
+  {
+    "hiragana": "しょうかい（します） （【する3】）",
+    "kanji": null,
+    "meaning": "giới thiệu",
+    "lesson": 4
+  },
+  {
+    "hiragana": "しょうがくせい",
+    "kanji": "小学生",
+    "meaning": "học sinh tiểu học",
+    "lesson": 18
+  },
+  { "hiragana": "しょうがつ", "kanji": "正月", "meaning": "tết", "lesson": 9 },
+  {
+    "hiragana": "しょうがっこう",
+    "kanji": "小学校",
+    "meaning": "trường cấp 1, tiểu học",
+    "lesson": 18
+  },
+  {
+    "hiragana": "しょうぐん",
+    "kanji": null,
+    "meaning": "tướng quân (người chỉ huy quân sự đứng đầu nước)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "じょうず（な）",
+    "kanji": "（上手（な））",
+    "meaning": "giỏi",
+    "lesson": 10
+  },
+  {
+    "hiragana": "しょうせつ",
+    "kanji": null,
+    "meaning": "tiểu thuyết",
+    "lesson": 17
+  },
+  {
+    "hiragana": "しょうせつか",
+    "kanji": null,
+    "meaning": "tiểu thuyết gia",
+    "lesson": 17
+  },
+  {
+    "hiragana": "しょうひん",
+    "kanji": "商品",
+    "meaning": "sản phẩm",
+    "lesson": 11
+  },
+  {
+    "hiragana": "しょうゆ",
+    "kanji": null,
+    "meaning": "nước tương",
+    "lesson": 4
+  },
+  {
+    "hiragana": "ショー",
+    "kanji": null,
+    "meaning": "buổi trình diễn",
+    "lesson": 6
+  },
+  { "hiragana": "しょくじ", "kanji": "食事", "meaning": "bữa ăn", "lesson": 3 },
+  {
+    "hiragana": "しょくぶつ",
+    "kanji": null,
+    "meaning": "thực vật",
+    "lesson": 15
+  },
+  {
+    "hiragana": "じょせい",
+    "kanji": "女性",
+    "meaning": "nữ giới",
+    "lesson": 6
+  },
+  { "hiragana": "しょっぱい", "kanji": null, "meaning": "mặn", "lesson": 4 },
+  {
+    "hiragana": "ショッピング",
+    "kanji": null,
+    "meaning": "mua sắm",
+    "lesson": 11
+  },
+  {
+    "hiragana": "ショップ",
+    "kanji": null,
+    "meaning": "cửa hàng",
+    "lesson": 16
+  },
+  {
+    "hiragana": "じょゆう",
+    "kanji": null,
+    "meaning": "nữ diễn viên",
+    "lesson": 17
+  },
+  {
+    "hiragana": "しります 【しる1】",
+    "kanji": null,
+    "meaning": "biết",
+    "lesson": 7
+  },
+  {
+    "hiragana": "しろ",
+    "kanji": null,
+    "meaning": "thành, lâu đài",
+    "lesson": 13
+  },
+  { "hiragana": "しろい", "kanji": "白い", "meaning": "trắng", "lesson": 2 },
+  {
+    "hiragana": "じん／～じん",
+    "kanji": "～人",
+    "meaning": "người ~ (nói về quốc tịch)",
+    "lesson": 18
+  },
+  {
+    "hiragana": "しんいち／しんいちさん",
+    "kanji": "新一／新一さん",
+    "meaning": "Shinichi (tên người)",
+    "lesson": 9
+  },
+  {
+    "hiragana": "じんじゃ",
+    "kanji": null,
+    "meaning": "đền thờ thần",
+    "lesson": 9
+  },
+  {
+    "hiragana": "じんせい",
+    "kanji": "（人生）",
+    "meaning": "đời người, cuộc đời",
+    "lesson": 17
+  },
+  { "hiragana": "しんせき", "kanji": null, "meaning": "họ hàng", "lesson": 9 },
+  {
+    "hiragana": "しんせつ（な）",
+    "kanji": null,
+    "meaning": "thân thiện, tử tế",
+    "lesson": 5
+  },
+  {
+    "hiragana": "しんせん（な）",
+    "kanji": null,
+    "meaning": "tươi",
+    "lesson": 17
+  },
+  {
+    "hiragana": "しんぜん",
+    "kanji": null,
+    "meaning": "thân thiện",
+    "lesson": 3
+  },
+  {
+    "hiragana": "しんぜんたいし",
+    "kanji": "（しんぜん大使）",
+    "meaning": "đại sứ thân thiện",
+    "lesson": 17
+  },
+  {
+    "hiragana": "しんぱい（な）",
+    "kanji": null,
+    "meaning": "lo lắng",
+    "lesson": 11
+  },
+  {
+    "hiragana": "しんぶん",
+    "kanji": "（新聞）",
+    "meaning": "báo chí",
+    "lesson": 18
+  },
+  {
+    "hiragana": "しんぶんし",
+    "kanji": null,
+    "meaning": "giấy báo",
+    "lesson": 15
+  },
+  {
+    "hiragana": "すいぞくかん",
+    "kanji": null,
+    "meaning": "thủy sinh cung",
+    "lesson": 6
+  },
+  {
+    "hiragana": "すいはんき",
+    "kanji": null,
+    "meaning": "nồi cơm điện",
+    "lesson": 11
+  },
+  {
+    "hiragana": "スーツケース",
+    "kanji": null,
+    "meaning": "va li",
+    "lesson": 16
+  },
+  {
+    "hiragana": "スーパー",
+    "kanji": null,
+    "meaning": "siêu thị",
+    "lesson": 15
+  },
+  { "hiragana": "スープ", "kanji": null, "meaning": "súp", "lesson": 3 },
+  { "hiragana": "スカート", "kanji": null, "meaning": "chân váy", "lesson": 2 },
+  {
+    "hiragana": "すき（な）",
+    "kanji": "好き（な）",
+    "meaning": "thích",
+    "lesson": 1
+  },
+  {
+    "hiragana": "スキー",
+    "kanji": null,
+    "meaning": "trượt tuyết",
+    "lesson": 1
+  },
+  {
+    "hiragana": "すきます（おなかが） 【すく1】",
+    "kanji": null,
+    "meaning": "trống, rỗng/ đói (bụng)",
+    "lesson": 4
+  },
+  {
+    "hiragana": "すぎます／～すぎます 【すぎる2】",
+    "kanji": null,
+    "meaning": "quá",
+    "lesson": 4
+  },
+  {
+    "hiragana": "すきやき",
+    "kanji": null,
+    "meaning": "lẩu sukiyaki",
+    "lesson": 3
+  },
+  {
+    "hiragana": "すぐ",
+    "kanji": null,
+    "meaning": "ngay lập tức",
+    "lesson": 15
+  },
+  { "hiragana": "すくない", "kanji": "少ない", "meaning": "ít", "lesson": 5 },
+  {
+    "hiragana": "すごい（すごく）",
+    "kanji": null,
+    "meaning": "tuyệt vời (vô cùng)",
+    "lesson": 6
+  },
+  {
+    "hiragana": "すこし",
+    "kanji": "少し",
+    "meaning": "một chút, một ít",
+    "lesson": 4
+  },
+  {
+    "hiragana": "すごします 【すごす1】",
+    "kanji": null,
+    "meaning": "sống, trải qua",
+    "lesson": 9
+  },
+  {
+    "hiragana": "すずき／すずきさん",
+    "kanji": null,
+    "meaning": "Suzuki (tên người)",
+    "lesson": 11
+  },
+  { "hiragana": "すずしい", "kanji": null, "meaning": "mát mẻ", "lesson": 15 },
+  {
+    "hiragana": "すすめます 【すすめる2】",
+    "kanji": null,
+    "meaning": "khuyên",
+    "lesson": 18
+  },
+  {
+    "hiragana": "スタッフ",
+    "kanji": null,
+    "meaning": "nhân viên",
+    "lesson": 7
+  },
+  { "hiragana": "ずっと", "kanji": null, "meaning": "suốt", "lesson": 9 },
+  { "hiragana": "すっぱい", "kanji": null, "meaning": "chua", "lesson": 4 },
+  {
+    "hiragana": "ステージ",
+    "kanji": null,
+    "meaning": "sân khấu",
+    "lesson": 13
+  },
+  {
+    "hiragana": "すてき（な）",
+    "kanji": null,
+    "meaning": "tuyệt vời",
+    "lesson": 16
+  },
+  {
+    "hiragana": "すてます 【すてる2】",
+    "kanji": null,
+    "meaning": "vứt",
+    "lesson": 12
+  },
+  {
+    "hiragana": "すばらしい",
+    "kanji": null,
+    "meaning": "tuyệt vời",
+    "lesson": 5
+  },
+  {
+    "hiragana": "スピーチ",
+    "kanji": null,
+    "meaning": "hùng biện, phát biểu",
+    "lesson": 7
+  },
+  {
+    "hiragana": "スピーチコンテスト",
+    "kanji": null,
+    "meaning": "cuộc thi hùng biện",
+    "lesson": 7
+  },
+  {
+    "hiragana": "スポーツ",
+    "kanji": null,
+    "meaning": "thể thao",
+    "lesson": 17
+  },
+  {
+    "hiragana": "すみます 【すむ1】",
+    "kanji": "（住みます）",
+    "meaning": "sống",
+    "lesson": 1
+  },
+  {
+    "hiragana": "すみません",
+    "kanji": null,
+    "meaning": "Xin lỗi.",
+    "lesson": 1
+  },
+  {
+    "hiragana": "すわります 【すわる1】",
+    "kanji": null,
+    "meaning": "ngồi",
+    "lesson": 2
+  },
+  { "hiragana": "せ", "kanji": null, "meaning": "lưng, dáng", "lesson": 2 },
+  {
+    "hiragana": "せいかつ",
+    "kanji": null,
+    "meaning": "cuộc sống",
+    "lesson": 15
+  },
+  {
+    "hiragana": "せいき／～せいき",
+    "kanji": null,
+    "meaning": "thế kỷ thứ ~",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ぜいこみ",
+    "kanji": "税込",
+    "meaning": "bao gồm thuế",
+    "lesson": 12
+  },
+  {
+    "hiragana": "せいせき",
+    "kanji": null,
+    "meaning": "thành tích",
+    "lesson": 18
+  },
+  {
+    "hiragana": "せいちょう（します） （【する3】）",
+    "kanji": null,
+    "meaning": "trưởng thành",
+    "lesson": 10
+  },
+  {
+    "hiragana": "せいべつ",
+    "kanji": "性別",
+    "meaning": "giới tính",
+    "lesson": 6
+  },
+  { "hiragana": "せかい", "kanji": null, "meaning": "thế giới", "lesson": 17 },
+  {
+    "hiragana": "せかいじゅう",
+    "kanji": null,
+    "meaning": "khắp thế giới",
+    "lesson": 17
+  },
+  { "hiragana": "せき", "kanji": null, "meaning": "chỗ ngồi", "lesson": 3 },
+  {
+    "hiragana": "せきてい",
+    "kanji": "石庭",
+    "meaning": "vườn đá",
+    "lesson": 13
+  },
+  {
+    "hiragana": "せつぶん",
+    "kanji": null,
+    "meaning": "ngày Lập xuân",
+    "lesson": 10
+  },
+  {
+    "hiragana": "せつめい（します） （【する3】）",
+    "kanji": null,
+    "meaning": "giải thích",
+    "lesson": 13
+  },
+  { "hiragana": "ぜひ", "kanji": null, "meaning": "nhất định", "lesson": 1 },
+  {
+    "hiragana": "せんしゅ",
+    "kanji": null,
+    "meaning": "tuyển thủ, vận động viên",
+    "lesson": 17
+  },
+  {
+    "hiragana": "せんしゅう",
+    "kanji": "先週",
+    "meaning": "tuần trước",
+    "lesson": 11
+  },
+  {
+    "hiragana": "せんせい",
+    "kanji": "先生",
+    "meaning": "thầy, cô giáo",
+    "lesson": 17
+  },
+  {
+    "hiragana": "ぜんぜん（～ない）",
+    "kanji": null,
+    "meaning": "hoàn toàn (không)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "せんそう",
+    "kanji": null,
+    "meaning": "chiến tranh",
+    "lesson": 14
+  },
+  {
+    "hiragana": "せんだいし",
+    "kanji": "仙台市",
+    "meaning": "thành phố Sendai",
+    "lesson": 18
+  },
+  {
+    "hiragana": "せんたくき／せんたっき",
+    "kanji": null,
+    "meaning": "máy giặt",
+    "lesson": 11
+  },
+  {
+    "hiragana": "ぜんぶ",
+    "kanji": null,
+    "meaning": "toàn bộ, tất cả",
+    "lesson": 4
+  },
+  {
+    "hiragana": "せんぷうき",
+    "kanji": null,
+    "meaning": "quạt điện",
+    "lesson": 11
+  },
+  { "hiragana": "そう", "kanji": null, "meaning": "vậy, thế", "lesson": 2 },
+  {
+    "hiragana": "そうじ（します） （【する3】）",
+    "kanji": null,
+    "meaning": "dọn dẹp",
+    "lesson": 9
+  },
+  {
+    "hiragana": "そうじき",
+    "kanji": null,
+    "meaning": "máy hút bụi",
+    "lesson": 11
+  },
+  {
+    "hiragana": "そうめん",
+    "kanji": null,
+    "meaning": "mỳ sợi nhỏ",
+    "lesson": 4
+  },
+  {
+    "hiragana": "そうりょう",
+    "kanji": "送料",
+    "meaning": "phí vận chuyển",
+    "lesson": 12
+  },
+  { "hiragana": "そして", "kanji": null, "meaning": "và", "lesson": 10 },
+  {
+    "hiragana": "そつぎょう（します） （【する3】）",
+    "kanji": null,
+    "meaning": "tốt nghiệp",
+    "lesson": 18
+  },
+  { "hiragana": "そと", "kanji": "外", "meaning": "bên ngoài", "lesson": 18 },
+  { "hiragana": "その", "kanji": null, "meaning": "~ đó", "lesson": 7 },
+  {
+    "hiragana": "そのまま",
+    "kanji": null,
+    "meaning": "cứ nguyên như thế",
+    "lesson": 4
+  },
+  {
+    "hiragana": "ソフトドリンク",
+    "kanji": null,
+    "meaning": "đồ uống không cồn",
+    "lesson": 3
+  },
+  { "hiragana": "それ", "kanji": null, "meaning": "cái đó", "lesson": 3 },
+  { "hiragana": "それから", "kanji": null, "meaning": "sau đó", "lesson": 5 },
+  { "hiragana": "それで", "kanji": null, "meaning": "vì thế", "lesson": 4 },
+  {
+    "hiragana": "それなら",
+    "kanji": null,
+    "meaning": "nếu vậy thì",
+    "lesson": 6
+  },
+  { "hiragana": "タイ", "kanji": null, "meaning": "Thái Lan", "lesson": 18 },
+  {
+    "hiragana": "だいがく",
+    "kanji": "大学",
+    "meaning": "đại học",
+    "lesson": 17
+  },
+  { "hiragana": "たいこ", "kanji": null, "meaning": "trống", "lesson": 8 },
+  {
+    "hiragana": "タイご",
+    "kanji": "タイ語",
+    "meaning": "tiếng Thái",
+    "lesson": 18
+  },
+  {
+    "hiragana": "たいこきょうしつ",
+    "kanji": null,
+    "meaning": "lớp học đánh trống",
+    "lesson": 8
+  },
+  {
+    "hiragana": "たいし",
+    "kanji": "（大使）",
+    "meaning": "đại sứ",
+    "lesson": 17
+  },
+  {
+    "hiragana": "だいじょうぶ（な）",
+    "kanji": null,
+    "meaning": "không sao, ổn",
+    "lesson": 8
+  },
+  {
+    "hiragana": "たいしょく（します） （【する3】）",
+    "kanji": null,
+    "meaning": "nghỉ việc, thôi việc",
+    "lesson": 18
+  },
+  {
+    "hiragana": "タイじん",
+    "kanji": "タイ人",
+    "meaning": "người Thái",
+    "lesson": 18
+  },
+  {
+    "hiragana": "だいすき（な）",
+    "kanji": "大好き（な）",
+    "meaning": "rất thích",
+    "lesson": 2
+  },
+  {
+    "hiragana": "たいせつ（な）",
+    "kanji": null,
+    "meaning": "quan trọng",
+    "lesson": 15
+  },
+  {
+    "hiragana": "だいたい",
+    "kanji": null,
+    "meaning": "đại khái",
+    "lesson": 15
+  },
+  {
+    "hiragana": "だいどころ",
+    "kanji": null,
+    "meaning": "nhà bếp",
+    "lesson": 15
+  },
+  {
+    "hiragana": "ダイビング",
+    "kanji": null,
+    "meaning": "lặn sâu",
+    "lesson": 5
+  },
+  {
+    "hiragana": "だいファン",
+    "kanji": "大ファン",
+    "meaning": "fan cuồn",
+    "lesson": 17
+  },
+  { "hiragana": "たいふう", "kanji": null, "meaning": "bão", "lesson": 5 },
+  {
+    "hiragana": "たいへん",
+    "kanji": null,
+    "meaning": "rất, vô cùng",
+    "lesson": 9
+  },
+  {
+    "hiragana": "たいへん（な）",
+    "kanji": null,
+    "meaning": "vất vả",
+    "lesson": 11
+  },
+  {
+    "hiragana": "たいようのとう",
+    "kanji": "太陽の塔",
+    "meaning": "tháp Mặt trời",
+    "lesson": 17
+  },
+  { "hiragana": "たかい", "kanji": "高い", "meaning": "cao", "lesson": 2 },
+  { "hiragana": "たかい", "kanji": "高い", "meaning": "đắt", "lesson": 5 },
+  { "hiragana": "だから", "kanji": null, "meaning": "Vì vậy,…", "lesson": 1 },
+  { "hiragana": "たくさん", "kanji": null, "meaning": "nhiều", "lesson": 7 },
+  { "hiragana": "タクシー", "kanji": null, "meaning": "taxi", "lesson": 5 },
+  {
+    "hiragana": "たしか",
+    "kanji": null,
+    "meaning": "có lẽ, nếu không nhầm thì",
+    "lesson": 17
+  },
+  {
+    "hiragana": "たち／～たち",
+    "kanji": null,
+    "meaning": "hội, đám",
+    "lesson": 17
+  },
+  {
+    "hiragana": "たちます 【たつ1】",
+    "kanji": null,
+    "meaning": "đứng",
+    "lesson": 2
+  },
+  { "hiragana": "だって", "kanji": null, "meaning": "vì là", "lesson": 9 },
+  {
+    "hiragana": "たてます 【たてる2】",
+    "kanji": null,
+    "meaning": "xây dựng",
+    "lesson": 13
+  },
+  { "hiragana": "たてもの", "kanji": null, "meaning": "tòa nhà", "lesson": 13 },
+  {
+    "hiragana": "たなか／たなかさん",
+    "kanji": "田中／田中さん",
+    "meaning": "Tanaka (tên người)",
+    "lesson": 7
+  },
+  {
+    "hiragana": "たなばた",
+    "kanji": null,
+    "meaning": "lễ Thất tịch",
+    "lesson": 10
+  },
+  {
+    "hiragana": "たなばたかざり",
+    "kanji": null,
+    "meaning": "trang trí ngày lễ Thất tịch",
+    "lesson": 10
+  },
+  {
+    "hiragana": "たのしい",
+    "kanji": "楽しい",
+    "meaning": "vui vẻ",
+    "lesson": 6
+  },
+  {
+    "hiragana": "たのしみ",
+    "kanji": "楽しみ",
+    "meaning": "niềm vui, sự mong đợi",
+    "lesson": 13
+  },
+  {
+    "hiragana": "たのしみに します",
+    "kanji": "楽しみに します",
+    "meaning": "mong ngóng, trông chờ",
+    "lesson": 13
+  },
+  {
+    "hiragana": "たのしみます 【たのしむ1】",
+    "kanji": "楽しみます",
+    "meaning": "tận hưởng",
+    "lesson": 3
+  },
+  { "hiragana": "たぶん", "kanji": null, "meaning": "có lẽ", "lesson": 12 },
+  {
+    "hiragana": "たべます 【たべる2】",
+    "kanji": "食べます",
+    "meaning": "ăn",
+    "lesson": 3
+  },
+  {
+    "hiragana": "たべもの",
+    "kanji": "食べ物",
+    "meaning": "đồ ăn",
+    "lesson": 5
+  },
+  { "hiragana": "たまご", "kanji": "卵", "meaning": "trứng", "lesson": 4 },
+  { "hiragana": "ため", "kanji": null, "meaning": "để, vì", "lesson": 10 },
+  {
+    "hiragana": "だめ（な）",
+    "kanji": null,
+    "meaning": "không được",
+    "lesson": 4
+  },
+  {
+    "hiragana": "たれ",
+    "kanji": null,
+    "meaning": "nước chấm, nước xốt",
+    "lesson": 4
+  },
+  { "hiragana": "だれ", "kanji": null, "meaning": "ai", "lesson": 2 },
+  {
+    "hiragana": "たんじょうび",
+    "kanji": "（誕生日）",
+    "meaning": "sinh nhật",
+    "lesson": 1
+  },
+  {
+    "hiragana": "ダンス",
+    "kanji": null,
+    "meaning": "khiêu vũ, nhảy",
+    "lesson": 1
+  },
+  {
+    "hiragana": "だんせい",
+    "kanji": "男性",
+    "meaning": "nam giới",
+    "lesson": 6
+  },
+  {
+    "hiragana": "たんとう",
+    "kanji": null,
+    "meaning": "phụ trách",
+    "lesson": 7
+  },
+  { "hiragana": "ちいさい", "kanji": "小さい", "meaning": "nhỏ", "lesson": 12 },
+  { "hiragana": "ちかい", "kanji": null, "meaning": "gần", "lesson": 3 },
+  {
+    "hiragana": "ちがいます 【ちかう1】",
+    "kanji": null,
+    "meaning": "khác",
+    "lesson": 3
+  },
+  { "hiragana": "ちかく", "kanji": null, "meaning": "gần", "lesson": 16 },
+  { "hiragana": "チキン", "kanji": null, "meaning": "thịt gà", "lesson": 7 },
+  {
+    "hiragana": "ちち",
+    "kanji": "父",
+    "meaning": "bố (của mình)",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ちとせあめ",
+    "kanji": null,
+    "meaning": "kẹo chitose",
+    "lesson": 10
+  },
+  {
+    "hiragana": "ちゅう／～ちゅう",
+    "kanji": "～中",
+    "meaning": "trong khi ~, đang ~",
+    "lesson": 9
+  },
+  {
+    "hiragana": "ちゅうがっこう",
+    "kanji": "中学校",
+    "meaning": "trường cấp 2, THCS",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ちゅうもん（します） （【する3】）",
+    "kanji": null,
+    "meaning": "gọi món",
+    "lesson": 3
+  },
+  {
+    "hiragana": "ちょうし",
+    "kanji": null,
+    "meaning": "tình trạng",
+    "lesson": 11
+  },
+  { "hiragana": "ちょうど", "kanji": null, "meaning": "vừa đúng", "lesson": 6 },
+  {
+    "hiragana": "ちょうど いい",
+    "kanji": null,
+    "meaning": "vừa khít, vừa đủ",
+    "lesson": 6
+  },
+  { "hiragana": "ちょっと", "kanji": null, "meaning": "một chút", "lesson": 3 },
+  {
+    "hiragana": "ツアー",
+    "kanji": null,
+    "meaning": "tour du lịch",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ツアーめい",
+    "kanji": "ツアー名",
+    "meaning": "tên tour",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ついたち",
+    "kanji": "１日／一日",
+    "meaning": "mùng 1",
+    "lesson": 7
+  },
+  {
+    "hiragana": "つうやく",
+    "kanji": null,
+    "meaning": "phiên dịch",
+    "lesson": 7
+  },
+  {
+    "hiragana": "つかいます 【つかう1】",
+    "kanji": "使います",
+    "meaning": "dùng, sử dụng",
+    "lesson": 7
+  },
+  {
+    "hiragana": "つかれます 【つかれる2】",
+    "kanji": null,
+    "meaning": "mệt",
+    "lesson": 5
+  },
+  { "hiragana": "つぎ", "kanji": null, "meaning": "tiếp theo", "lesson": 13 },
+  {
+    "hiragana": "つきます（でんきが） 【つく1】",
+    "kanji": null,
+    "meaning": "bật (đèn sáng)",
+    "lesson": 15
+  },
+  {
+    "hiragana": "つきます（ふねが） 【つく1】",
+    "kanji": "（着きます（ふねが））",
+    "meaning": "đến nơi",
+    "lesson": 5
+  },
+  { "hiragana": "つくえ", "kanji": null, "meaning": "bàn", "lesson": 7 },
+  {
+    "hiragana": "つくります 【つくる1】",
+    "kanji": "作ります",
+    "meaning": "làm",
+    "lesson": 6
+  },
+  {
+    "hiragana": "つけます（たれを） 【つける2】",
+    "kanji": null,
+    "meaning": "chấm (nước chấm)",
+    "lesson": 4
+  },
+  {
+    "hiragana": "つけます（でんきを） 【つける2】",
+    "kanji": null,
+    "meaning": "bật (~ đèn)",
+    "lesson": 15
+  },
+  {
+    "hiragana": "つごう",
+    "kanji": null,
+    "meaning": "hoàn cảnh, tình hình",
+    "lesson": 7
+  },
+  {
+    "hiragana": "つだうめこ",
+    "kanji": "津田梅子",
+    "meaning": "Tsuda Umeko",
+    "lesson": 17
+  },
+  { "hiragana": "つち", "kanji": "（土）", "meaning": "đất", "lesson": 14 },
+  {
+    "hiragana": "つま",
+    "kanji": null,
+    "meaning": "vợ (của mình)",
+    "lesson": 9
+  },
+  {
+    "hiragana": "つまらない",
+    "kanji": null,
+    "meaning": "chán, buồn tẻ",
+    "lesson": 9
+  },
+  { "hiragana": "つめたい", "kanji": null, "meaning": "lạnh", "lesson": 3 },
+  { "hiragana": "つゆ", "kanji": null, "meaning": "mùa mưa", "lesson": 5 },
+  { "hiragana": "つよい", "kanji": null, "meaning": "mạnh mẽ", "lesson": 13 },
+  {
+    "hiragana": "で（それで）",
+    "kanji": null,
+    "meaning": "và rồi",
+    "lesson": 5
+  },
+  {
+    "hiragana": "ディーブイディー／DVD",
+    "kanji": null,
+    "meaning": "DVD",
+    "lesson": 9
+  },
+  {
+    "hiragana": "デート（します） （【する3】）",
+    "kanji": null,
+    "meaning": "hẹn hò",
+    "lesson": 18
+  },
+  { "hiragana": "テーブル", "kanji": null, "meaning": "bàn", "lesson": 3 },
+  { "hiragana": "てがみ", "kanji": null, "meaning": "thư", "lesson": 14 },
+  {
+    "hiragana": "てき／～てき",
+    "kanji": null,
+    "meaning": "mang tính ~",
+    "lesson": 13
+  },
+  {
+    "hiragana": "できます 【できる2】",
+    "kanji": null,
+    "meaning": "có thể",
+    "lesson": 7
+  },
+  {
+    "hiragana": "できます（りょうりのじゅんびが） 【できる2】",
+    "kanji": null,
+    "meaning": "xong",
+    "lesson": 4
+  },
+  {
+    "hiragana": "できるだけ",
+    "kanji": null,
+    "meaning": "hết sức có thể",
+    "lesson": 15
+  },
+  { "hiragana": "できれば", "kanji": null, "meaning": "nếu được", "lesson": 5 },
+  {
+    "hiragana": "デザイン",
+    "kanji": null,
+    "meaning": "thiết kế",
+    "lesson": 12
+  },
+  {
+    "hiragana": "テスト",
+    "kanji": null,
+    "meaning": "bài kiểm tra",
+    "lesson": 18
+  },
+  {
+    "hiragana": "では",
+    "kanji": null,
+    "meaning": "Vậy thì/ Vậy nhé!",
+    "lesson": 4
+  },
+  {
+    "hiragana": "でます 【でる2】",
+    "kanji": "出ます",
+    "meaning": "ra ngoài",
+    "lesson": 11
+  },
+  { "hiragana": "でも", "kanji": null, "meaning": "nhưng", "lesson": 5 },
+  {
+    "hiragana": "デモンストレーション",
+    "kanji": null,
+    "meaning": "buổi trình diễn",
+    "lesson": 8
+  },
+  { "hiragana": "てら", "kanji": null, "meaning": "chùa", "lesson": 9 },
+  { "hiragana": "テレビ", "kanji": null, "meaning": "ti-vi", "lesson": 1 },
+  {
+    "hiragana": "てん／～てん～（3.5）",
+    "kanji": null,
+    "meaning": "~ phẩy ~ (số thập phân)",
+    "lesson": 12
+  },
+  {
+    "hiragana": "てんいん",
+    "kanji": null,
+    "meaning": "nhân viên cửa hàng, người bán hàng",
+    "lesson": 11
+  },
+  { "hiragana": "でんき", "kanji": "電気", "meaning": "điện", "lesson": 15 },
+  {
+    "hiragana": "でんきせいひん",
+    "kanji": "電気製品",
+    "meaning": "đồ điện, hàng điện tử",
+    "lesson": 11
+  },
+  {
+    "hiragana": "でんきてん",
+    "kanji": "（電気店）",
+    "meaning": "cửa hàng đồ điện",
+    "lesson": 1
+  },
+  {
+    "hiragana": "てんきん（します） （【する3】）",
+    "kanji": null,
+    "meaning": "thuyên chuyển công tác",
+    "lesson": 18
+  },
+  {
+    "hiragana": "でんしゃ",
+    "kanji": "電車",
+    "meaning": "tàu điện",
+    "lesson": 1
+  },
+  {
+    "hiragana": "でんしレンジ",
+    "kanji": "（電子レンジ）",
+    "meaning": "lò vi sóng",
+    "lesson": 11
+  },
+  {
+    "hiragana": "でんとう",
+    "kanji": null,
+    "meaning": "truyền thống",
+    "lesson": 13
+  },
+  {
+    "hiragana": "でんとうてき（な）",
+    "kanji": null,
+    "meaning": "truyền thống",
+    "lesson": 13
+  },
+  {
+    "hiragana": "てんのう",
+    "kanji": null,
+    "meaning": "Thiên Hoàng",
+    "lesson": 13
+  },
+  { "hiragana": "てんぷら", "kanji": null, "meaning": "tempura", "lesson": 3 },
+  {
+    "hiragana": "でんわ（します） （【する3】）",
+    "kanji": "電話（します）",
+    "meaning": "điện thoại",
+    "lesson": 14
+  },
+  {
+    "hiragana": "でんわばんごう",
+    "kanji": null,
+    "meaning": "số điện thoại",
+    "lesson": 7
+  },
+  {
+    "hiragana": "ど （どようび）",
+    "kanji": "土",
+    "meaning": "thứ bảy",
+    "lesson": 8
+  },
+  { "hiragana": "ドア", "kanji": null, "meaning": "cửa", "lesson": 15 },
+  { "hiragana": "ドイツ", "kanji": null, "meaning": "Đức", "lesson": 13 },
+  { "hiragana": "どう", "kanji": null, "meaning": "như thế nào", "lesson": 5 },
+  { "hiragana": "どういう", "kanji": null, "meaning": "kiểu gì", "lesson": 1 },
+  { "hiragana": "とうがらし", "kanji": null, "meaning": "ớt", "lesson": 4 },
+  {
+    "hiragana": "とうきょう",
+    "kanji": "東京",
+    "meaning": "Tokyo",
+    "lesson": 1
+  },
+  {
+    "hiragana": "とうきょうオリンピック",
+    "kanji": "東京オリンピック",
+    "meaning": "Olympic Tokyo",
+    "lesson": 18
+  },
+  { "hiragana": "どうぐ", "kanji": null, "meaning": "dụng cụ", "lesson": 5 },
+  { "hiragana": "どうして", "kanji": null, "meaning": "tại sao", "lesson": 14 },
+  { "hiragana": "どうぞ", "kanji": null, "meaning": "xin mời", "lesson": 1 },
+  { "hiragana": "とうふ", "kanji": null, "meaning": "đậu phụ", "lesson": 3 },
+  { "hiragana": "どうぶつ", "kanji": null, "meaning": "động vật", "lesson": 6 },
+  {
+    "hiragana": "どうも （ありがとう）",
+    "kanji": null,
+    "meaning": "Cảm ơn.",
+    "lesson": 8
+  },
+  {
+    "hiragana": "どうやって",
+    "kanji": null,
+    "meaning": "bằng cách nào",
+    "lesson": 4
+  },
+  { "hiragana": "とおい", "kanji": null, "meaning": "xa", "lesson": 1 },
+  { "hiragana": "とおく", "kanji": null, "meaning": "xa", "lesson": 18 },
+  { "hiragana": "とき", "kanji": "（時）", "meaning": "lúc, khi", "lesson": 5 },
+  {
+    "hiragana": "ときどき",
+    "kanji": null,
+    "meaning": "thỉnh thoảng",
+    "lesson": 11
+  },
+  {
+    "hiragana": "とくがわしょうぐん",
+    "kanji": "徳川しょうぐん",
+    "meaning": "tướng quân Tokugawa (tướng quân thời Edo)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "どくしょ",
+    "kanji": "読書",
+    "meaning": "đọc sách",
+    "lesson": 1
+  },
+  { "hiragana": "どくしん", "kanji": null, "meaning": "độc thân", "lesson": 1 },
+  {
+    "hiragana": "とくに",
+    "kanji": null,
+    "meaning": "đặc biệt là",
+    "lesson": 1
+  },
+  {
+    "hiragana": "とくべつ（な）",
+    "kanji": null,
+    "meaning": "đặc biệt",
+    "lesson": 9
+  },
+  { "hiragana": "どこ", "kanji": null, "meaning": "ở đâu", "lesson": 8 },
+  {
+    "hiragana": "ところ",
+    "kanji": "（所）",
+    "meaning": "nơi, chốn",
+    "lesson": 1
+  },
+  { "hiragana": "とし", "kanji": "（年）", "meaning": "tuổi tác", "lesson": 1 },
+  {
+    "hiragana": "どちら",
+    "kanji": null,
+    "meaning": "phía nào, cái nào",
+    "lesson": 12
+  },
+  {
+    "hiragana": "どっち",
+    "kanji": null,
+    "meaning": "cái nào (giữa 2 lựa chọn)",
+    "lesson": 12
+  },
+  { "hiragana": "とても", "kanji": null, "meaning": "rất", "lesson": 6 },
+  {
+    "hiragana": "とどきます 【とどく1】",
+    "kanji": null,
+    "meaning": "được chuyển đến",
+    "lesson": 12
+  },
+  {
+    "hiragana": "どなた",
+    "kanji": null,
+    "meaning": "ai/ vị nào (cách nói lịch sự của だれ)",
+    "lesson": 2
+  },
+  { "hiragana": "どの", "kanji": null, "meaning": "~ nào", "lesson": 2 },
+  {
+    "hiragana": "どのぐらい",
+    "kanji": null,
+    "meaning": "bao lâu",
+    "lesson": 9
+  },
+  {
+    "hiragana": "ともだち",
+    "kanji": "友だち",
+    "meaning": "bạn bè",
+    "lesson": 1
+  },
+  {
+    "hiragana": "とよとみひでよし",
+    "kanji": "豊臣秀吉",
+    "meaning": "Toyotomi Hideyoshi",
+    "lesson": 14
+  },
+  {
+    "hiragana": "ドライブ（します） （【する3】）",
+    "kanji": null,
+    "meaning": "lái xe hơi đi chơi",
+    "lesson": 5
+  },
+  { "hiragana": "とり", "kanji": null, "meaning": "gà", "lesson": 3 },
+  {
+    "hiragana": "とりにく",
+    "kanji": "とり肉",
+    "meaning": "thịt gà",
+    "lesson": 3
+  },
+  {
+    "hiragana": "とります 【とる1】",
+    "kanji": null,
+    "meaning": "lấy",
+    "lesson": 4
+  },
+  {
+    "hiragana": "とります（しゃしんを） 【とる1】",
+    "kanji": null,
+    "meaning": "chụp (ảnh)",
+    "lesson": 10
+  },
+  { "hiragana": "ドリンク", "kanji": null, "meaning": "đồ uống", "lesson": 3 },
+  { "hiragana": "ドレス", "kanji": null, "meaning": "váy", "lesson": 2 },
+  {
+    "hiragana": "どんな",
+    "kanji": null,
+    "meaning": "như thế nào",
+    "lesson": 1
+  },
+  {
+    "hiragana": "ないよう",
+    "kanji": "内容",
+    "meaning": "nội dung",
+    "lesson": 6
+  },
+  { "hiragana": "なか", "kanji": "中", "meaning": "bên trong", "lesson": 8 },
+  { "hiragana": "ながい", "kanji": "長い", "meaning": "dài", "lesson": 2 },
+  {
+    "hiragana": "ながいき",
+    "kanji": "（長生き）",
+    "meaning": "sống lâu",
+    "lesson": 10
+  },
+  {
+    "hiragana": "なかが いい",
+    "kanji": null,
+    "meaning": "thân thiết",
+    "lesson": 18
+  },
+  {
+    "hiragana": "なかごろ",
+    "kanji": "中ごろ",
+    "meaning": "khoảng giữa",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ながします 【ながす1】",
+    "kanji": null,
+    "meaning": "đổ (chất lỏng)",
+    "lesson": 15
+  },
+  {
+    "hiragana": "なきます 【なく1】",
+    "kanji": null,
+    "meaning": "khóc",
+    "lesson": 2
+  },
+  {
+    "hiragana": "なくなります 【なくなる1】",
+    "kanji": null,
+    "meaning": "mất",
+    "lesson": 17
+  },
+  {
+    "hiragana": "なげます 【なげる2】",
+    "kanji": null,
+    "meaning": "ném",
+    "lesson": 10
+  },
+  { "hiragana": "なに／なん", "kanji": "何", "meaning": "cái gì", "lesson": 3 },
+  {
+    "hiragana": "なにか",
+    "kanji": "何か",
+    "meaning": "cái gì đó",
+    "lesson": 11
+  },
+  {
+    "hiragana": "なにも",
+    "kanji": "何も",
+    "meaning": "không gì cả",
+    "lesson": 4
+  },
+  {
+    "hiragana": "なのか",
+    "kanji": "７日／七日",
+    "meaning": "mùng 7",
+    "lesson": 10
+  },
+  { "hiragana": "なべ", "kanji": null, "meaning": "lẩu", "lesson": 3 },
+  { "hiragana": "なま", "kanji": "（生）", "meaning": "sống", "lesson": 3 },
+  { "hiragana": "なまえ", "kanji": "名前", "meaning": "tên", "lesson": 1 },
+  {
+    "hiragana": "ならいます 【ならう1】",
+    "kanji": null,
+    "meaning": "học, theo học",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ならべます 【ならべる2】",
+    "kanji": null,
+    "meaning": "sắp xếp",
+    "lesson": 7
+  },
+  {
+    "hiragana": "なります 【なる1】",
+    "kanji": null,
+    "meaning": "trở nên, trở thành",
+    "lesson": 10
+  },
+  {
+    "hiragana": "なんとか",
+    "kanji": null,
+    "meaning": "bằng cách nào đó, cách này cách nọ",
+    "lesson": 18
+  },
+  { "hiragana": "におい", "kanji": null, "meaning": "mùi", "lesson": 4 },
+  {
+    "hiragana": "にがて（な）",
+    "kanji": null,
+    "meaning": "tệ, không giỏi",
+    "lesson": 3
+  },
+  { "hiragana": "にく", "kanji": "肉", "meaning": "thịt", "lesson": 3 },
+  {
+    "hiragana": "にじょうじょう",
+    "kanji": "二条城",
+    "meaning": "thành Nijou",
+    "lesson": 13
+  },
+  {
+    "hiragana": "にち （じゅうごにち）／～にち",
+    "kanji": "～日（15日）",
+    "meaning": "ngày, mùng ~",
+    "lesson": 1
+  },
+  {
+    "hiragana": "にち （にちようび）",
+    "kanji": "日",
+    "meaning": "chủ nhật",
+    "lesson": 8
+  },
+  {
+    "hiragana": "にちかん／～にちかん／かかん／～かかん",
+    "kanji": "～日間",
+    "meaning": "~ ngày",
+    "lesson": 9
+  },
+  { "hiragana": "にちじ", "kanji": "日時", "meaning": "ngày giờ", "lesson": 8 },
+  {
+    "hiragana": "にほん／にっぽん",
+    "kanji": "日本",
+    "meaning": "Nhật Bản",
+    "lesson": 1
+  },
+  {
+    "hiragana": "にほんご",
+    "kanji": "日本語",
+    "meaning": "tiếng Nhật",
+    "lesson": 7
+  },
+  {
+    "hiragana": "にほんしゅ",
+    "kanji": "日本酒",
+    "meaning": "rượu Nhật",
+    "lesson": 3
+  },
+  {
+    "hiragana": "にほんてき（な）",
+    "kanji": "日本てき（な）",
+    "meaning": "phong cách Nhật Bản",
+    "lesson": 13
+  },
+  {
+    "hiragana": "にほんまつり",
+    "kanji": "日本まつり",
+    "meaning": "lễ hội Nhật Bản",
+    "lesson": 7
+  },
+  {
+    "hiragana": "にます 【にる2】",
+    "kanji": null,
+    "meaning": "giống, tương tự",
+    "lesson": 4
+  },
+  {
+    "hiragana": "にゅうがく",
+    "kanji": "（入学）",
+    "meaning": "̣nhập học",
+    "lesson": 18
+  },
+  {
+    "hiragana": "にゅうじょう",
+    "kanji": "入場",
+    "meaning": "vào cửa",
+    "lesson": 8
+  },
+  {
+    "hiragana": "にゅうじょうりょう",
+    "kanji": "入場料",
+    "meaning": "phí vào cửa",
+    "lesson": 8
+  },
+  {
+    "hiragana": "ニュース",
+    "kanji": null,
+    "meaning": "bản tin, tin tức",
+    "lesson": 18
+  },
+  { "hiragana": "にわ", "kanji": null, "meaning": "khu vườn", "lesson": 13 },
+  {
+    "hiragana": "にん／～にん",
+    "kanji": null,
+    "meaning": "~ người",
+    "lesson": 1
+  },
+  {
+    "hiragana": "にんき",
+    "kanji": "人気",
+    "meaning": "được yêu thích",
+    "lesson": 3
+  },
+  {
+    "hiragana": "にんぎょう",
+    "kanji": null,
+    "meaning": "búp bê",
+    "lesson": 10
+  },
+  {
+    "hiragana": "にんめ／～にんめ",
+    "kanji": "～人目",
+    "meaning": "người thứ ~",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ねがい",
+    "kanji": "（願い）",
+    "meaning": "điều ước, thỉnh cầu",
+    "lesson": 10
+  },
+  {
+    "hiragana": "ねがいごと",
+    "kanji": "（願い事）",
+    "meaning": "điều ước",
+    "lesson": 10
+  },
+  {
+    "hiragana": "ねがいます 【ねがう1】",
+    "kanji": "（願います）",
+    "meaning": "cầu nguyện",
+    "lesson": 10
+  },
+  { "hiragana": "ネクタイ", "kanji": null, "meaning": "cà-vạt", "lesson": 2 },
+  {
+    "hiragana": "ねだん",
+    "kanji": null,
+    "meaning": "giá tiền, giá cả",
+    "lesson": 12
+  },
+  {
+    "hiragana": "ネックレス",
+    "kanji": null,
+    "meaning": "vòng cổ",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ネット",
+    "kanji": null,
+    "meaning": "mạng (internet)",
+    "lesson": 11
+  },
+  {
+    "hiragana": "ネットショッピング",
+    "kanji": null,
+    "meaning": "mua sắm trực tuyến",
+    "lesson": 11
+  },
+  {
+    "hiragana": "ねん／～ねん",
+    "kanji": "～年",
+    "meaning": "~ năm",
+    "lesson": 9
+  },
+  {
+    "hiragana": "ねんがじょう",
+    "kanji": null,
+    "meaning": "thiệp mừng năm mới",
+    "lesson": 9
+  },
+  {
+    "hiragana": "ねんれい",
+    "kanji": "年齢",
+    "meaning": "độ tuổi",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ノーベルしょう",
+    "kanji": null,
+    "meaning": "giải Nobel",
+    "lesson": 17
+  },
+  {
+    "hiragana": "のだ／のださん",
+    "kanji": null,
+    "meaning": "Noda (tên người)",
+    "lesson": 1
+  },
+  { "hiragana": "のど", "kanji": null, "meaning": "cổ họng", "lesson": 4 },
+  {
+    "hiragana": "のみます 【のむ1】",
+    "kanji": "飲みます",
+    "meaning": "uống",
+    "lesson": 3
+  },
+  {
+    "hiragana": "のみもの",
+    "kanji": "飲み物",
+    "meaning": "đồ uống",
+    "lesson": 4
+  },
+  {
+    "hiragana": "のります 【のる1】",
+    "kanji": "乗ります",
+    "meaning": "lên",
+    "lesson": 5
+  },
+  { "hiragana": "はあ", "kanji": null, "meaning": "Ờ…, Ừm…", "lesson": 3 },
+  {
+    "hiragana": "パーティー",
+    "kanji": null,
+    "meaning": "bữa tiệc",
+    "lesson": 18
+  },
+  { "hiragana": "はい", "kanji": null, "meaning": "Ừ., Vâng.", "lesson": 2 },
+  {
+    "hiragana": "バイオリニスト",
+    "kanji": null,
+    "meaning": "nghệ sỹ vĩ cầm",
+    "lesson": 17
+  },
+  {
+    "hiragana": "バイオリン",
+    "kanji": null,
+    "meaning": "vĩ cầm",
+    "lesson": 17
+  },
+  {
+    "hiragana": "はいります（やさいが） 【はいる1】",
+    "kanji": "入ります",
+    "meaning": "vào",
+    "lesson": 3
+  },
+  {
+    "hiragana": "はきます 【はく1】",
+    "kanji": null,
+    "meaning": "mặc, xỏ",
+    "lesson": 2
+  },
+  {
+    "hiragana": "はくぶつかん",
+    "kanji": null,
+    "meaning": "bảo tàng",
+    "lesson": 14
+  },
+  { "hiragana": "はこ", "kanji": null, "meaning": "hộp", "lesson": 14 },
+  {
+    "hiragana": "はこびます 【はこぶ1】",
+    "kanji": null,
+    "meaning": "vận chuyển",
+    "lesson": 14
+  },
+  {
+    "hiragana": "はじまります 【はじまる1】",
+    "kanji": null,
+    "meaning": "bắt đầu",
+    "lesson": 8
+  },
+  { "hiragana": "はじめ", "kanji": null, "meaning": "ban đầu", "lesson": 8 },
+  {
+    "hiragana": "はじめごろ",
+    "kanji": null,
+    "meaning": "khoảng đầu",
+    "lesson": 13
+  },
+  { "hiragana": "はじめて", "kanji": null, "meaning": "lần đầu", "lesson": 4 },
+  { "hiragana": "はじめに", "kanji": null, "meaning": "đầu tiên", "lesson": 8 },
+  {
+    "hiragana": "はじめまして",
+    "kanji": null,
+    "meaning": "Xin chào. (lần đầu gặp mặt)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "はじめます 【はじめる2】",
+    "kanji": null,
+    "meaning": "bắt đầu",
+    "lesson": 7
+  },
+  { "hiragana": "ばしょ", "kanji": "場所", "meaning": "địa điểm", "lesson": 7 },
+  {
+    "hiragana": "はしら",
+    "kanji": null,
+    "meaning": "cột, cái trụ",
+    "lesson": 13
+  },
+  { "hiragana": "バス", "kanji": null, "meaning": "xe buýt", "lesson": 5 },
+  {
+    "hiragana": "はずかしい",
+    "kanji": null,
+    "meaning": "xấu hổ, ngại ngùng, ngượng",
+    "lesson": 18
+  },
+  {
+    "hiragana": "はたらきます 【はたらく1】",
+    "kanji": null,
+    "meaning": "làm việc",
+    "lesson": 1
+  },
+  { "hiragana": "バッグ", "kanji": null, "meaning": "túi xách", "lesson": 2 },
+  {
+    "hiragana": "はつもうで",
+    "kanji": null,
+    "meaning": "đi lễ đầu năm",
+    "lesson": 9
+  },
+  { "hiragana": "はな", "kanji": "花", "meaning": "hoa", "lesson": 13 },
+  {
+    "hiragana": "はなし",
+    "kanji": "話",
+    "meaning": "câu chuyện",
+    "lesson": 11
+  },
+  {
+    "hiragana": "はなします 【はなす1】",
+    "kanji": "話します",
+    "meaning": "nói chuyện",
+    "lesson": 7
+  },
+  {
+    "hiragana": "はなみ",
+    "kanji": "（花見）",
+    "meaning": "ngắm hoa anh đào",
+    "lesson": 13
+  },
+  {
+    "hiragana": "はは",
+    "kanji": "母",
+    "meaning": "mẹ (của mình)",
+    "lesson": 18
+  },
+  { "hiragana": "ははは", "kanji": null, "meaning": "ha ha ha", "lesson": 1 },
+  {
+    "hiragana": "はやい（はやく）",
+    "kanji": null,
+    "meaning": "nhanh",
+    "lesson": 5
+  },
+  { "hiragana": "はる", "kanji": "春", "meaning": "mùa xuân", "lesson": 1 },
+  {
+    "hiragana": "はるな／はるなさん",
+    "kanji": null,
+    "meaning": "Haruna (tên người)",
+    "lesson": 1
+  },
+  { "hiragana": "はん", "kanji": "～半", "meaning": "~ rưỡi", "lesson": 8 },
+  {
+    "hiragana": "パンフレット",
+    "kanji": null,
+    "meaning": "tờ quảng cáo dạng sách gập",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ばんめ／～ばんめ",
+    "kanji": "（～ばん目）",
+    "meaning": "số thứ ~",
+    "lesson": 1
+  },
+  { "hiragana": "ひ", "kanji": "日", "meaning": "ngày", "lesson": 7 },
+  { "hiragana": "ピアノ", "kanji": null, "meaning": "piano", "lesson": 10 },
+  { "hiragana": "ビール", "kanji": null, "meaning": "bia", "lesson": 3 },
+  { "hiragana": "ひがし", "kanji": "東", "meaning": "phía Đông", "lesson": 1 },
+  {
+    "hiragana": "ひきます 【ひく1】",
+    "kanji": null,
+    "meaning": "đánh, chơi nhạc cụ",
+    "lesson": 17
+  },
+  { "hiragana": "ひこうき", "kanji": null, "meaning": "máy bay", "lesson": 5 },
+  {
+    "hiragana": "ひさしぶり",
+    "kanji": null,
+    "meaning": "lâu lắm rồi",
+    "lesson": 9
+  },
+  {
+    "hiragana": "ひつよう（な）",
+    "kanji": null,
+    "meaning": "cần thiết",
+    "lesson": 16
+  },
+  { "hiragana": "ビデオ", "kanji": null, "meaning": "video", "lesson": 7 },
+  {
+    "hiragana": "ビデオカメラ",
+    "kanji": null,
+    "meaning": "máy quay video",
+    "lesson": 7
+  },
+  { "hiragana": "ひと", "kanji": "人", "meaning": "người", "lesson": 1 },
+  {
+    "hiragana": "ひどい（ひどく）",
+    "kanji": null,
+    "meaning": "tồi tệ",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ひとつ",
+    "kanji": "１つ／一つ",
+    "meaning": "một cái",
+    "lesson": 3
+  },
+  {
+    "hiragana": "ひとり",
+    "kanji": "１人／一人",
+    "meaning": "một người",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ひとりっこ",
+    "kanji": "（一人っ子）",
+    "meaning": "con một",
+    "lesson": 1
+  },
+  {
+    "hiragana": "ひなにんぎょう",
+    "kanji": null,
+    "meaning": "búp bê cho bé gái",
+    "lesson": 10
+  },
+  {
+    "hiragana": "ひなまつり",
+    "kanji": null,
+    "meaning": "lễ hội bé gái",
+    "lesson": 10
+  },
+  { "hiragana": "ひみつ", "kanji": null, "meaning": "bí mật", "lesson": 1 },
+  {
+    "hiragana": "びょうき",
+    "kanji": null,
+    "meaning": "bệnh, ốm",
+    "lesson": 10
+  },
+  { "hiragana": "ひろい", "kanji": "広い", "meaning": "rộng", "lesson": 5 },
+  {
+    "hiragana": "ひろし／ひろしさん",
+    "kanji": null,
+    "meaning": "Hiroshi (tên người)",
+    "lesson": 2
+  },
+  {
+    "hiragana": "ひろば",
+    "kanji": "（広場）",
+    "meaning": "quảng trường",
+    "lesson": 7
+  },
+  {
+    "hiragana": "ビン",
+    "kanji": null,
+    "meaning": "cái bình, chai (thủy tinh)",
+    "lesson": 15
+  },
+  {
+    "hiragana": "ファン",
+    "kanji": null,
+    "meaning": "người hâm mộ",
+    "lesson": 17
+  },
+  {
+    "hiragana": "ふうじんらいじんずびょうぶ",
+    "kanji": "風神雷神図屏風",
+    "meaning": "bức bình phong Thần Gió Thần Sấm",
+    "lesson": 14
+  },
+  { "hiragana": "ふうん", "kanji": null, "meaning": "Ừm…, Hừm…", "lesson": 6 },
+  {
+    "hiragana": "ふえます 【ふえる2】",
+    "kanji": null,
+    "meaning": "tăng lên",
+    "lesson": 16
+  },
+  { "hiragana": "ふく", "kanji": null, "meaning": "quần áo", "lesson": 14 },
+  {
+    "hiragana": "ふくざつ（な）",
+    "kanji": null,
+    "meaning": "phức tạp",
+    "lesson": 12
+  },
+  { "hiragana": "ふくろ", "kanji": null, "meaning": "túi", "lesson": 15 },
+  { "hiragana": "ぶし", "kanji": null, "meaning": "võ sỹ", "lesson": 13 },
+  { "hiragana": "ふた", "kanji": null, "meaning": "nắp, vung", "lesson": 4 },
+  { "hiragana": "ぶたい", "kanji": null, "meaning": "vũ đài", "lesson": 13 },
+  {
+    "hiragana": "ふたつ",
+    "kanji": "２つ／二つ",
+    "meaning": "hai cái",
+    "lesson": 3
+  },
+  {
+    "hiragana": "ふたり",
+    "kanji": "２人／二人",
+    "meaning": "hai người",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ふつう",
+    "kanji": null,
+    "meaning": "bình thường",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ふつか",
+    "kanji": "２日／二日",
+    "meaning": "mùng 2",
+    "lesson": 8
+  },
+  {
+    "hiragana": "ぶつりがく",
+    "kanji": "（物理学）",
+    "meaning": "vật lý học",
+    "lesson": 17
+  },
+  { "hiragana": "ふとん", "kanji": null, "meaning": "chăn", "lesson": 16 },
+  { "hiragana": "ふね", "kanji": null, "meaning": "thuyền", "lesson": 5 },
+  {
+    "hiragana": "ふふふ",
+    "kanji": null,
+    "meaning": "hi hi hi (tiếng cười phụ nữ)",
+    "lesson": 4
+  },
+  {
+    "hiragana": "プラ（プラスチック）",
+    "kanji": null,
+    "meaning": "nhựa",
+    "lesson": 15
+  },
+  { "hiragana": "ブラジル", "kanji": null, "meaning": "Brazil", "lesson": 18 },
+  {
+    "hiragana": "フラッシュ",
+    "kanji": null,
+    "meaning": "đèn flash",
+    "lesson": 14
+  },
+  { "hiragana": "プラン", "kanji": null, "meaning": "kế hoạch", "lesson": 6 },
+  { "hiragana": "フランス", "kanji": null, "meaning": "Pháp", "lesson": 9 },
+  {
+    "hiragana": "フランスご",
+    "kanji": "フランス語",
+    "meaning": "tiếng Pháp",
+    "lesson": 18
+  },
+  {
+    "hiragana": "フリーマーケット",
+    "kanji": null,
+    "meaning": "chợ bán đồ cũ, trợ trời",
+    "lesson": 16
+  },
+  {
+    "hiragana": "ふります 【ふる1】",
+    "kanji": null,
+    "meaning": "rơi",
+    "lesson": 7
+  },
+  { "hiragana": "ふるい", "kanji": "古い", "meaning": "cũ", "lesson": 16 },
+  {
+    "hiragana": "プレゼント",
+    "kanji": null,
+    "meaning": "quà tặng",
+    "lesson": 16
+  },
+  {
+    "hiragana": "プログラム",
+    "kanji": null,
+    "meaning": "chương trình",
+    "lesson": 8
+  },
+  {
+    "hiragana": "ふん／～ふん／ぷん",
+    "kanji": "～分",
+    "meaning": "~ phút",
+    "lesson": 7
+  },
+  { "hiragana": "ぶんか", "kanji": "文化", "meaning": "văn hóa", "lesson": 6 },
+  {
+    "hiragana": "ぶんかざい",
+    "kanji": "（文化ざい）",
+    "meaning": "di sản văn hóa",
+    "lesson": 14
+  },
+  {
+    "hiragana": "ブンチャー",
+    "kanji": null,
+    "meaning": "bún chả",
+    "lesson": 4
+  },
+  {
+    "hiragana": "へいあんじんぐう",
+    "kanji": "平安神宮",
+    "meaning": "điện thờ Heian",
+    "lesson": 13
+  },
+  {
+    "hiragana": "へいせい",
+    "kanji": "平成",
+    "meaning": "Bình Thành",
+    "lesson": 9
+  },
+  { "hiragana": "へえ", "kanji": null, "meaning": "Ớ!, Thế á!", "lesson": 6 },
+  {
+    "hiragana": "ベジタリアン",
+    "kanji": null,
+    "meaning": "người ăn chay",
+    "lesson": 3
+  },
+  { "hiragana": "ベトナム", "kanji": null, "meaning": "Việt Nam", "lesson": 4 },
+  {
+    "hiragana": "ベビーカー",
+    "kanji": null,
+    "meaning": "xe đẩy em bé",
+    "lesson": 16
+  },
+  {
+    "hiragana": "ベビーベッド",
+    "kanji": null,
+    "meaning": "giường, nôi em bé",
+    "lesson": 16
+  },
+  { "hiragana": "へや", "kanji": null, "meaning": "phòng", "lesson": 13 },
+  {
+    "hiragana": "へらします 【へらす1】",
+    "kanji": null,
+    "meaning": "làm giảm",
+    "lesson": 15
+  },
+  { "hiragana": "ペルシャ", "kanji": null, "meaning": "Ba Tư", "lesson": 14 },
+  {
+    "hiragana": "べんきょう（します） （【する3】）",
+    "kanji": "勉強（します）",
+    "meaning": "học",
+    "lesson": 18
+  },
+  {
+    "hiragana": "べんり（な）",
+    "kanji": null,
+    "meaning": "tiện lợi",
+    "lesson": 12
+  },
+  {
+    "hiragana": "ほう",
+    "kanji": null,
+    "meaning": "mặt, phương diện (dùng khi so sánh, một mặt nào đó hơn một mặt khác)",
+    "lesson": 12
+  },
+  {
+    "hiragana": "ほう／ほお",
+    "kanji": null,
+    "meaning": "Uây ~!",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ほうさく",
+    "kanji": null,
+    "meaning": "được mùa, bội thu",
+    "lesson": 10
+  },
+  { "hiragana": "ぼうし", "kanji": null, "meaning": "mũ", "lesson": 2 },
+  { "hiragana": "ホール", "kanji": null, "meaning": "hội trường", "lesson": 7 },
+  {
+    "hiragana": "ほか",
+    "kanji": null,
+    "meaning": "khác, ngoài ra",
+    "lesson": 17
+  },
+  { "hiragana": "ほし", "kanji": null, "meaning": "ngôi sao", "lesson": 10 },
+  { "hiragana": "ほしい", "kanji": null, "meaning": "muốn có", "lesson": 11 },
+  {
+    "hiragana": "ほしまつり",
+    "kanji": null,
+    "meaning": "lễ hội sao",
+    "lesson": 10
+  },
+  {
+    "hiragana": "ぼしゅう",
+    "kanji": "募集",
+    "meaning": "tuyển dụng, chiêu mộ",
+    "lesson": 7
+  },
+  {
+    "hiragana": "ほっ",
+    "kanji": null,
+    "meaning": "(tiếng thở phào)",
+    "lesson": 5
+  },
+  {
+    "hiragana": "ほっとします 【ほっとする3】",
+    "kanji": null,
+    "meaning": "thở phào nhẹ nhõm",
+    "lesson": 5
+  },
+  { "hiragana": "ホテル", "kanji": null, "meaning": "khách sạn", "lesson": 5 },
+  {
+    "hiragana": "ほめます 【ほめる2】",
+    "kanji": null,
+    "meaning": "khen",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ほら",
+    "kanji": null,
+    "meaning": "Trông kìa! Xem kìa!",
+    "lesson": 2
+  },
+  {
+    "hiragana": "ボランティア",
+    "kanji": null,
+    "meaning": "tình nguyện",
+    "lesson": 7
+  },
+  {
+    "hiragana": "ポルトガル",
+    "kanji": null,
+    "meaning": "Bồ Đào Nha",
+    "lesson": 14
+  },
+  { "hiragana": "ほん", "kanji": "本", "meaning": "sách", "lesson": 14 },
+  {
+    "hiragana": "ほん／～ほん／ぼん／ぽん",
+    "kanji": "～本",
+    "meaning": "~ cây (đếm vật tròn, dài)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ホンコン",
+    "kanji": null,
+    "meaning": "Hồng Kông",
+    "lesson": 9
+  },
+  {
+    "hiragana": "ほんじつ",
+    "kanji": "（本日）",
+    "meaning": "hôm nay (trang trọng)",
+    "lesson": 8
+  },
+  {
+    "hiragana": "ほんとう／ほんと",
+    "kanji": null,
+    "meaning": "sự thật, thực sự",
+    "lesson": 2
+  },
+  {
+    "hiragana": "ほんとうに／ほんとに",
+    "kanji": null,
+    "meaning": "thật sự là",
+    "lesson": 5
+  },
+  {
+    "hiragana": "ほんもの",
+    "kanji": "（本物）",
+    "meaning": "đồ thật",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ほんやく（します） （【する3】）",
+    "kanji": null,
+    "meaning": "biên dịch",
+    "lesson": 1
+  },
+  {
+    "hiragana": "まあまあ（な）",
+    "kanji": null,
+    "meaning": "bình thường, tàm tạm",
+    "lesson": 6
+  },
+  {
+    "hiragana": "まい",
+    "kanji": "～まい",
+    "meaning": "~ tờ (đếm vật mỏng)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "まいこさん",
+    "kanji": null,
+    "meaning": "maiko (vũ kĩ nhân)",
+    "lesson": 13
+  },
+  {
+    "hiragana": "まいとし",
+    "kanji": "毎年",
+    "meaning": "hàng năm",
+    "lesson": 9
+  },
+  { "hiragana": "まえ", "kanji": "前", "meaning": "trước", "lesson": 13 },
+  {
+    "hiragana": "まこと／まことさん",
+    "kanji": "まこと￣／まことさん￣",
+    "meaning": "Makoto (tên người)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "まじめ（な）",
+    "kanji": null,
+    "meaning": "nghiêm túc",
+    "lesson": 1
+  },
+  { "hiragana": "まだ", "kanji": null, "meaning": "vẫn chưa", "lesson": 4 },
+  {
+    "hiragana": "まち",
+    "kanji": "町",
+    "meaning": "thành phố, thị trấn, khu phố",
+    "lesson": 1
+  },
+  {
+    "hiragana": "まちます 【まつ1】",
+    "kanji": "待ちます",
+    "meaning": "chờ",
+    "lesson": 4
+  },
+  { "hiragana": "まつ", "kanji": null, "meaning": "cây tùng", "lesson": 13 },
+  { "hiragana": "まつり", "kanji": null, "meaning": "lễ hội", "lesson": 10 },
+  { "hiragana": "まど", "kanji": null, "meaning": "cửa sổ", "lesson": 15 },
+  { "hiragana": "まめ", "kanji": null, "meaning": "đậu", "lesson": 10 },
+  {
+    "hiragana": "まめまき",
+    "kanji": null,
+    "meaning": "ném đậu đuổi quỷ",
+    "lesson": 10
+  },
+  {
+    "hiragana": "マンガ",
+    "kanji": null,
+    "meaning": "truyện tranh",
+    "lesson": 1
+  },
+  {
+    "hiragana": "マンガきょうしつ",
+    "kanji": null,
+    "meaning": "lớp học vẽ truyện tranh",
+    "lesson": 7
+  },
+  {
+    "hiragana": "まんぞく（します） （【する3】）",
+    "kanji": null,
+    "meaning": "hài lòng ̣",
+    "lesson": 12
+  },
+  {
+    "hiragana": "みえます 【みえる2】",
+    "kanji": "見えます",
+    "meaning": "nhìn thấy",
+    "lesson": 13
+  },
+  { "hiragana": "みじかい", "kanji": "短い", "meaning": "ngắn", "lesson": 6 },
+  { "hiragana": "みず", "kanji": "水", "meaning": "nước", "lesson": 11 },
+  {
+    "hiragana": "ミステリアス（な）",
+    "kanji": null,
+    "meaning": "thần bí",
+    "lesson": 13
+  },
+  { "hiragana": "みせ", "kanji": "店", "meaning": "cửa hàng", "lesson": 1 },
+  {
+    "hiragana": "みせます 【みせる2】",
+    "kanji": "見せます",
+    "meaning": "cho xem",
+    "lesson": 13
+  },
+  {
+    "hiragana": "みっか",
+    "kanji": "３日／三日",
+    "meaning": "mùng 3",
+    "lesson": 7
+  },
+  {
+    "hiragana": "みっつ",
+    "kanji": "３つ／三つ",
+    "meaning": "ba cái",
+    "lesson": 3
+  },
+  {
+    "hiragana": "みなさん",
+    "kanji": null,
+    "meaning": "mọi người",
+    "lesson": 8
+  },
+  {
+    "hiragana": "みます 【みる2】",
+    "kanji": "見ます",
+    "meaning": "nhìn, xem",
+    "lesson": 1
+  },
+  {
+    "hiragana": "みやざと（みやさと）／みやざとさん",
+    "kanji": "宮里／宮里さん",
+    "meaning": "Miyazato (tên người)",
+    "lesson": 6
+  },
+  {
+    "hiragana": "ミュージカル",
+    "kanji": null,
+    "meaning": "nhạc kịch",
+    "lesson": 1
+  },
+  { "hiragana": "みんな", "kanji": null, "meaning": "mọi người", "lesson": 4 },
+  {
+    "hiragana": "むいか",
+    "kanji": "６日／六日",
+    "meaning": "mùng 6",
+    "lesson": 1
+  },
+  { "hiragana": "むかし", "kanji": null, "meaning": "ngày xưa", "lesson": 10 },
+  { "hiragana": "むずかしい", "kanji": null, "meaning": "khó", "lesson": 15 },
+  {
+    "hiragana": "むだ（な）",
+    "kanji": null,
+    "meaning": "lãng phí",
+    "lesson": 15
+  },
+  {
+    "hiragana": "むだに します",
+    "kanji": null,
+    "meaning": "dùng một cách lãng phí",
+    "lesson": 15
+  },
+  { "hiragana": "むら", "kanji": null, "meaning": "làng, thôn", "lesson": 1 },
+  {
+    "hiragana": "むらかみはるき",
+    "kanji": "村上春樹",
+    "meaning": "Murakami Haruki",
+    "lesson": 1
+  },
+  {
+    "hiragana": "むり（な）",
+    "kanji": null,
+    "meaning": "quá sức",
+    "lesson": 7
+  },
+  {
+    "hiragana": "むりょう",
+    "kanji": "無料",
+    "meaning": "miễn phí",
+    "lesson": 8
+  },
+  {
+    "hiragana": "めい／～めい",
+    "kanji": "（～名）",
+    "meaning": "~ người",
+    "lesson": 3
+  },
+  {
+    "hiragana": "メール",
+    "kanji": null,
+    "meaning": "thư điện tử, email",
+    "lesson": 13
+  },
+  { "hiragana": "めがね", "kanji": null, "meaning": "kính mắt", "lesson": 2 },
+  { "hiragana": "メキシコ", "kanji": null, "meaning": "Mexico", "lesson": 1 },
+  {
+    "hiragana": "めずらしい",
+    "kanji": null,
+    "meaning": "lạ, hiếm",
+    "lesson": 6
+  },
+  {
+    "hiragana": "メダル",
+    "kanji": null,
+    "meaning": "huy chương",
+    "lesson": 17
+  },
+  {
+    "hiragana": "めんどう（な）",
+    "kanji": null,
+    "meaning": "phiền toái",
+    "lesson": 9
+  },
+  { "hiragana": "もう", "kanji": null, "meaning": "đã ~", "lesson": 4 },
+  { "hiragana": "もう", "kanji": null, "meaning": "~ nữa", "lesson": 4 },
+  { "hiragana": "もうすぐ", "kanji": null, "meaning": "sắp", "lesson": 8 },
+  { "hiragana": "モード", "kanji": null, "meaning": "chế độ", "lesson": 12 },
+  { "hiragana": "もじ", "kanji": null, "meaning": "chữ viết", "lesson": 18 },
+  {
+    "hiragana": "モダン（な）",
+    "kanji": null,
+    "meaning": "hiện đại",
+    "lesson": 13
+  },
+  {
+    "hiragana": "もちます 【もつ1】",
+    "kanji": "持ちます",
+    "meaning": "cầm",
+    "lesson": 2
+  },
+  {
+    "hiragana": "もちろん",
+    "kanji": null,
+    "meaning": "tất nhiên, đương nhiên",
+    "lesson": 17
+  },
+  {
+    "hiragana": "もったいない",
+    "kanji": null,
+    "meaning": "lãng phí",
+    "lesson": 15
+  },
+  {
+    "hiragana": "もっていきます 【もっていく1】",
+    "kanji": "持っていきます",
+    "meaning": "mang đi",
+    "lesson": 5
+  },
+  { "hiragana": "もっと", "kanji": null, "meaning": "thêm nữa", "lesson": 4 },
+  {
+    "hiragana": "モデル",
+    "kanji": null,
+    "meaning": "mẫu, kiểu, dáng",
+    "lesson": 12
+  },
+  { "hiragana": "もの", "kanji": "（物）", "meaning": "đồ vật", "lesson": 1 },
+  { "hiragana": "もみじ", "kanji": null, "meaning": "lá đỏ", "lesson": 13 },
+  {
+    "hiragana": "もらいます 【もらう1】",
+    "kanji": null,
+    "meaning": "nhận",
+    "lesson": 8
+  },
+  { "hiragana": "もり", "kanji": null, "meaning": "rừng rậm", "lesson": 6 },
+  { "hiragana": "もんだい", "kanji": null, "meaning": "vấn đề", "lesson": 7 },
+  {
+    "hiragana": "や（やさん）／～やさん",
+    "kanji": null,
+    "meaning": "cửa hàng ~",
+    "lesson": 13
+  },
+  {
+    "hiragana": "やぎ／やぎさん",
+    "kanji": "（八木／八木さん）",
+    "meaning": "Yagi (tên người)",
+    "lesson": 15
+  },
+  {
+    "hiragana": "やきもの",
+    "kanji": null,
+    "meaning": "đồ gốm sứ",
+    "lesson": 14
+  },
+  { "hiragana": "やく～", "kanji": null, "meaning": "khoảng ~", "lesson": 13 },
+  {
+    "hiragana": "やくに たちます",
+    "kanji": null,
+    "meaning": "hữu ích",
+    "lesson": 15
+  },
+  { "hiragana": "やさい", "kanji": "野菜", "meaning": "rau", "lesson": 3 },
+  {
+    "hiragana": "やさしい",
+    "kanji": null,
+    "meaning": "hiền lành, tốt bụng",
+    "lesson": 1
+  },
+  { "hiragana": "やすい", "kanji": "安い", "meaning": "rẻ", "lesson": 5 },
+  { "hiragana": "やすみ", "kanji": "休み", "meaning": "nghỉ", "lesson": 9 },
+  {
+    "hiragana": "やっと",
+    "kanji": null,
+    "meaning": "cuối cùng thì ~",
+    "lesson": 18
+  },
+  {
+    "hiragana": "やっぱり",
+    "kanji": null,
+    "meaning": "quả là, đúng là",
+    "lesson": 14
+  },
+  {
+    "hiragana": "やましたやすひろ",
+    "kanji": "山下泰裕",
+    "meaning": "Yamashita Yasuhiro",
+    "lesson": 17
+  },
+  {
+    "hiragana": "やまだ／やまださん",
+    "kanji": "（山田／山田さん）",
+    "meaning": "Yamada (tên người)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "やります 【やる1】",
+    "kanji": null,
+    "meaning": "làm",
+    "lesson": 1
+  },
+  { "hiragana": "やわらかい", "kanji": null, "meaning": "mềm", "lesson": 3 },
+  {
+    "hiragana": "ゆうこ／ゆうこさん",
+    "kanji": null,
+    "meaning": "Yuko (tên người)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "ユーザーコメント",
+    "kanji": null,
+    "meaning": "ý kiến người dùng",
+    "lesson": 12
+  },
+  {
+    "hiragana": "ゆうしょく",
+    "kanji": null,
+    "meaning": "bữa tối",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ゆうめい（な）",
+    "kanji": null,
+    "meaning": "nổi tiếng",
+    "lesson": 3
+  },
+  {
+    "hiragana": "ゆかわひでき",
+    "kanji": "湯川秀樹",
+    "meaning": "Yukawa Hideki",
+    "lesson": 17
+  },
+  {
+    "hiragana": "ゆしゅつ（します） （【する3】）",
+    "kanji": null,
+    "meaning": "xuất khẩu",
+    "lesson": 14
+  },
+  {
+    "hiragana": "ゆたか（な）",
+    "kanji": null,
+    "meaning": "phong phú",
+    "lesson": 5
+  },
+  {
+    "hiragana": "ユニセフ（UNICEF）",
+    "kanji": null,
+    "meaning": "UNICEF",
+    "lesson": 17
+  },
+  {
+    "hiragana": "ゆれます 【ゆれる2】",
+    "kanji": null,
+    "meaning": "rung, lắc",
+    "lesson": 5
+  },
+  {
+    "hiragana": "ようこそ",
+    "kanji": null,
+    "meaning": "Hoan nghênh!",
+    "lesson": 13
+  },
+  {
+    "hiragana": "ヨーロッパ",
+    "kanji": null,
+    "meaning": "châu Âu",
+    "lesson": 14
+  },
+  {
+    "hiragana": "よかったら",
+    "kanji": null,
+    "meaning": "nếu được thì, nếu không chê thì",
+    "lesson": 13
+  },
+  {
+    "hiragana": "よく",
+    "kanji": null,
+    "meaning": "thường xuyên, hay",
+    "lesson": 1
+  },
+  { "hiragana": "よく", "kanji": null, "meaning": "làm ~ tốt", "lesson": 13 },
+  {
+    "hiragana": "よくじつ",
+    "kanji": "翌日",
+    "meaning": "ngày tiếp theo, ngày hôm sau",
+    "lesson": 12
+  },
+  {
+    "hiragana": "よごします 【よごす1】",
+    "kanji": null,
+    "meaning": "làm bẩn (không ~ dòng nước/ không khí)",
+    "lesson": 15
+  },
+  { "hiragana": "ヨサコイ", "kanji": null, "meaning": "yosakoi", "lesson": 7 },
+  {
+    "hiragana": "よしだ／よしださん",
+    "kanji": null,
+    "meaning": "Yoshida (tên người)",
+    "lesson": 1
+  },
+  {
+    "hiragana": "よせなべ",
+    "kanji": null,
+    "meaning": "lẩu thập cẩm",
+    "lesson": 3
+  },
+  {
+    "hiragana": "よっか",
+    "kanji": "４日／四日",
+    "meaning": "mùng 4",
+    "lesson": 9
+  },
+  {
+    "hiragana": "よびます 【よぶ1】",
+    "kanji": null,
+    "meaning": "gọi",
+    "lesson": 1
+  },
+  {
+    "hiragana": "よみます 【よむ1】",
+    "kanji": "読みます",
+    "meaning": "đọc",
+    "lesson": 1
+  },
+  {
+    "hiragana": "よやく（します） （【する3】）",
+    "kanji": null,
+    "meaning": "đặt trước",
+    "lesson": 3
+  },
+  { "hiragana": "よる", "kanji": "夜", "meaning": "buổi tối", "lesson": 5 },
+  {
+    "hiragana": "よろこびます 【よろこぶ1】",
+    "kanji": null,
+    "meaning": "vui mừng",
+    "lesson": 16
+  },
+  {
+    "hiragana": "よろしく",
+    "kanji": null,
+    "meaning": "Hân hạnh., Mong được giúp đỡ.",
+    "lesson": 1
+  },
+  { "hiragana": "よわい", "kanji": null, "meaning": "yếu", "lesson": 18 },
+  {
+    "hiragana": "らいげつ",
+    "kanji": "来月",
+    "meaning": "tháng sau",
+    "lesson": 7
+  },
+  {
+    "hiragana": "らく（な）",
+    "kanji": "（楽（な））",
+    "meaning": "thoải mái, nhàn hạ",
+    "lesson": 12
+  },
+  {
+    "hiragana": "ラグビー",
+    "kanji": null,
+    "meaning": "bóng bầu dục",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ラグビーぶ",
+    "kanji": null,
+    "meaning": "câu lạc bộ bóng bầu dục",
+    "lesson": 18
+  },
+  {
+    "hiragana": "ラジオ",
+    "kanji": null,
+    "meaning": "đài phát thanh",
+    "lesson": 11
+  },
+  {
+    "hiragana": "らしょうもん",
+    "kanji": "羅生門",
+    "meaning": "Rashomon (phim)",
+    "lesson": 17
+  },
+  {
+    "hiragana": "リーダー",
+    "kanji": null,
+    "meaning": "thủ lĩnh, lãnh đạo",
+    "lesson": 13
+  },
+  {
+    "hiragana": "リサイクル（します） （【する3】）",
+    "kanji": null,
+    "meaning": "tái chế",
+    "lesson": 15
+  },
+  {
+    "hiragana": "りっぱ（な）",
+    "kanji": null,
+    "meaning": "tuyệt vời, xuất chúng",
+    "lesson": 13
+  },
+  { "hiragana": "りゆう", "kanji": null, "meaning": "lý do", "lesson": 3 },
+  {
+    "hiragana": "りゅうがく（します） （【する3】）",
+    "kanji": "留学（します）",
+    "meaning": "du học",
+    "lesson": 17
+  },
+  {
+    "hiragana": "りょうあんじ",
+    "kanji": "龍安寺",
+    "meaning": "chùa Ryoan",
+    "lesson": 13
+  },
+  {
+    "hiragana": "りょうきん",
+    "kanji": "（料金）",
+    "meaning": "tiền phí",
+    "lesson": 5
+  },
+  {
+    "hiragana": "りょうしん",
+    "kanji": null,
+    "meaning": "bố mẹ (của mình)",
+    "lesson": 18
+  },
+  { "hiragana": "りょうり", "kanji": "料理", "meaning": "món ăn", "lesson": 3 },
+  {
+    "hiragana": "りょこう（します） （【する3】）",
+    "kanji": "旅行（します）",
+    "meaning": "đi du lịch",
+    "lesson": 5
+  },
+  { "hiragana": "りんご", "kanji": null, "meaning": "táo", "lesson": 16 },
+  {
+    "hiragana": "れいぞうこ",
+    "kanji": null,
+    "meaning": "tủ lạnh",
+    "lesson": 11
+  },
+  { "hiragana": "れきし", "kanji": null, "meaning": "lịch sử", "lesson": 13 },
+  {
+    "hiragana": "れきしてき（な）",
+    "kanji": null,
+    "meaning": "mang tính lịch sử",
+    "lesson": 14
+  },
+  {
+    "hiragana": "レストラン",
+    "kanji": null,
+    "meaning": "nhà hàng",
+    "lesson": 1
+  },
+  { "hiragana": "レッド", "kanji": null, "meaning": "màu đỏ", "lesson": 12 },
+  {
+    "hiragana": "レビュー",
+    "kanji": null,
+    "meaning": "đánh giá",
+    "lesson": 12
+  },
+  {
+    "hiragana": "レンタル（します） （【する3】）",
+    "kanji": null,
+    "meaning": "thuê",
+    "lesson": 5
+  },
+  {
+    "hiragana": "レンタルショップ",
+    "kanji": null,
+    "meaning": "cửa hàng cho thuê",
+    "lesson": 16
+  },
+  {
+    "hiragana": "れんらく（します） （【する3】）",
+    "kanji": "連絡（します）",
+    "meaning": "liên lạc",
+    "lesson": 7
+  },
+  {
+    "hiragana": "れんらくさき",
+    "kanji": "連絡先",
+    "meaning": "địa chỉ liên lạc",
+    "lesson": 7
+  },
+  {
+    "hiragana": "ろくおんじ",
+    "kanji": "鹿苑寺",
+    "meaning": "chùa Rokuon",
+    "lesson": 13
+  },
+  { "hiragana": "ロシア", "kanji": null, "meaning": "Nga", "lesson": 1 },
+  { "hiragana": "わあ", "kanji": null, "meaning": "Uây ~!", "lesson": 9 },
+  { "hiragana": "ワイン", "kanji": null, "meaning": "rượu vang", "lesson": 14 },
+  {
+    "hiragana": "わかります 【わかる1】",
+    "kanji": null,
+    "meaning": "hiểu",
+    "lesson": 7
+  },
+  {
+    "hiragana": "わけます 【わける2】",
+    "kanji": null,
+    "meaning": "phân loại",
+    "lesson": 15
+  },
+  {
+    "hiragana": "わざあり　＜じゅうどう＞",
+    "kanji": null,
+    "meaning": "đòn wazaari (judo)",
+    "lesson": 18
+  },
+  {
+    "hiragana": "わしょく",
+    "kanji": null,
+    "meaning": "đồ ăn Nhật",
+    "lesson": 3
+  },
+  {
+    "hiragana": "わすれます 【わすれる2】",
+    "kanji": null,
+    "meaning": "quên",
+    "lesson": 15
+  },
+  { "hiragana": "わたし", "kanji": "私", "meaning": "tôi", "lesson": 1 },
+  {
+    "hiragana": "わらいます 【わらう1】",
+    "kanji": null,
+    "meaning": "cười",
+    "lesson": 2
+  },
+  { "hiragana": "わるい", "kanji": null, "meaning": "xấu, tệ", "lesson": 7 }
+]
