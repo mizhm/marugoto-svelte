@@ -1,42 +1,48 @@
 import { browser } from '$app/environment';
 
-let voices: SpeechSynthesisVoice[] = [];
+// Cache to store blob URLs for texts we've already fetched
+// This prevents re-fetching the same word multiple times
+const audioCache = new Map<string, string>();
 
-if (browser && window.speechSynthesis) {
-	const loadVoices = () => {
-		voices = window.speechSynthesis.getVoices();
-	};
-	loadVoices();
-	window.speechSynthesis.onvoiceschanged = loadVoices;
-}
+// Track current audio to allow interruption
+let currentAudio: HTMLAudioElement | null = null;
 
-export function speak(text: string) {
-	if (!browser || !window.speechSynthesis) return;
+export async function speak(text: string) {
+	if (!browser || !text) return;
 
-	// Cancel any current speaking
-	window.speechSynthesis.cancel();
-
-	const utterance = new SpeechSynthesisUtterance(text);
-	utterance.lang = 'ja-JP';
-	utterance.rate = 0.9; // Slightly slower for better clarity
-
-	// Check if we need to reload voices
-	if (voices.length === 0) {
-		voices = window.speechSynthesis.getVoices();
+	// Stop any currently playing audio
+	if (currentAudio) {
+		currentAudio.pause();
+		currentAudio.currentTime = 0;
 	}
 
-	// Try to find a Japanese voice
-	// 1. Google Japanese (Chrome/Android)
-	// 2. Exact ja-JP match (System)
-	// 3. Loose 'ja' match
-	const jaVoice =
-		voices.find((v) => v.lang === 'ja-JP' && v.name.includes('Google')) ||
-		voices.find((v) => v.lang === 'ja-JP') ||
-		voices.find((v) => v.lang.includes('ja'));
+	try {
+		let audioUrl = audioCache.get(text);
 
-	if (jaVoice) {
-		utterance.voice = jaVoice;
+		// If not in cache, fetch from our API proxy
+		if (!audioUrl) {
+			const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}`);
+			if (!res.ok) {
+				console.error('TTS API error:', res.status, await res.text());
+				return;
+			}
+
+			const blob = await res.blob();
+			audioUrl = URL.createObjectURL(blob);
+			audioCache.set(text, audioUrl);
+		}
+
+		// Play
+		currentAudio = new Audio(audioUrl);
+		// Clean up on end (optional, but good practice if we were tracking state)
+		currentAudio.onended = () => {
+			if (currentAudio?.src === audioUrl) {
+				currentAudio = null;
+			}
+		};
+
+		await currentAudio.play();
+	} catch (e) {
+		console.error('TTS Playback failed:', e);
 	}
-
-	window.speechSynthesis.speak(utterance);
 }
