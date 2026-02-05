@@ -14,6 +14,7 @@
 
 	let { data }: { data: PageData } = $props();
 
+	import { browser } from '$app/environment';
 	import { LEVEL_GRADIENTS } from '$lib/theme';
 	import { speak } from '$lib/audio';
 
@@ -23,8 +24,31 @@
 	let currentIndex = $state(0);
 	let isFlipped = $state(false);
 	let showHiragana = $state(true);
+	let autoPlay = $state(true);
 	let knownCount = $state(0);
 	let unknownCount = $state(0);
+
+	// Load settings
+	$effect(() => {
+		if (browser) {
+			const saved = localStorage.getItem('flashcard_autoplay');
+			if (saved !== null) autoPlay = saved === 'true';
+		}
+	});
+
+	// Auto-play effect
+	$effect(() => {
+		// key: currentCard combined with autoPlay check
+		// We use currentIndex to track card changes
+		const card = cards[currentIndex];
+		if (card && autoPlay && !isFlipped) {
+			// Small delay to let transition finish or merely to not startle user immediately
+			const timer = setTimeout(() => {
+				speak(card.kanji || card.hiragana);
+			}, 300);
+			return () => clearTimeout(timer);
+		}
+	});
 
 	// Initialize cards
 	$effect(() => {
@@ -273,6 +297,15 @@
 				<label class="flex items-center gap-2 cursor-pointer">
 					<input type="checkbox" class="toggle toggle-sm" bind:checked={showHiragana} />
 					<span class="text-sm">Hiragana</span>
+				</label>
+				<label class="flex items-center gap-2 cursor-pointer">
+					<input
+						type="checkbox"
+						class="toggle toggle-sm"
+						bind:checked={autoPlay}
+						onchange={() => browser && localStorage.setItem('flashcard_autoplay', String(autoPlay))}
+					/>
+					<span class="text-sm">Auto-play</span>
 				</label>
 			</div>
 
