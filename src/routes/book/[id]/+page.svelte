@@ -13,8 +13,8 @@
 	} from 'lucide-svelte';
 	import { speak } from '$lib/audio';
 	import { fly } from 'svelte/transition';
-	import { flip } from 'svelte/animate';
 	import { quadOut } from 'svelte/easing';
+	import { toHiragana } from 'wanakana';
 
 	let { data }: { data: PageData } = $props();
 
@@ -26,12 +26,25 @@
 	let debouncedQuery = $state('');
 	let showHiragana = $state(true);
 
+	// Pagination State
+	let displayedCount = $state(50);
+	const PAGE_SIZE = 50;
+
 	// Debounce search query
 	$effect(() => {
+		const query = searchQuery;
 		const timer = setTimeout(() => {
-			debouncedQuery = searchQuery;
+			debouncedQuery = query;
+			// Reset pagination on search change
+			displayedCount = PAGE_SIZE;
 		}, 300);
 		return () => clearTimeout(timer);
+	});
+
+	// Reset pagination on lesson filter change
+	$effect(() => {
+		const _ = selectedLesson;
+		displayedCount = PAGE_SIZE;
 	});
 
 	// Filtered vocabulary
@@ -43,17 +56,47 @@
 		}
 
 		if (debouncedQuery.trim()) {
-			const query = debouncedQuery.toLowerCase().trim();
+			const rawQuery = debouncedQuery.toLowerCase().trim();
+			// Convert romanji to hiragana for search (IMEMode: true matches partial inputs like 'k' -> 'k')
+			const hiraganaQuery = toHiragana(rawQuery, { IMEMode: true });
+
 			result = result.filter(
 				(v) =>
-					v.hiragana.toLowerCase().includes(query) ||
-					(v.kanji && v.kanji.toLowerCase().includes(query)) ||
-					v.meaning.toLowerCase().includes(query)
+					v.hiragana.toLowerCase().includes(hiraganaQuery) || // Search by Hiragana/Romanji
+					v.hiragana.toLowerCase().includes(rawQuery) || // Search by exact match (rare but safe)
+					(v.kanji && v.kanji.toLowerCase().includes(rawQuery)) || // Search by Kanji
+					v.meaning.toLowerCase().includes(rawQuery) // Search by Meaning
 			);
 		}
 
 		return result;
 	});
+
+	// Virtual pagination (only render what's needed)
+	let displayedVocabulary = $derived(filteredVocabulary.slice(0, displayedCount));
+
+	function loadMore() {
+		if (displayedCount < filteredVocabulary.length) {
+			displayedCount += PAGE_SIZE;
+		}
+	}
+
+	// Intersection Observer for infinite scroll
+	function viewport(element: HTMLElement) {
+		const observer = new IntersectionObserver((entries) => {
+			if (entries[0].isIntersecting) {
+				loadMore();
+			}
+		});
+
+		observer.observe(element);
+
+		return {
+			destroy() {
+				observer.disconnect();
+			}
+		};
+	}
 </script>
 
 <svelte:head>
@@ -109,12 +152,14 @@
 		<div class="max-w-6xl mx-auto px-4 py-3">
 			<div class="flex gap-3">
 				<div class="relative flex-1">
-					<Search class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-base-content/40" />
 					<input
 						type="text"
-						placeholder="Tìm kiếm từ vựng..."
+						placeholder="Tìm kiếm từ vựng (hỗ trợ Romanji)..."
 						class="input input-bordered w-full pl-11 bg-base-200"
 						bind:value={searchQuery}
+					/>
+					<Search
+						class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-base-content/40 z-10 pointer-events-none"
 					/>
 				</div>
 
@@ -150,9 +195,8 @@
 		</p>
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-			{#each filteredVocabulary as entry, i (entry)}
+			{#each displayedVocabulary as entry, i (entry)}
 				<div
-					animate:flip={{ duration: 300, easing: quadOut }}
 					in:fly={{ y: 20, duration: 400, delay: Math.min(i * 30, 300), easing: quadOut }}
 					class="card bg-base-100/60 backdrop-blur-md shadow-sm border border-base-content/5 hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 {LEVEL_ACCENTS[
 						data.book.level
@@ -200,6 +244,13 @@
 				</div>
 			{/each}
 		</div>
+
+		<!-- Infinite Scroll Trigger -->
+		{#if displayedCount < filteredVocabulary.length}
+			<div class="h-20 flex items-center justify-center p-4" use:viewport>
+				<span class="loading loading-spinner text-primary"></span>
+			</div>
+		{/if}
 
 		{#if filteredVocabulary.length === 0}
 			<div class="text-center py-16">
