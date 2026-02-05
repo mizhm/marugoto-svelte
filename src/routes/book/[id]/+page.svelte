@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import type { BookLevel, BookType } from '$lib/types';
-	import { ArrowLeft, Search, Eye, EyeOff, ChevronUp, Layers } from 'lucide-svelte';
+	import { ArrowLeft, Search, Eye, EyeOff, ChevronUp, Layers, Target } from 'lucide-svelte';
 
 	let { data }: { data: PageData } = $props();
 
@@ -37,7 +37,7 @@
 	};
 
 	// Filtered vocabulary
-	let filteredVocabulary = $derived(() => {
+	let filteredVocabulary = $derived.by(() => {
 		let result = data.vocabulary;
 
 		if (selectedLesson !== null) {
@@ -93,6 +93,11 @@
 					<span class="hidden sm:inline">Flashcard</span>
 				</a>
 
+				<a href="/book/{data.book.id}/quiz" class="btn btn-secondary gap-2">
+					<Target class="w-5 h-5" />
+					<span class="hidden sm:inline">Quiz</span>
+				</a>
+
 				<div class="text-center px-4 py-2 bg-primary/10 rounded-xl">
 					<div class="text-2xl font-bold text-primary">{data.totalWords}</div>
 					<div class="text-xs text-base-content/60">từ vựng</div>
@@ -143,11 +148,11 @@
 	<!-- Content -->
 	<main class="max-w-6xl mx-auto px-4 py-6">
 		<p class="text-base-content/60 mb-6">
-			Hiển thị <span class="font-semibold text-base-content">{filteredVocabulary().length}</span> từ
+			Hiển thị <span class="font-semibold text-base-content">{filteredVocabulary.length}</span> từ
 		</p>
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-			{#each filteredVocabulary() as entry}
+			{#each filteredVocabulary as entry}
 				<div
 					class="card bg-base-100 shadow-md border-l-4 {levelAccent[
 						data.book.level
@@ -188,7 +193,7 @@
 			{/each}
 		</div>
 
-		{#if filteredVocabulary().length === 0}
+		{#if filteredVocabulary.length === 0}
 			<div class="text-center py-16">
 				<div class="text-5xl mb-4">🔍</div>
 				<p class="text-xl font-medium text-base-content/70">Không tìm thấy từ vựng</p>
