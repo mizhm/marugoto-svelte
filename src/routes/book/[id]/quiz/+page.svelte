@@ -5,15 +5,7 @@
 
 	let { data }: { data: PageData } = $props();
 
-	// Level colors
-	const levelGradients: Record<BookLevel, string> = {
-		A1: 'from-emerald-500 to-teal-600',
-		'A2-1': 'from-blue-500 to-cyan-600',
-		'A2-2': 'from-indigo-500 to-blue-600',
-		'A2/B1': 'from-violet-500 to-purple-600',
-		'B1-1': 'from-rose-500 to-pink-600',
-		'B1-2': 'from-orange-500 to-red-600'
-	};
+	import { LEVEL_GRADIENTS } from '$lib/theme';
 
 	// Quiz settings
 	const QUESTION_OPTIONS = [5, 10, 15, 20, 30];
@@ -154,7 +146,7 @@
 				<div class="flex-1">
 					<div class="flex items-center gap-2 mb-1">
 						<span
-							class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r {levelGradients[
+							class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r {LEVEL_GRADIENTS[
 								data.book.level
 							]}"
 						>
@@ -183,7 +175,7 @@
 	{#if quizStarted && !quizFinished}
 		<div class="h-1 bg-base-300">
 			<div
-				class="h-full bg-gradient-to-r {levelGradients[
+				class="h-full bg-gradient-to-r {LEVEL_GRADIENTS[
 					data.book.level
 				]} transition-all duration-300"
 				style="width: {progress}%"

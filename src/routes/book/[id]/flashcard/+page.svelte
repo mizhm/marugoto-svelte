@@ -8,20 +8,14 @@
 		ChevronRight,
 		Shuffle,
 		Check,
-		X
+		X,
+		Volume2
 	} from 'lucide-svelte';
 
 	let { data }: { data: PageData } = $props();
 
-	// Level colors
-	const levelGradients: Record<BookLevel, string> = {
-		A1: 'from-emerald-500 to-teal-600',
-		'A2-1': 'from-blue-500 to-cyan-600',
-		'A2-2': 'from-indigo-500 to-blue-600',
-		'A2/B1': 'from-violet-500 to-purple-600',
-		'B1-1': 'from-rose-500 to-pink-600',
-		'B1-2': 'from-orange-500 to-red-600'
-	};
+	import { LEVEL_GRADIENTS } from '$lib/theme';
+	import { speak } from '$lib/audio';
 
 	// State
 	let selectedLesson = $state<number | null>(null);
@@ -120,7 +114,7 @@
 				<div class="flex-1">
 					<div class="flex items-center gap-2 mb-1">
 						<span
-							class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r {levelGradients[
+							class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r {LEVEL_GRADIENTS[
 								data.book.level
 							]}"
 						>
@@ -147,7 +141,7 @@
 	<!-- Progress bar -->
 	<div class="h-1 bg-base-300">
 		<div
-			class="h-full bg-gradient-to-r {levelGradients[data.book.level]} transition-all duration-300"
+			class="h-full bg-gradient-to-r {LEVEL_GRADIENTS[data.book.level]} transition-all duration-300"
 			style="width: {progress}%"
 		></div>
 	</div>
@@ -176,7 +170,16 @@
 
 			<!-- Flashcard -->
 			<div class="w-full max-w-2xl perspective-1000">
-				<button class="w-full aspect-[3/2] cursor-pointer" onclick={flipCard} aria-label="Lật thẻ">
+				<div
+					class="w-full aspect-[3/2] cursor-pointer outline-none focus:ring-4 focus:ring-primary/20 rounded-2xl"
+					onclick={flipCard}
+					onkeydown={(e) => {
+						if (e.key === 'Enter' || e.key === ' ') flipCard();
+					}}
+					role="button"
+					tabindex="0"
+					aria-label="Lật thẻ"
+				>
 					<div
 						class="relative w-full h-full transition-transform duration-500 transform-style-3d {isFlipped
 							? 'rotate-y-180'
@@ -185,8 +188,17 @@
 						<!-- Front (Japanese) -->
 						<div class="absolute inset-0 backface-hidden">
 							<div
-								class="w-full h-full bg-base-100 rounded-2xl shadow-xl flex flex-col items-center justify-center p-8 border border-base-300"
+								class="w-full h-full bg-base-100 rounded-2xl shadow-xl flex flex-col items-center justify-center p-8 border border-base-300 relative"
 							>
+								<button
+									class="absolute top-4 right-4 btn btn-circle btn-ghost text-base-content/50 hover:text-primary hover:bg-primary/10 z-10"
+									onclick={(e) => {
+										e.stopPropagation();
+										speak(currentCard.kanji || currentCard.hiragana);
+									}}
+								>
+									<Volume2 class="w-6 h-6" />
+								</button>
 								{#if currentCard.kanji}
 									<div class="text-7xl md:text-8xl font-bold mb-4 text-base-content">
 										{currentCard.kanji}
@@ -210,7 +222,7 @@
 						<!-- Back (Vietnamese) -->
 						<div class="absolute inset-0 backface-hidden rotate-y-180">
 							<div
-								class="w-full h-full bg-gradient-to-br {levelGradients[
+								class="w-full h-full bg-gradient-to-br {LEVEL_GRADIENTS[
 									data.book.level
 								]} rounded-2xl shadow-xl flex flex-col items-center justify-center p-8"
 							>
@@ -222,7 +234,7 @@
 							</div>
 						</div>
 					</div>
-				</button>
+				</div>
 			</div>
 
 			<!-- Controls -->

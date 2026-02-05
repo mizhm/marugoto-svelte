@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { BOOKS } from '$lib/constants';
-	import type { BookLevel, BookType } from '$lib/types';
+	import { LEVEL_GRADIENTS, TYPE_CONFIG } from '$lib/theme';
+	import type { BookLevel } from '$lib/types';
 
 	// Group books by level for organized display
 	const booksByLevel = BOOKS.reduce(
@@ -16,23 +17,6 @@
 
 	// Level order for display
 	const levelOrder: BookLevel[] = ['A1', 'A2-1', 'A2-2', 'A2/B1', 'B1-1', 'B1-2'];
-
-	// Level gradient backgrounds
-	const levelGradients: Record<BookLevel, string> = {
-		A1: 'from-emerald-500 to-teal-600',
-		'A2-1': 'from-blue-500 to-cyan-600',
-		'A2-2': 'from-indigo-500 to-blue-600',
-		'A2/B1': 'from-violet-500 to-purple-600',
-		'B1-1': 'from-rose-500 to-pink-600',
-		'B1-2': 'from-orange-500 to-red-600'
-	};
-
-	// Type icon and colors
-	const typeConfig: Record<BookType, { icon: string; label: string; color: string }> = {
-		katsudou: { icon: '🗣️', label: 'Hoạt động', color: 'text-emerald-400' },
-		rikai: { icon: '📖', label: 'Hiểu biết', color: 'text-sky-400' },
-		combined: { icon: '📚', label: 'Tổng hợp', color: 'text-violet-400' }
-	};
 </script>
 
 <svelte:head>
@@ -117,7 +101,7 @@
 					<!-- Level Header -->
 					<div class="flex items-center gap-4 mb-8">
 						<div
-							class="px-5 py-2 rounded-xl bg-gradient-to-r {levelGradients[
+							class="px-5 py-2 rounded-xl bg-gradient-to-r {LEVEL_GRADIENTS[
 								level
 							]} text-white font-bold text-lg shadow-lg"
 						>
@@ -135,7 +119,7 @@
 							>
 								<!-- Gradient overlay on hover -->
 								<div
-									class="absolute inset-0 bg-gradient-to-br {levelGradients[
+									class="absolute inset-0 bg-gradient-to-br {LEVEL_GRADIENTS[
 										level
 									]} opacity-0 group-hover:opacity-5 transition-opacity duration-500"
 								></div>
@@ -144,15 +128,15 @@
 									<!-- Top Row: Type & Icon -->
 									<div class="flex items-center justify-between mb-4">
 										<span
-											class="px-3 py-1 rounded-full bg-base-200 text-xs font-medium {typeConfig[
+											class="px-3 py-1 rounded-full bg-base-200 text-xs font-medium {TYPE_CONFIG[
 												book.type
 											].color}"
 										>
-											{typeConfig[book.type].icon}
-											{typeConfig[book.type].label}
+											{TYPE_CONFIG[book.type].icon}
+											{TYPE_CONFIG[book.type].label}
 										</span>
 										<div
-											class="w-10 h-10 rounded-xl bg-gradient-to-br {levelGradients[
+											class="w-10 h-10 rounded-xl bg-gradient-to-br {LEVEL_GRADIENTS[
 												level
 											]} flex items-center justify-center text-white text-lg shadow-md group-hover:scale-110 transition-transform duration-300"
 										>
@@ -175,7 +159,7 @@
 										<div class="flex gap-1">
 											{#each Array(3) as _, i}
 												<div
-													class="w-2 h-2 rounded-full bg-gradient-to-r {levelGradients[level]}"
+													class="w-2 h-2 rounded-full bg-gradient-to-r {LEVEL_GRADIENTS[level]}"
 													style="opacity: {1 - i * 0.3}"
 												></div>
 											{/each}
@@ -198,7 +182,7 @@
 
 								<!-- Bottom accent line -->
 								<div
-									class="h-1 bg-gradient-to-r {levelGradients[
+									class="h-1 bg-gradient-to-r {LEVEL_GRADIENTS[
 										level
 									]} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
 								></div>

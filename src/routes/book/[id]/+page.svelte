@@ -1,40 +1,35 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import type { BookLevel, BookType } from '$lib/types';
-	import { ArrowLeft, Search, Eye, EyeOff, ChevronUp, Layers, Target } from 'lucide-svelte';
+	import {
+		ArrowLeft,
+		Search,
+		Eye,
+		EyeOff,
+		ChevronUp,
+		Layers,
+		Target,
+		Volume2
+	} from 'lucide-svelte';
+	import { speak } from '$lib/audio';
 
 	let { data }: { data: PageData } = $props();
+
+	import { LEVEL_GRADIENTS, LEVEL_ACCENTS, TYPE_CONFIG } from '$lib/theme';
 
 	// UI State
 	let selectedLesson = $state<number | null>(null);
 	let searchQuery = $state('');
+	let debouncedQuery = $state('');
 	let showHiragana = $state(true);
 
-	// Level colors
-	const levelGradients: Record<BookLevel, string> = {
-		A1: 'from-emerald-500 to-teal-600',
-		'A2-1': 'from-blue-500 to-cyan-600',
-		'A2-2': 'from-indigo-500 to-blue-600',
-		'A2/B1': 'from-violet-500 to-purple-600',
-		'B1-1': 'from-rose-500 to-pink-600',
-		'B1-2': 'from-orange-500 to-red-600'
-	};
-
-	const levelAccent: Record<BookLevel, string> = {
-		A1: 'border-l-emerald-500',
-		'A2-1': 'border-l-blue-500',
-		'A2-2': 'border-l-indigo-500',
-		'A2/B1': 'border-l-violet-500',
-		'B1-1': 'border-l-rose-500',
-		'B1-2': 'border-l-orange-500'
-	};
-
-	// Type config
-	const typeConfig: Record<BookType, { icon: string; label: string }> = {
-		katsudou: { icon: '🗣️', label: 'Hoạt động' },
-		rikai: { icon: '📖', label: 'Hiểu biết' },
-		combined: { icon: '📚', label: 'Tổng hợp' }
-	};
+	// Debounce search query
+	$effect(() => {
+		const timer = setTimeout(() => {
+			debouncedQuery = searchQuery;
+		}, 300);
+		return () => clearTimeout(timer);
+	});
 
 	// Filtered vocabulary
 	let filteredVocabulary = $derived.by(() => {
@@ -44,8 +39,8 @@
 			result = result.filter((v) => v.lesson === selectedLesson);
 		}
 
-		if (searchQuery.trim()) {
-			const query = searchQuery.toLowerCase().trim();
+		if (debouncedQuery.trim()) {
+			const query = debouncedQuery.toLowerCase().trim();
 			result = result.filter(
 				(v) =>
 					v.hiragana.toLowerCase().includes(query) ||
@@ -74,15 +69,15 @@
 				<div class="flex-1">
 					<div class="flex items-center gap-2 mb-1">
 						<span
-							class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r {levelGradients[
+							class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r {LEVEL_GRADIENTS[
 								data.book.level
 							]}"
 						>
 							{data.book.level}
 						</span>
 						<span class="text-sm text-base-content/60">
-							{typeConfig[data.book.type].icon}
-							{typeConfig[data.book.type].label}
+							{TYPE_CONFIG[data.book.type].icon}
+							{TYPE_CONFIG[data.book.type].label}
 						</span>
 					</div>
 					<h1 class="text-xl font-bold">{data.book.title}</h1>
@@ -154,14 +149,22 @@
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 			{#each filteredVocabulary as entry}
 				<div
-					class="card bg-base-100 shadow-md border-l-4 {levelAccent[
+					class="card bg-base-100 shadow-md border-l-4 {LEVEL_ACCENTS[
 						data.book.level
 					]} hover:shadow-lg"
 				>
 					<div class="card-body p-5">
 						<!-- Lesson badge -->
-						<div class="mb-3">
+						<!-- Header: Lesson + Audio -->
+						<div class="flex items-center justify-between mb-3">
 							<span class="badge badge-ghost text-xs">Bài {entry.lesson}</span>
+							<button
+								class="btn btn-circle btn-ghost btn-xs text-base-content/40 hover:text-primary"
+								onclick={() => speak(entry.kanji || entry.hiragana)}
+								title="Nghe phát âm"
+							>
+								<Volume2 class="w-4 h-4" />
+							</button>
 						</div>
 
 						<!-- Japanese section -->

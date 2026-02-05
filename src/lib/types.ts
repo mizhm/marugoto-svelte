@@ -9,7 +9,7 @@ export interface BookDefinition {
 	id: string;
 	title: string;
 	description: string;
-	/** JSON filename in /src/lib/data/ */
+	/** JSON filename in /static/data/ */
 	sourceFile: string;
 	/** JLPT-aligned level */
 	level: BookLevel;
