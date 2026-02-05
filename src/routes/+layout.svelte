@@ -19,7 +19,7 @@
 	];
 
 	// Current theme state
-	let currentTheme = $state('dark');
+	let currentTheme = $state('light');
 
 	// Load theme from localStorage on mount
 	$effect(() => {
