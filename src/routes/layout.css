@@ -1,3 +1,5 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin '@tailwindcss/typography';
-@plugin "daisyui";
+@plugin "daisyui" {
+	themes: light, dark, cupcake, dracula, night, forest, aqua, synthwave;
+}
