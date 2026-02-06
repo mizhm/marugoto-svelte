@@ -1,271 +1,432 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import type { BookLevel, BookType } from '$lib/types';
 	import {
 		ArrowLeft,
 		Search,
 		Eye,
 		EyeOff,
-		ChevronUp,
-		Layers,
+		Volume2,
+		BookOpen,
+		Grid,
 		Target,
-		Volume2
+		CheckSquare,
+		Square,
+		ChevronDown,
+		Shuffle,
+		ArrowUpDown
 	} from 'lucide-svelte';
 	import { speak } from '$lib/audio';
 	import { fly } from 'svelte/transition';
 	import { quadOut } from 'svelte/easing';
 	import { toHiragana } from 'wanakana';
+	// @ts-ignore
+	import Flashcard from '$lib/components/Flashcard.svelte';
+	// @ts-ignore
+	import ProgressBar from '$lib/components/ProgressBar.svelte';
+	import { LEVEL_GRADIENTS } from '$lib/theme';
 
 	let { data }: { data: PageData } = $props();
 
-	import { LEVEL_GRADIENTS, LEVEL_ACCENTS, TYPE_CONFIG } from '$lib/theme';
-
 	// UI State
-	let selectedLesson = $state<number | null>(null);
+	// Multi-select state: Set of selected lesson numbers. Empty = All lessons.
+	let selectedLessons = $state<Set<number>>(new Set());
+	let isLessonDropdownOpen = $state(false);
+
 	let searchQuery = $state('');
 	let debouncedQuery = $state('');
 	let showHiragana = $state(true);
+	let viewMode = $state<'list' | 'focus'>('focus');
+	let currentCardIndex = $state(0);
 
-	// Pagination State
-	let displayedCount = $state(50);
-	const PAGE_SIZE = 50;
+	// Sort State
+	let isSortedByLesson = $state(true);
 
-	// Debounce search query
+	// Shuffle State
+	// Initialize with data using a derived or effect if strictly needed to sync,
+	// but for "initial seed" patterns, we can just silence the warning or accept it.
+	// Here we keep it simple but acknowledge the pattern.
+	let vocabularyList = $state([...data.vocabulary]);
+
+	$effect(() => {
+		// If data changes (e.g. navigation), reset list
+		vocabularyList = [...data.vocabulary];
+	});
+
+	// Debounce search
 	$effect(() => {
 		const query = searchQuery;
 		const timer = setTimeout(() => {
 			debouncedQuery = query;
-			// Reset pagination on search change
-			displayedCount = PAGE_SIZE;
+			currentCardIndex = 0; // Reset card index on filter change
 		}, 300);
 		return () => clearTimeout(timer);
 	});
 
-	// Reset pagination on lesson filter change
-	$effect(() => {
-		const _ = selectedLesson;
-		displayedCount = PAGE_SIZE;
-	});
-
 	// Filtered vocabulary
 	let filteredVocabulary = $derived.by(() => {
-		let result = data.vocabulary;
+		let result = vocabularyList;
 
-		if (selectedLesson !== null) {
-			result = result.filter((v) => v.lesson === selectedLesson);
+		// Lesson Filter (Multi-select)
+		if (selectedLessons.size > 0) {
+			result = result.filter((v) => selectedLessons.has(v.lesson));
 		}
 
 		if (debouncedQuery.trim()) {
 			const rawQuery = debouncedQuery.toLowerCase().trim();
-			// Convert romanji to hiragana for search (IMEMode: true matches partial inputs like 'k' -> 'k')
 			const hiraganaQuery = toHiragana(rawQuery, { IMEMode: true });
 
 			result = result.filter(
 				(v) =>
-					v.hiragana.toLowerCase().includes(hiraganaQuery) || // Search by Hiragana/Romanji
-					v.hiragana.toLowerCase().includes(rawQuery) || // Search by exact match (rare but safe)
-					(v.kanji && v.kanji.toLowerCase().includes(rawQuery)) || // Search by Kanji
-					v.meaning.toLowerCase().includes(rawQuery) // Search by Meaning
+					v.hiragana.toLowerCase().includes(hiraganaQuery) ||
+					v.hiragana.toLowerCase().includes(rawQuery) ||
+					(v.kanji && v.kanji.toLowerCase().includes(rawQuery)) ||
+					v.meaning.toLowerCase().includes(rawQuery)
 			);
+		}
+
+		// Sort by Lesson
+		if (isSortedByLesson) {
+			result = [...result].sort((a, b) => (Number(a.lesson) || 0) - (Number(b.lesson) || 0));
 		}
 
 		return result;
 	});
 
-	// Virtual pagination (only render what's needed)
-	let displayedVocabulary = $derived(filteredVocabulary.slice(0, displayedCount));
+	let currentCard = $derived(filteredVocabulary[currentCardIndex]);
 
-	function loadMore() {
-		if (displayedCount < filteredVocabulary.length) {
-			displayedCount += PAGE_SIZE;
+	function nextCard() {
+		if (currentCardIndex < filteredVocabulary.length - 1) {
+			currentCardIndex++;
 		}
 	}
 
-	// Intersection Observer for infinite scroll
-	function viewport(element: HTMLElement) {
-		const observer = new IntersectionObserver((entries) => {
-			if (entries[0].isIntersecting) {
-				loadMore();
-			}
-		});
+	function prevCard() {
+		if (currentCardIndex > 0) {
+			currentCardIndex--;
+		}
+	}
 
-		observer.observe(element);
+	function shuffleCards() {
+		// Disable sort when shuffling
+		isSortedByLesson = false;
+		// Shuffle the base list to preserve randomness even while filtering
+		vocabularyList = [...vocabularyList].sort(() => Math.random() - 0.5);
+		currentCardIndex = 0;
+	}
 
-		return {
-			destroy() {
-				observer.disconnect();
-			}
-		};
+	function toggleSort() {
+		isSortedByLesson = !isSortedByLesson;
+		if (!isSortedByLesson) {
+			// If turning off sort, maybe revert to original order or just keep current?
+			// For now, let's reset to original data order if not shuffled
+			vocabularyList = [...data.vocabulary];
+		}
+	}
+
+	function handleKeydown(e: KeyboardEvent) {
+		if (viewMode !== 'focus') return;
+		// Prevent conflicts with input typing
+		if (document.activeElement?.tagName === 'INPUT') return;
+
+		if (e.key === 'ArrowRight') nextCard();
+		if (e.key === 'ArrowLeft') prevCard();
+	}
+
+	function toggleLesson(lesson: number) {
+		const newSet = new Set(selectedLessons);
+		if (newSet.has(lesson)) {
+			newSet.delete(lesson);
+		} else {
+			newSet.add(lesson);
+		}
+		selectedLessons = newSet;
+		currentCardIndex = 0;
 	}
 </script>
+
+<svelte:window onkeydown={handleKeydown} />
 
 <svelte:head>
 	<title>{data.book.title} | Marugoto Vocabulary</title>
 </svelte:head>
 
-<div class="min-h-screen">
+<div class="min-h-screen bg-base-100 flex flex-col">
 	<!-- Header -->
-	<header class="sticky top-0 z-50 bg-base-100 shadow-sm">
-		<div class="max-w-6xl mx-auto px-4 py-4">
-			<div class="flex items-center gap-4">
-				<a href="/" class="btn btn-ghost btn-circle">
+	<header
+		class="sticky top-0 z-40 bg-base-100/95 backdrop-blur-md border-b border-base-content/5 shadow-sm"
+	>
+		<div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+			<div class="flex items-center gap-3">
+				<a href="/" class="btn btn-ghost btn-square btn-sm hover:bg-base-200">
 					<ArrowLeft class="w-5 h-5" />
 				</a>
 
-				<div class="flex-1">
-					<div class="flex items-center gap-2 mb-1">
-						<span
-							class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r {LEVEL_GRADIENTS[
-								data.book.level
-							]}"
-						>
-							{data.book.level}
-						</span>
-						<span class="text-sm text-base-content/60">
-							{TYPE_CONFIG[data.book.type].icon}
-							{TYPE_CONFIG[data.book.type].label}
-						</span>
+				<div class="flex flex-col">
+					<h1 class="font-bold text-lg leading-tight line-clamp-1">{data.book.title}</h1>
+					<div class="flex items-center gap-2 text-xs text-base-content/60">
+						<span class="font-medium text-primary">{data.book.level}</span>
+						<span>•</span>
+						<span>{data.totalWords} words</span>
 					</div>
-					<h1 class="text-xl font-bold">{data.book.title}</h1>
 				</div>
+			</div>
 
-				<a href="/book/{data.book.id}/flashcard" class="btn btn-primary gap-2">
-					<Layers class="w-5 h-5" />
-					<span class="hidden sm:inline">Flashcard</span>
-				</a>
+			<div class="flex items-center gap-2">
+				<!-- Sort Button -->
+				<button
+					class="btn btn-sm btn-ghost gap-2 {isSortedByLesson ? 'text-primary' : ''}"
+					onclick={toggleSort}
+					title="Sort by Lesson"
+					aria-label={isSortedByLesson ? 'Sort by original order' : 'Sort by Lesson'}
+				>
+					<ArrowUpDown class="w-4 h-4" />
+					<span class="hidden sm:inline">Sort</span>
+				</button>
 
-				<a href="/book/{data.book.id}/quiz" class="btn btn-secondary gap-2">
-					<Target class="w-5 h-5" />
+				<!-- Shuffle Button (New) -->
+				<button
+					class="btn btn-sm btn-ghost gap-2"
+					onclick={shuffleCards}
+					title="Shuffle Cards"
+					aria-label="Shuffle vocabulary"
+				>
+					<Shuffle class="w-4 h-4" />
+					<span class="hidden sm:inline">Shuffle</span>
+				</button>
+
+				<!-- Quiz Button (Restored) -->
+				<a href="/book/{data.book.id}/quiz" class="btn btn-sm btn-outline gap-2">
+					<Target class="w-4 h-4" />
 					<span class="hidden sm:inline">Quiz</span>
 				</a>
 
-				<div class="text-center px-4 py-2 bg-primary/10 rounded-xl">
-					<div class="text-2xl font-bold text-primary">{data.totalWords}</div>
-					<div class="text-xs text-base-content/60">từ vựng</div>
+				<!-- View Toggle -->
+				<div class="join bg-base-200 p-1 rounded-lg">
+					<button
+						class="join-item btn btn-sm btn-ghost gap-2 {viewMode === 'focus'
+							? 'bg-base-100 shadow-sm'
+							: ''}"
+						onclick={() => (viewMode = 'focus')}
+					>
+						<BookOpen class="w-4 h-4" />
+						<span class="hidden sm:inline">Study</span>
+					</button>
+					<button
+						class="join-item btn btn-sm btn-ghost gap-2 {viewMode === 'list'
+							? 'bg-base-100 shadow-sm'
+							: ''}"
+						onclick={() => (viewMode = 'list')}
+					>
+						<Grid class="w-4 h-4" />
+						<span class="hidden sm:inline">List</span>
+					</button>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<!-- Filters -->
-	<div class="sticky top-[88px] z-40 bg-base-100 border-b border-base-300">
-		<div class="max-w-6xl mx-auto px-4 py-3">
-			<div class="flex gap-3">
-				<div class="relative flex-1">
+	<main
+		class="flex-1 max-w-7xl mx-auto w-full p-4 md:p-6 gap-8 grid grid-cols-1 lg:grid-cols-[350px_1fr] items-start"
+	>
+		<!-- Sidebar / Controls (Sticky on desktop) -->
+		<aside class="space-y-6 lg:sticky lg:top-24">
+			<!-- Filters -->
+			<div
+				class="bg-base-100 rounded-2xl border border-base-content/10 p-4 space-y-4 shadow-sm relative z-30"
+			>
+				<div class="relative">
 					<input
 						type="text"
-						placeholder="Tìm kiếm từ vựng (hỗ trợ Romanji)..."
-						class="input input-bordered w-full pl-11 bg-base-200"
+						placeholder="Search vocabulary..."
+						class="input input-sm input-bordered w-full pl-9 bg-base-100 focus:bg-base-100 transition-colors"
 						bind:value={searchQuery}
 					/>
-					<Search
-						class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-base-content/40 z-10 pointer-events-none"
-					/>
+					<Search class="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-base-content/40" />
 				</div>
 
-				<select
-					class="select select-bordered bg-base-200 min-w-[130px]"
-					bind:value={selectedLesson}
-				>
-					<option value={null}>Tất cả bài</option>
-					{#each data.lessonNumbers as lesson}
-						<option value={lesson}>Bài {lesson}</option>
-					{/each}
-				</select>
-
-				<button
-					class="btn btn-square {showHiragana ? 'btn-primary' : 'btn-ghost border-base-300'}"
-					onclick={() => (showHiragana = !showHiragana)}
-					title={showHiragana ? 'Ẩn hiragana' : 'Hiện hiragana'}
-				>
-					{#if showHiragana}
-						<Eye class="w-5 h-5" />
-					{:else}
-						<EyeOff class="w-5 h-5" />
-					{/if}
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<!-- Content -->
-	<main class="max-w-6xl mx-auto px-4 py-6">
-		<p class="text-base-content/60 mb-6">
-			Hiển thị <span class="font-semibold text-base-content">{filteredVocabulary.length}</span> từ
-		</p>
-
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-			{#each displayedVocabulary as entry, i (entry)}
-				<div
-					in:fly={{ y: 20, duration: 400, delay: Math.min(i * 30, 300), easing: quadOut }}
-					class="card bg-base-100/60 backdrop-blur-md shadow-sm border border-base-content/5 hover:border-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 {LEVEL_ACCENTS[
-						data.book.level
-					]}"
-				>
-					<div class="card-body p-5">
-						<!-- Lesson badge -->
-						<!-- Header: Lesson + Audio -->
-						<div class="flex items-center justify-between mb-3">
-							<span class="badge badge-ghost text-xs">Bài {entry.lesson}</span>
-							<button
-								class="btn btn-circle btn-ghost btn-xs text-base-content/40 hover:text-primary"
-								onclick={() => speak(entry.kanji || entry.hiragana)}
-								title="Nghe phát âm"
-							>
-								<Volume2 class="w-4 h-4" />
-							</button>
+				<div class="flex flex-col gap-2">
+					<!-- Custom Multi-select Dropdown -->
+					<div class="dropdown w-full">
+						<div
+							tabindex="0"
+							role="button"
+							class="btn btn-sm btn-bordered w-full justify-between bg-base-100 font-normal border-base-300"
+							onclick={() => (isLessonDropdownOpen = !isLessonDropdownOpen)}
+						>
+							<span class="truncate">
+								{selectedLessons.size === 0 ? 'All Lessons' : `Selected (${selectedLessons.size})`}
+							</span>
+							<ChevronDown class="w-4 h-4 opacity-50" />
 						</div>
-
-						<!-- Japanese section -->
-						<div class="space-y-1 mb-4">
-							{#if entry.kanji}
-								<div class="text-3xl font-bold text-base-content leading-tight">
-									{entry.kanji}
-								</div>
-								{#if showHiragana}
-									<div class="text-lg text-base-content/50">
-										{entry.hiragana}
-									</div>
-								{/if}
-							{:else}
-								<div class="text-3xl font-bold text-base-content leading-tight">
-									{entry.hiragana}
-								</div>
-							{/if}
-						</div>
-
-						<!-- Vietnamese meaning - bigger -->
-						<div class="pt-3 border-t border-base-200">
-							<p class="text-base text-base-content/80 leading-relaxed">
-								{entry.meaning}
-							</p>
-						</div>
+						<ul
+							tabindex="0"
+							class="dropdown-content z-[100] menu p-2 shadow-xl bg-base-100 rounded-box w-full max-h-60 overflow-y-auto flex-nowrap border border-base-content/5 mt-1"
+						>
+							<li>
+								<button
+									class="flex items-center gap-2"
+									onclick={() => (selectedLessons = new Set())}
+								>
+									{#if selectedLessons.size === 0}
+										<CheckSquare class="w-4 h-4 text-primary" />
+									{:else}
+										<Square class="w-4 h-4 text-base-content/30" />
+									{/if}
+									<span class="font-semibold">All Lessons</span>
+								</button>
+							</li>
+							<div class="divider my-1 h-px"></div>
+							{#each data.lessonNumbers as lesson}
+								<li>
+									<button
+										class="flex items-center gap-2"
+										onclick={(e) => {
+											e.currentTarget.blur();
+											toggleLesson(lesson);
+										}}
+									>
+										{#if selectedLessons.has(lesson)}
+											<CheckSquare class="w-4 h-4 text-primary" />
+										{:else}
+											<Square class="w-4 h-4 text-base-content/30" />
+										{/if}
+										<span>Lesson {lesson}</span>
+									</button>
+								</li>
+							{/each}
+						</ul>
 					</div>
+
+					<button
+						class="btn btn-sm w-full gap-2 justify-between {showHiragana
+							? 'btn-soft'
+							: 'btn-outline'}"
+						onclick={() => (showHiragana = !showHiragana)}
+					>
+						<span>Show Hiragana</span>
+						{#if showHiragana}
+							<Eye class="w-4 h-4" />
+						{:else}
+							<EyeOff class="w-4 h-4" />
+						{/if}
+					</button>
 				</div>
-			{/each}
+			</div>
+
+			<!-- Progress in Focus Mode -->
+			{#if viewMode === 'focus' && filteredVocabulary.length > 0}
+				<div
+					class="bg-base-100 rounded-2xl border border-base-content/10 p-5 shadow-sm relative z-0"
+				>
+					<h3 class="font-bold text-sm mb-3 text-base-content/70 uppercase tracking-widest">
+						Progress
+					</h3>
+					<ProgressBar current={currentCardIndex + 1} total={filteredVocabulary.length} />
+
+					<div class="grid grid-cols-2 gap-2 mt-4">
+						<button
+							class="btn btn-outline btn-sm"
+							onclick={prevCard}
+							disabled={currentCardIndex === 0}>Previous</button
+						>
+						<button
+							class="btn btn-primary btn-sm"
+							onclick={nextCard}
+							disabled={currentCardIndex === filteredVocabulary.length - 1}>Next</button
+						>
+					</div>
+					<p class="text-xs text-center text-base-content/40 mt-3">
+						Use <kbd class="kbd kbd-xs">←</kbd> <kbd class="kbd kbd-xs">→</kbd> keys
+					</p>
+				</div>
+			{/if}
+		</aside>
+
+		<!-- Main Content Area -->
+		<div class="w-full min-h-[500px]">
+			{#if filteredVocabulary.length === 0}
+				<!-- Empty State -->
+				<div
+					class="h-full flex flex-col items-center justify-center text-center p-8 border-2 border-dashed border-base-content/10 rounded-3xl"
+				>
+					<div class="text-4xl mb-4 opacity-50">🔍</div>
+					<h3 class="font-bold text-lg">No words found</h3>
+					<p class="text-base-content/60">Try adjusting your filters</p>
+				</div>
+			{:else if viewMode === 'focus'}
+				<!-- FOCUS MODE: Flashcard -->
+				<div class="h-full flex flex-col items-center justify-center py-8">
+					{#key currentCard}
+						<div class="w-full max-w-xl" in:fly={{ y: 20, duration: 300, easing: quadOut }}>
+							<Flashcard vocab={currentCard} />
+
+							<div class="mt-8 text-center text-sm text-base-content/40 font-medium">
+								Lesson {currentCard.lesson}
+							</div>
+						</div>
+					{/key}
+				</div>
+			{:else}
+				<!-- LIST MODE: Grid (Redesigned) -->
+				<div class="grid grid-cols-1 gap-3">
+					{#each filteredVocabulary as entry (entry)}
+						<div
+							class="card bg-base-100 border border-base-content/5 hover:border-primary/20 hover:shadow-md transition-all p-4 flex flex-row items-center justify-between group cursor-pointer"
+							onclick={() => speak(entry.kanji || entry.hiragana)}
+							role="button"
+							tabindex="0"
+							onkeydown={(e) => {
+								if (e.key === 'Enter' || e.key === ' ') {
+									e.preventDefault();
+									speak(entry.kanji || entry.hiragana);
+								}
+							}}
+						>
+							<div class="flex items-center gap-4">
+								<!-- Lesson Badge -->
+								<div
+									class="flex flex-col items-center justify-center w-12 h-12 rounded-xl bg-base-200/50 text-xs font-bold text-base-content/40 shrink-0"
+								>
+									<span class="text-[10px] uppercase">Les</span>
+									<span class="text-base text-primary/80">{entry.lesson}</span>
+								</div>
+
+								<!-- Japanese Text -->
+								<div>
+									{#if entry.kanji}
+										<div class="text-xl font-bold flex items-baseline gap-2">
+											{entry.kanji}
+										</div>
+										{#if showHiragana}
+											<div class="text-sm text-base-content/60 font-medium">{entry.hiragana}</div>
+										{/if}
+									{:else}
+										<div class="text-xl font-bold">{entry.hiragana}</div>
+									{/if}
+								</div>
+							</div>
+
+							<!-- Meaning & Actions -->
+							<div class="text-right flex items-center gap-4">
+								<span class="text-base font-medium text-base-content/80 text-right"
+									>{entry.meaning}</span
+								>
+
+								<button
+									class="btn btn-ghost btn-circle btn-sm text-base-content/30 hover:text-primary hover:bg-primary/10 transition-all opacity-0 group-hover:opacity-100"
+									onclick={(e) => {
+										e.stopPropagation();
+										speak(entry.kanji || entry.hiragana);
+									}}
+									title="Play Audio"
+								>
+									<Volume2 class="w-4 h-4" />
+								</button>
+							</div>
+						</div>
+					{/each}
+				</div>
+			{/if}
 		</div>
-
-		<!-- Infinite Scroll Trigger -->
-		{#if displayedCount < filteredVocabulary.length}
-			<div class="h-20 flex items-center justify-center p-4" use:viewport>
-				<span class="loading loading-spinner text-primary"></span>
-			</div>
-		{/if}
-
-		{#if filteredVocabulary.length === 0}
-			<div class="text-center py-16">
-				<div class="text-5xl mb-4">🔍</div>
-				<p class="text-xl font-medium text-base-content/70">Không tìm thấy từ vựng</p>
-				<p class="text-base-content/50 mt-2">Thử thay đổi bộ lọc hoặc từ khóa</p>
-			</div>
-		{/if}
 	</main>
-
-	<!-- Back to top -->
-	<button
-		onclick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-		class="fixed bottom-6 right-6 btn btn-circle btn-primary shadow-xl"
-	>
-		<ChevronUp class="w-5 h-5" />
-	</button>
 </div>

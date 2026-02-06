@@ -1,19 +1,35 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import type { BookLevel, VocabularyEntry } from '$lib/types';
-	import { ArrowLeft, RotateCcw, Trophy, X, Check, Zap } from 'lucide-svelte';
+	import type { VocabularyEntry } from '$lib/types';
+	import {
+		ArrowLeft,
+		RotateCcw,
+		Trophy,
+		X,
+		Check,
+		Zap,
+		HelpCircle,
+		ChevronRight,
+		Play,
+		Square,
+		CheckSquare,
+		ChevronDown
+	} from 'lucide-svelte';
+	import { fly, scale, fade } from 'svelte/transition';
+	import { quadOut, elasticOut } from 'svelte/easing';
+	import { LEVEL_GRADIENTS } from '$lib/theme';
 
 	let { data }: { data: PageData } = $props();
-
-	import { LEVEL_GRADIENTS } from '$lib/theme';
 
 	// Quiz settings
 	const QUESTION_OPTIONS = [5, 10, 15, 20, 30];
 	const OPTIONS_COUNT = 4;
 
 	// State
-	let selectedLesson = $state<number | null>(null);
+	let selectedLessons = $state<Set<number>>(new Set());
+	let isLessonDropdownOpen = $state(false);
 	let questionCount = $state(10);
+
 	let questions = $state<
 		Array<{
 			word: VocabularyEntry;
@@ -21,19 +37,23 @@
 			correctIndex: number;
 		}>
 	>([]);
+
 	let currentIndex = $state(0);
 	let selectedAnswer = $state<number | null>(null);
 	let isAnswered = $state(false);
+
+	// Stats
 	let correctCount = $state(0);
 	let wrongCount = $state(0);
-	let quizStarted = $state(false);
-	let quizFinished = $state(false);
+
+	// Game Flow State
+	let gameState = $state<'start' | 'playing' | 'finished'>('start');
 
 	// Calculate available vocabulary based on lesson selection
 	let availableVocab = $derived(
-		selectedLesson === null
+		selectedLessons.size === 0
 			? data.vocabulary
-			: data.vocabulary.filter((v) => v.lesson === selectedLesson)
+			: data.vocabulary.filter((v) => selectedLessons.has(v.lesson))
 	);
 
 	// Max questions based on available vocabulary (need at least 4 for options)
@@ -42,8 +62,18 @@
 	// Available question count options (filtered based on vocabulary size)
 	let availableQuestionOptions = $derived(QUESTION_OPTIONS.filter((n) => n <= maxQuestions));
 
+	function toggleLesson(lesson: number) {
+		const newSet = new Set(selectedLessons);
+		if (newSet.has(lesson)) {
+			newSet.delete(lesson);
+		} else {
+			newSet.add(lesson);
+		}
+		selectedLessons = newSet;
+	}
+
 	// Generate quiz questions
-	function generateQuiz() {
+	function startQuiz() {
 		const pool = availableVocab;
 		const count = Math.min(questionCount, pool.length);
 
@@ -74,8 +104,7 @@
 		isAnswered = false;
 		correctCount = 0;
 		wrongCount = 0;
-		quizStarted = true;
-		quizFinished = false;
+		gameState = 'playing';
 	}
 
 	function selectAnswer(index: number) {
@@ -97,12 +126,12 @@
 			selectedAnswer = null;
 			isAnswered = false;
 		} else {
-			quizFinished = true;
+			gameState = 'finished';
 		}
 	}
 
 	function handleKeydown(e: KeyboardEvent) {
-		if (!quizStarted || quizFinished) return;
+		if (gameState !== 'playing') return;
 
 		if (e.key >= '1' && e.key <= '4') {
 			const index = parseInt(e.key) - 1;
@@ -120,7 +149,8 @@
 	}
 
 	let currentQuestion = $derived(questions[currentIndex]);
-	let progress = $derived(questions.length > 0 ? ((currentIndex + 1) / questions.length) * 100 : 0);
+	let progress = $derived(questions.length > 0 ? (currentIndex / questions.length) * 100 : 0);
+
 	let scorePercent = $derived(
 		correctCount + wrongCount > 0
 			? Math.round((correctCount / (correctCount + wrongCount)) * 100)
@@ -135,260 +165,286 @@
 			100% {
 				transform: translateX(0);
 			}
-			20% {
-				transform: translateX(-5px);
+			25% {
+				transform: translateX(-4px);
 			}
-			40% {
-				transform: translateX(5px);
-			}
-			60% {
-				transform: translateX(-5px);
-			}
-			80% {
-				transform: translateX(5px);
+			75% {
+				transform: translateX(4px);
 			}
 		}
 		.animate-shake {
-			animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+			animation: shake 0.3s ease-in-out;
 		}
 	</style>
-	<title>Quiz - {data.book.title}</title>
+	<title>Quiz: {data.book.title} | Marugoto</title>
 </svelte:head>
 
 <svelte:window onkeydown={handleKeydown} />
 
-<div class="min-h-screen flex flex-col">
+<div class="min-h-screen bg-base-100 flex flex-col">
 	<!-- Header -->
-	<header class="bg-base-100 shadow-sm">
-		<div class="max-w-4xl mx-auto px-4 py-4">
-			<div class="flex items-center gap-4">
-				<a href="/book/{data.book.id}" class="btn btn-ghost btn-circle">
+	<header class="bg-base-100/80 backdrop-blur-md border-b border-base-content/5 sticky top-0 z-50">
+		<div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+			<div class="flex items-center gap-2">
+				<a href="/book/{data.book.id}" class="btn btn-ghost btn-circle btn-sm">
 					<ArrowLeft class="w-5 h-5" />
 				</a>
-
-				<div class="flex-1">
-					<div class="flex items-center gap-2 mb-1">
-						<span
-							class="px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r {LEVEL_GRADIENTS[
-								data.book.level
-							]}"
-						>
-							{data.book.level}
-						</span>
-						<span class="text-sm text-base-content/60">Quiz</span>
-					</div>
-					<h1 class="font-bold truncate">{data.book.title}</h1>
+				<div class="flex flex-col">
+					<span class="text-xs font-bold text-primary tracking-wider uppercase">Quiz Mode</span>
+					<h1 class="font-bold text-sm sm:text-base line-clamp-1">{data.book.title}</h1>
 				</div>
-
-				{#if !quizStarted}
-					<select class="select select-bordered select-sm bg-base-200" bind:value={selectedLesson}>
-						<option value={null}>Tất cả ({data.vocabulary.length})</option>
-						{#each data.lessonNumbers as lesson}
-							<option value={lesson}>
-								Bài {lesson} ({data.vocabulary.filter((v) => v.lesson === lesson).length})
-							</option>
-						{/each}
-					</select>
-				{/if}
 			</div>
+
+			{#if gameState === 'start'}
+				<!-- Custom Multi-select Dropdown -->
+				<div class="dropdown dropdown-end">
+					<div
+						tabindex="0"
+						role="button"
+						class="btn btn-sm btn-ghost bg-base-200/50 font-normal border-base-300 min-w-[140px] justify-between"
+						onclick={() => (isLessonDropdownOpen = !isLessonDropdownOpen)}
+					>
+						<span class="truncate max-w-[100px]">
+							{selectedLessons.size === 0 ? 'All Lessons' : `Selected (${selectedLessons.size})`}
+						</span>
+						<ChevronDown class="w-4 h-4 opacity-50" />
+					</div>
+					<ul
+						tabindex="0"
+						class="dropdown-content z-[20] menu p-2 shadow-xl bg-base-100 rounded-box w-64 max-h-80 overflow-y-auto flex-nowrap border border-base-content/5 mt-1"
+					>
+						<li>
+							<button class="flex items-center gap-2" onclick={() => (selectedLessons = new Set())}>
+								{#if selectedLessons.size === 0}
+									<CheckSquare class="w-4 h-4 text-primary" />
+								{:else}
+									<Square class="w-4 h-4 text-base-content/30" />
+								{/if}
+								<span class="font-semibold">All Lessons</span>
+							</button>
+						</li>
+						<div class="divider my-1 h-px"></div>
+						{#each data.lessonNumbers as lesson}
+							<li>
+								<button
+									class="flex items-center gap-2"
+									onclick={(e) => {
+										e.currentTarget.blur();
+										toggleLesson(lesson);
+									}}
+								>
+									{#if selectedLessons.has(lesson)}
+										<CheckSquare class="w-4 h-4 text-primary" />
+									{:else}
+										<Square class="w-4 h-4 text-base-content/30" />
+									{/if}
+									<span>Lesson {lesson}</span>
+								</button>
+							</li>
+						{/each}
+					</ul>
+				</div>
+			{:else if gameState === 'playing'}
+				<div class="flex items-center gap-4 text-xs font-bold">
+					<div class="flex items-center gap-1.5 text-success bg-success/10 px-2 py-1 rounded-lg">
+						<Check class="w-3.5 h-3.5" />
+						{correctCount}
+					</div>
+					<div class="flex items-center gap-1.5 text-error bg-error/10 px-2 py-1 rounded-lg">
+						<X class="w-3.5 h-3.5" />
+						{wrongCount}
+					</div>
+				</div>
+			{/if}
 		</div>
+
+		<!-- Progress Bar -->
+		{#if gameState === 'playing'}
+			<div class="w-full h-1 bg-base-200">
+				<div
+					class="h-full bg-primary transition-all duration-300 ease-out"
+					style="width: {((currentIndex + (isAnswered ? 1 : 0)) / questions.length) * 100}%"
+				></div>
+			</div>
+		{/if}
 	</header>
 
-	<!-- Progress bar -->
-	{#if quizStarted && !quizFinished}
-		<div class="h-1 bg-base-300">
-			<div
-				class="h-full bg-gradient-to-r {LEVEL_GRADIENTS[
-					data.book.level
-				]} transition-all duration-300"
-				style="width: {progress}%"
-			></div>
-		</div>
-	{/if}
+	<main class="flex-1 flex flex-col items-center justify-center p-4 w-full max-w-2xl mx-auto">
+		<!-- START SCREEN -->
+		{#if gameState === 'start'}
+			<div class="text-center space-y-8 w-full max-w-md" in:fly={{ y: 20, duration: 400 }}>
+				<div class="relative inline-block mb-4">
+					<div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full"></div>
+					<div
+						class="w-24 h-24 rounded-3xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-5xl shadow-xl relative z-10 rotate-3"
+					>
+						🎯
+					</div>
+				</div>
 
-	<!-- Main content -->
-	<main class="flex-1 flex flex-col items-center justify-center p-4">
-		{#if !quizStarted}
-			<!-- Start screen -->
-			<div class="text-center max-w-md">
-				<div class="text-6xl mb-6">🎯</div>
-				<h2 class="text-3xl font-bold mb-4">Kiểm tra từ vựng</h2>
-				<p class="text-base-content/60 mb-6">Chọn số lượng câu hỏi và bắt đầu kiểm tra</p>
+				<div class="space-y-2">
+					<h2 class="text-3xl font-bold">Ready to practice?</h2>
+					<p class="text-base-content/60">Choose how many words you want to review</p>
+				</div>
 
-				<!-- Question count selector -->
-				<div class="mb-8">
-					<p class="text-sm text-base-content/60 mb-2">Số câu hỏi</p>
+				<div class="bg-base-200/50 rounded-2xl p-6 border border-base-content/5">
 					<div class="flex flex-wrap justify-center gap-2">
 						{#each availableQuestionOptions as count}
 							<button
-								class="btn {questionCount === count ? 'btn-primary' : 'btn-outline'}"
+								class="btn btn-lg {questionCount === count
+									? 'btn-primary shadow-lg scale-105'
+									: 'btn-outline border-base-300 hover:border-primary hover:bg-primary/5'} transition-all"
 								onclick={() => (questionCount = count)}
 							>
 								{count}
 							</button>
 						{/each}
 					</div>
-					{#if maxQuestions < 5}
-						<p class="text-sm text-warning mt-3">
-							⚠️ Cần ít nhất 5 từ vựng để tạo quiz. Hiện có: {maxQuestions}
-						</p>
-					{:else if maxQuestions < questionCount}
-						<p class="text-sm text-base-content/50 mt-3">
-							Có {maxQuestions} từ vựng trong bộ lọc
-						</p>
-					{/if}
+					<div class="mt-4 text-xs text-base-content/40 font-medium">Questions</div>
 				</div>
 
 				<button
-					class="btn btn-primary btn-lg gap-2"
-					onclick={generateQuiz}
+					class="btn btn-primary btn-lg w-full gap-2 shadow-xl shadow-primary/20 hover:scale-[1.02] transition-transform"
+					onclick={startQuiz}
 					disabled={maxQuestions < 4}
 				>
-					<Zap class="w-5 h-5" />
-					Bắt đầu Quiz
+					<Play class="w-5 h-5 fill-current" />
+					Start Quiz
 				</button>
+
+				{#if maxQuestions < 4}
+					<div role="alert" class="alert alert-warning text-sm py-2">
+						<HelpCircle class="w-4 h-4" />
+						<span>Not enough words properly loaded to start quiz.</span>
+					</div>
+				{/if}
 			</div>
-		{:else if quizFinished}
-			<!-- Results screen -->
-			<div class="text-center max-w-md">
-				<div class="text-6xl mb-6">
-					{#if scorePercent >= 80}
-						🎉
-					{:else if scorePercent >= 50}
-						👍
-					{:else}
-						💪
-					{/if}
-				</div>
-				<h2 class="text-3xl font-bold mb-4">Kết quả</h2>
 
-				<div class="stats shadow mb-8">
-					<div class="stat">
-						<div class="stat-figure text-success">
-							<Check class="w-8 h-8" />
+			<!-- PLAYING SCREEN -->
+		{:else if gameState === 'playing' && currentQuestion}
+			<div class="w-full space-y-8">
+				<!-- Question Card -->
+				<div
+					class="relative w-full aspect-[2/1] bg-base-100 rounded-3xl border border-base-content/10 shadow-lg flex flex-col items-center justify-center p-8 text-center overlow-hidden"
+				>
+					<div
+						class="absolute inset-0 bg-gradient-to-br {LEVEL_GRADIENTS[data.book.level]} opacity-5"
+					></div>
+					<span class="text-xs font-bold text-base-content/30 uppercase tracking-widest mb-4"
+						>Question {currentIndex + 1} of {questions.length}</span
+					>
+
+					{#key currentQuestion}
+						<div class="space-y-2" in:scale={{ start: 0.9, duration: 300, easing: elasticOut }}>
+							{#if currentQuestion.word.kanji}
+								<h2 class="text-5xl md:text-6xl font-black text-base-content">
+									{currentQuestion.word.kanji}
+								</h2>
+								<p class="text-2xl text-base-content/50 font-medium">
+									{currentQuestion.word.hiragana}
+								</p>
+							{:else}
+								<h2 class="text-5xl md:text-6xl font-black text-base-content">
+									{currentQuestion.word.hiragana}
+								</h2>
+							{/if}
 						</div>
-						<div class="stat-title">Đúng</div>
-						<div class="stat-value text-success">{correctCount}</div>
-					</div>
-					<div class="stat">
-						<div class="stat-figure text-error">
-							<X class="w-8 h-8" />
-						</div>
-						<div class="stat-title">Sai</div>
-						<div class="stat-value text-error">{wrongCount}</div>
-					</div>
-					<div class="stat">
-						<div class="stat-figure text-primary">
-							<Trophy class="w-8 h-8" />
-						</div>
-						<div class="stat-title">Điểm</div>
-						<div class="stat-value text-primary">{scorePercent}%</div>
-					</div>
+					{/key}
 				</div>
 
-				<div class="flex gap-3 justify-center">
-					<button class="btn btn-primary gap-2" onclick={generateQuiz}>
-						<RotateCcw class="w-4 h-4" />
-						Làm lại
-					</button>
-					<a href="/book/{data.book.id}" class="btn btn-ghost"> Quay lại </a>
-				</div>
-			</div>
-		{:else if currentQuestion}
-			<!-- Question -->
-			<div class="w-full max-w-2xl">
-				<!-- Stats -->
-				<div class="flex items-center justify-between mb-6 text-sm">
-					<span class="text-base-content/60">
-						Câu {currentIndex + 1} / {questions.length}
-					</span>
-					<div class="flex gap-4">
-						<span class="text-success flex items-center gap-1">
-							<Check class="w-4 h-4" />
-							{correctCount}
-						</span>
-						<span class="text-error flex items-center gap-1">
-							<X class="w-4 h-4" />
-							{wrongCount}
-						</span>
-					</div>
-				</div>
-
-				<!-- Question card -->
-				<div class="card bg-base-100 shadow-xl mb-8">
-					<div class="card-body items-center text-center py-12">
-						<p class="text-sm text-base-content/50 mb-2">Từ này có nghĩa là gì?</p>
-						{#if currentQuestion.word.kanji}
-							<h2 class="text-6xl md:text-7xl font-bold mb-3">
-								{currentQuestion.word.kanji}
-							</h2>
-							<p class="text-2xl text-base-content/50">{currentQuestion.word.hiragana}</p>
-						{:else}
-							<h2 class="text-6xl md:text-7xl font-bold">
-								{currentQuestion.word.hiragana}
-							</h2>
-						{/if}
-					</div>
-				</div>
-
-				<!-- Options -->
+				<!-- Options Grid -->
 				<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 					{#each currentQuestion.options as option, i}
 						{@const isCorrect = i === currentQuestion.correctIndex}
 						{@const isSelected = i === selectedAnswer}
 						{@const isWrongSelected = isAnswered && isSelected && !isCorrect}
+
 						<button
-							class="btn btn-lg h-auto py-4 text-left justify-start gap-3 border-2
+							class="btn btn-lg h-auto py-5 px-6 text-left justify-between border-2 relative overflow-hidden group
 								{isAnswered
 								? isCorrect
-									? 'bg-success border-success text-white hover:bg-success scale-105 shadow-xl transition-transform'
+									? 'bg-success/10 border-success text-success'
 									: isWrongSelected
-										? 'bg-error border-error text-white hover:bg-error animate-shake shadow-lg'
-										: 'btn-ghost opacity-30 border-transparent scale-95'
-								: 'btn-outline hover:btn-primary border-base-300 hover:scale-[1.01] transition-transform'}"
+										? 'bg-error/10 border-error text-error animate-shake'
+										: 'opacity-40 border-transparent bg-base-200'
+								: 'bg-base-100 border-base-200 hover:border-primary hover:bg-base-100'}"
 							onclick={() => selectAnswer(i)}
 							disabled={isAnswered}
 						>
-							<span
-								class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0
-									{isAnswered && isCorrect
-									? 'bg-white/20 text-white'
-									: isWrongSelected
-										? 'bg-white/20 text-white'
-										: 'bg-base-200 text-base-content'}"
-							>
-								{#if isAnswered && isCorrect}
-									<Check class="w-4 h-4" />
+							<span class="font-medium text-lg relative z-10">{option}</span>
+
+							{#if isAnswered}
+								{#if isCorrect}
+									<Check class="w-6 h-6 shrink-0" />
 								{:else if isWrongSelected}
-									<X class="w-4 h-4" />
-								{:else}
-									{i + 1}
+									<X class="w-6 h-6 shrink-0" />
 								{/if}
-							</span>
-							<span
-								class="flex-1 text-base {isAnswered && (isCorrect || isWrongSelected)
-									? 'font-semibold'
-									: ''}">{option}</span
-							>
+							{:else}
+								<span
+									class="w-6 h-6 rounded-full bg-base-200 text-base-content/40 text-xs flex items-center justify-center group-hover:bg-primary group-hover:text-primary-content transition-colors"
+								>
+									{i + 1}
+								</span>
+							{/if}
 						</button>
 					{/each}
 				</div>
 
-				<!-- Next button -->
-				{#if isAnswered}
-					<div class="text-center mt-8">
-						<button class="btn btn-primary btn-lg" onclick={nextQuestion}>
-							{currentIndex < questions.length - 1 ? 'Câu tiếp theo' : 'Xem kết quả'}
+				<!-- Next Button / Hint -->
+				<div class="h-16 flex items-center justify-center">
+					{#if isAnswered}
+						<button
+							class="btn btn-link no-underline gap-2 text-base-content/60 hover:text-primary animate-bounce decoration-transparent"
+							onclick={nextQuestion}
+						>
+							Press <kbd class="kbd kbd-sm font-sans">Space</kbd> to continue
+							<ChevronRight class="w-4 h-4" />
 						</button>
-						<p class="text-xs text-base-content/40 mt-2">
-							Nhấn <span class="kbd kbd-sm">Space</span> để tiếp tục
-						</p>
-					</div>
-				{:else}
-					<p class="text-center text-xs text-base-content/40 mt-8">
-						Nhấn <span class="kbd kbd-sm">1</span>-<span class="kbd kbd-sm">4</span> để chọn đáp án
+					{/if}
+				</div>
+			</div>
+
+			<!-- FINISHED SCREEN -->
+		{:else if gameState === 'finished'}
+			<div class="text-center space-y-8 w-full max-w-md" in:scale={{ start: 0.9, duration: 400 }}>
+				<div class="relative inline-block">
+					<div class="absolute inset-0 bg-yellow-400/20 blur-3xl rounded-full"></div>
+					<Trophy class="w-32 h-32 text-yellow-500 drop-shadow-xl relative z-10" />
+				</div>
+
+				<div>
+					<h2 class="text-4xl font-black mb-2">{scorePercent}% Score</h2>
+					<p class="text-base-content/60 text-lg">
+						{#if scorePercent >= 90}
+							Incredible! Perfect mastery!
+						{:else if scorePercent >= 80}
+							Great job! Almost perfect.
+						{:else if scorePercent >= 50}
+							Good effort! Keep practicing.
+						{:else}
+							Keep going! Practice makes perfect.
+						{/if}
 					</p>
-				{/if}
+				</div>
+
+				<div class="stats shadow-lg w-full border border-base-content/5 bg-base-100">
+					<div class="stat place-items-center">
+						<div class="stat-title text-success font-bold">Correct</div>
+						<div class="stat-value text-success">{correctCount}</div>
+					</div>
+					<div class="stat place-items-center">
+						<div class="stat-title text-error font-bold">Wrong</div>
+						<div class="stat-value text-error">{wrongCount}</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col gap-3 pt-4">
+					<button class="btn btn-primary btn-lg w-full gap-2 shadow-lg" onclick={startQuiz}>
+						<RotateCcw class="w-5 h-5" />
+						Play Again
+					</button>
+					<a href="/book/{data.book.id}" class="btn btn-ghost w-full"> Back to Book </a>
+				</div>
 			</div>
 		{/if}
 	</main>

@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import 'tailwindcss';
+
 @plugin '@tailwindcss/typography';
 @plugin "daisyui" {
-	themes: light, dark, cupcake, dracula, night, forest, aqua, synthwave;
+	themes: winter, emerald, light, dark, cupcake, dracula, night, forest, aqua, synthwave;
+}
+
+@theme {
+	--font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+	body {
+		font-family: 'Inter', sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
 }

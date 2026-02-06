@@ -14,8 +14,11 @@ export interface BookDefinition {
 	/** JLPT-aligned level */
 	level: BookLevel;
 	/** Book type: katsudou (activity), rikai (comprehension), or combined */
+	/** Book type: katsudou (activity), rikai (comprehension), or combined */
 	type: BookType;
 }
+
+export type Book = BookDefinition;
 
 export interface VocabularyEntry {
 	hiragana: string;
